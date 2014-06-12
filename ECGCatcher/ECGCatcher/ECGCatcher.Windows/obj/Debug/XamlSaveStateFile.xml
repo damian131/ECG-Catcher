@@ -1,5 +1,10 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="e:\dokumenty\projekty\ecgcatcher\ecgcatcher\ecgcatcher\ecgcatcher.windows\obj\debug\intermediatexaml\ecgcatcher.windows.exe" HashGuid="0258103b-bae3-95e5-dd1b-22c75d7411e2" />
+    <LocalAssembly PathName="e:\dokumenty\projekty\ecgcatcher\ecgcatcher\ecgcatcher\ecgcatcher.windows\obj\debug\intermediatexaml\ecgcatcher.windows.exe" HashGuid="d199c937-0807-83af-57dd-d38e7187f1f5" />
+    <ReferenceAssembly PathName="e:\dokumenty\projekty\ecgcatcher\ecgcatcher\packages\caliburn.micro.core.2.0.0\lib\portable-net45+win8+wp8+wpa81\caliburn.micro.dll" HashGuid="9d39451b-c8d7-f78a-6a7d-71bd9b0f1167" />
+    <ReferenceAssembly PathName="e:\dokumenty\projekty\ecgcatcher\ecgcatcher\packages\caliburn.micro.2.0.0\lib\win81\caliburn.micro.extensions.dll" HashGuid="513ef815-b782-36af-57f7-cc17eb6b6d9e" />
+    <ReferenceAssembly PathName="e:\dokumenty\projekty\ecgcatcher\ecgcatcher\packages\caliburn.micro.2.0.0\lib\win81\caliburn.micro.platform.dll" HashGuid="c8eb7504-b912-dbe1-4877-e3409c3ad0aa" />
+    <ReferenceAssembly PathName="e:\dokumenty\projekty\ecgcatcher\ecgcatcher\packages\caliburn.micro.2.0.0\lib\win81\microsoft.xaml.interactions.dll" HashGuid="95a94f94-3917-d473-4f7c-18c4bd437046" />
+    <ReferenceAssembly PathName="e:\dokumenty\projekty\ecgcatcher\ecgcatcher\packages\caliburn.micro.2.0.0\lib\win81\microsoft.xaml.interactivity.dll" HashGuid="d25f59e6-dd81-900a-0dfc-55b39f6898ef" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

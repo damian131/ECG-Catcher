@@ -19,6 +19,21 @@
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\ECGCatcher.Windows.exe">
       <PackagePath>ECGCatcher.Windows.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\packages\Caliburn.Micro.Core.2.0.0\lib\portable-net45+win8+wp8+wpa81\Caliburn.Micro.dll">
+      <PackagePath>Caliburn.Micro.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\packages\Caliburn.Micro.2.0.0\lib\win81\Caliburn.Micro.Extensions.dll">
+      <PackagePath>Caliburn.Micro.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\packages\Caliburn.Micro.2.0.0\lib\win81\Caliburn.Micro.Platform.dll">
+      <PackagePath>Caliburn.Micro.Platform.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\packages\Caliburn.Micro.2.0.0\lib\win81\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\packages\Caliburn.Micro.2.0.0\lib\win81\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -35,11 +50,41 @@
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\Images\arya.jpg">
+      <PackagePath>Resources\Images\arya.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\Images\catelyn.jpg">
+      <PackagePath>Resources\Images\catelyn.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\Images\cercei.jpg">
+      <PackagePath>Resources\Images\cercei.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\Images\jamie.jpg">
+      <PackagePath>Resources\Images\jamie.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\Images\jon.jpg">
+      <PackagePath>Resources\Images\jon.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\Images\rob.jpg">
+      <PackagePath>Resources\Images\rob.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\Images\sandor.jpg">
+      <PackagePath>Resources\Images\sandor.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\Images\sansa.jpg">
+      <PackagePath>Resources\Images\sansa.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\Images\tyrion.jpg">
+      <PackagePath>Resources\Images\tyrion.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\MainPage.xbf">
-      <PackagePath>MainPage.xbf</PackagePath>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Views\MainView.xbf">
+      <PackagePath>Views\MainView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Views\CharacterView.xbf">
+      <PackagePath>Views\CharacterView.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\ECGCatcher.Windows.xr.xml">
       <PackagePath>ECGCatcher.Windows.xr.xml</PackagePath>
