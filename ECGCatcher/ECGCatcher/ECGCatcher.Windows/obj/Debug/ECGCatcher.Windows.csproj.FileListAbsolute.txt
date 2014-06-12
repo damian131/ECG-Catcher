@@ -49,3 +49,8 @@ E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\De
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\ECGCatcher.Windows.csproj.GenerateResource.Cache
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Caliburn.Micro.Extensions.pri.xml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Caliburn.Micro.Platform.pri.xml
+E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Resources\Dictionary.xbf
+E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Resources\Dictionary.g.i.cs
+E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Resources\Dictionary.g.cs
+E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Resources\Dictionary.xaml
+E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Resources\Dictionary.xbf

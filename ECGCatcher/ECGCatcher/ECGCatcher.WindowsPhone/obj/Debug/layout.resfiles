@@ -1,3 +1,12 @@
+Resources\Images\arya.jpg
+Resources\Images\catelyn.jpg
+Resources\Images\cercei.jpg
+Resources\Images\jamie.jpg
+Resources\Images\jon.jpg
+Resources\Images\rob.jpg
+Resources\Images\sandor.jpg
+Resources\Images\sansa.jpg
+Resources\Images\tyrion.jpg
 Assets\Logo.scale-240.png
 Assets\SmallLogo.scale-240.png
 Assets\SplashScreen.scale-240.png
@@ -6,4 +15,6 @@ Assets\StoreLogo.scale-240.png
 Assets\WideLogo.scale-240.png
 App.xbf
 ECGCatcher.WindowsPhone.xr.xml
-MainPage.xbf
+Resources\Dictionary.xbf
+Views\CharacterView.xbf
+Views\MainView.xbf
