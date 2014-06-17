@@ -1,1 +1,0 @@
-E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\ECGCatcher.WindowsPhone.csproj;neutral
