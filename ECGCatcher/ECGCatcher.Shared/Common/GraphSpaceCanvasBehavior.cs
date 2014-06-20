@@ -29,7 +29,7 @@ namespace ECGCatcher.Common
 
             if (e.NewValue != null)
             {
-                (e.NewValue as IGraphSpace).ActualSizeChanged += gcb.ActualSizeChanged;
+                (e.NewValue as IGraphSpace).ActualSizeChanged += gcb.ActualSizeChanged; 
                 (e.NewValue as IGraphSpace).GraphSpaceSizeChanged += gcb.GraphSpaceSizeChanged;
                 (e.NewValue as IGraphSpace).Children = gcb.GraphSpaceCanvas.Children;
             }
@@ -65,9 +65,19 @@ namespace ECGCatcher.Common
         {
             AssociatedObject = associatedObject;
             GraphSpaceCanvas = AssociatedObject as Canvas;
-            
+            GraphSpaceCanvas.SizeChanged += GraphSpaceCanvas_SizeChanged;
         }
 
+        void GraphSpaceCanvas_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            if(GraphSpace != null)
+            {
+                GraphSpace.Width = e.NewSize.Width;
+                GraphSpace.Height = e.NewSize.Height;
+            }
+        }
+
+       
 
         public void Detach()
         {

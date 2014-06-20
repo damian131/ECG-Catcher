@@ -9,12 +9,11 @@ namespace ECGCatcher.Models
 {
     public sealed class GraphSpace : PropertyChangedBase, IGraphSpace
     {
-        public GraphSpace() {
-            PreviousPoint = new Point(0, ActualHeight * 0.5);
-        }
+        public GraphSpace() {}
 
-        public readonly double DataSpace = 2;
         public Point PreviousPoint { get; set; }
+        public double ZeroLevelCoordinate { get; set; }
+        //public int AmountOfDrawnData { get; set; }
 
         private double _Width;
         public double Width {
@@ -96,6 +95,12 @@ namespace ECGCatcher.Models
         {
             if (ActualSizeChanged != null)
                 ActualSizeChanged(this, e);
+        }
+
+        public void SetBasePreviousPoint(double x)
+        {
+            ZeroLevelCoordinate = Height * 0.5;
+            PreviousPoint = new Point(x, ZeroLevelCoordinate);
         }
     }
 }

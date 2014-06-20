@@ -19,6 +19,8 @@ namespace ECGCatcher
         UIElementCollection Children { get; set; }
 
         Point PreviousPoint { get; set; }
+        //int AmountOfDrawnData { get; set; }
+        double ZeroLevelCoordinate{get; set;}
 
         /// <summary>
         /// Occurs when [graphspace size changed].
@@ -28,5 +30,7 @@ namespace ECGCatcher
         /// Occurs when [actual size changed].
         /// </summary>
         event EventHandler<SizeChangedEventArgs> ActualSizeChanged;
+
+        void SetBasePreviousPoint(double x);
     }
 }

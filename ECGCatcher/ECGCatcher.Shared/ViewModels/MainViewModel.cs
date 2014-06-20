@@ -27,8 +27,12 @@ namespace ECGCatcher.ViewModels
 
         private void PlayButton_Clicked()
         {
+            _GraphSpace.SetBasePreviousPoint(0);
+
             var gd = new GraphDrawer(GraphSpace);
-            gd.DrawData( new Point(150.3,240.2) );
+            var rand = new Random();
+            for (int i = 0; i < 1000; ++i)
+                gd.DrawData(rand.Next(-200, 200));
         }
         
     }
