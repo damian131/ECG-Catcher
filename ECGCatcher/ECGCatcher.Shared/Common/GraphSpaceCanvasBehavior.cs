@@ -32,6 +32,7 @@ namespace ECGCatcher.Common
                 (e.NewValue as IGraphSpace).ActualSizeChanged += gcb.ActualSizeChanged; 
                 (e.NewValue as IGraphSpace).GraphSpaceSizeChanged += gcb.GraphSpaceSizeChanged;
                 (e.NewValue as IGraphSpace).Children = gcb.GraphSpaceCanvas.Children;
+                (e.NewValue as IGraphSpace).RenderTransform = gcb.GraphSpaceCanvas.RenderTransform;
             }
         }
 

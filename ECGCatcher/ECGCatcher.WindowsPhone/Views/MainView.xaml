@@ -27,14 +27,12 @@
                 </Image>
             </Grid>
             <Grid Grid.Row="1">
+                <!--GRAPH SPACE-->
                 <Canvas>
                     <Interactivity:Interaction.Behaviors>
                         <common:GraphSpaceCanvasBehavior GraphSpace="{Binding Path=GraphSpace, Mode=OneWay}" />
                     </Interactivity:Interaction.Behaviors>
                 </Canvas>
-                <!--ActualWidth="{Binding Path=GraphSpace.ActualWidth, Mode=OneWay}"
-                        ActualHeight="{Binding Path=GraphSpace.ActualWidth}"
-                        Children="{Binding Path=GraphSpace.Children, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"-->
             </Grid>
             <Grid Grid.Row="2" Style="{StaticResource MainPanelGridStyle}">
                 <Grid.ColumnDefinitions>
@@ -45,7 +43,8 @@
                 </Grid.ColumnDefinitions>
 
                 <AppBarButton Grid.Column="0" Icon="Back" Style="{StaticResource MainPanelAppBarButtonPhoneStyle}"/>
-                <AppBarButton Grid.Column="1" Icon="Play" Style="{StaticResource MainPanelAppBarButtonPhoneStyle}"/>
+                <AppBarButton Grid.Column="1" Icon="Play" Style="{StaticResource MainPanelAppBarButtonPhoneStyle}"
+                              caliburn:Message.Attach="[Event Click]=[Action PlayButton_Clicked]"/>
                 <AppBarButton Grid.Column="2" Icon="Pause" Style="{StaticResource MainPanelAppBarButtonPhoneStyle}"/>
                 <AppBarButton Grid.Column="3" Icon="Forward" Style="{StaticResource MainPanelAppBarButtonPhoneStyle}"/>
             </Grid>

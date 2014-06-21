@@ -25,14 +25,17 @@ namespace ECGCatcher.ViewModels
             }
         }
 
-        private void PlayButton_Clicked()
+        async private void PlayButton_Clicked()
         {
-            _GraphSpace.SetBasePreviousPoint(0);
+            _GraphSpace.CalculateInitialFactors();
 
             var gd = new GraphDrawer(GraphSpace);
             var rand = new Random();
             for (int i = 0; i < 1000; ++i)
-                gd.DrawData(rand.Next(-200, 200));
+            {
+                gd.DrawData(rand.Next(-5000, 5000));
+                await System.Threading.Tasks.Task.Delay(TimeSpan.FromMilliseconds(1000));
+            }
         }
         
     }

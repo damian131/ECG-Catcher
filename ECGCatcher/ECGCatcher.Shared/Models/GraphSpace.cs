@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using Windows.Foundation;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media;
 
 namespace ECGCatcher.Models
 {
@@ -11,8 +12,12 @@ namespace ECGCatcher.Models
     {
         public GraphSpace() {}
 
+        private const int _MaxData = 5000;
+
         public Point PreviousPoint { get; set; }
         public double ZeroLevelCoordinate { get; set; }
+        public double DataScaleFactor { get; set; }
+        public Int64 GraphShiftFactor { get; set; } // used to shifting a graph
         //public int AmountOfDrawnData { get; set; }
 
         private double _Width;
@@ -69,6 +74,18 @@ namespace ECGCatcher.Models
             }
         }
 
+        private Transform _RenderTransform;
+        public Transform RenderTransform
+        {
+            get { return _RenderTransform; }
+            set
+            {
+                _RenderTransform = value;
+                NotifyOfPropertyChange(() => RenderTransform);
+            }
+        }
+        
+
         /// <summary>
         /// Occurs when [graphspace size changed].
         /// </summary>
@@ -97,10 +114,22 @@ namespace ECGCatcher.Models
                 ActualSizeChanged(this, e);
         }
 
-        public void SetBasePreviousPoint(double x)
+        public void CalculateInitialFactors()
         {
             ZeroLevelCoordinate = Height * 0.5;
-            PreviousPoint = new Point(x, ZeroLevelCoordinate);
+            DataScaleFactor = CalculateScale(_MaxData);
+            PreviousPoint = new Point(0, ZeroLevelCoordinate); // TODO: should be width
+            GraphShiftFactor = 0;
+        }
+
+        private double CalculateScale(int limit)
+        {
+            double scale = 0.9;
+
+            while (scale * limit > ZeroLevelCoordinate)
+                scale -= 0.01;
+
+            return scale;
         }
     }
 }

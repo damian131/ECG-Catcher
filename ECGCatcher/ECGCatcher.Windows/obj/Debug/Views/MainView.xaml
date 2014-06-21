@@ -26,7 +26,8 @@
                 </Image>
             </Grid>
             <Grid Grid.Row="1">
-                <Canvas ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                <!--GRAPH SPACE-->
+                <Canvas>
                     <Interactivity:Interaction.Behaviors>
                         <common:GraphSpaceCanvasBehavior GraphSpace="{Binding Path=GraphSpace, Mode=OneWay}" />
                     </Interactivity:Interaction.Behaviors>

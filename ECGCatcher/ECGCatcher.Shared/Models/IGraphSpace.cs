@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using Windows.Foundation;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media;
 
 namespace ECGCatcher
 {
@@ -16,11 +17,14 @@ namespace ECGCatcher
         double ActualWidth { get; set; }
         double ActualHeight { get; set; }
 
+        Transform RenderTransform { get; set; }
         UIElementCollection Children { get; set; }
 
         Point PreviousPoint { get; set; }
         //int AmountOfDrawnData { get; set; }
         double ZeroLevelCoordinate{get; set;}
+        double DataScaleFactor { get; set; }
+        Int64 GraphShiftFactor { get; set; }
 
         /// <summary>
         /// Occurs when [graphspace size changed].
@@ -31,6 +35,6 @@ namespace ECGCatcher
         /// </summary>
         event EventHandler<SizeChangedEventArgs> ActualSizeChanged;
 
-        void SetBasePreviousPoint(double x);
+        void CalculateInitialFactors();
     }
 }

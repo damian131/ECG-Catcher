@@ -16,7 +16,10 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Common\GraphSpaceCanvasBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ECGMeasurement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ECGService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\GraphDrawer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\GraphShifter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\GraphSpace.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\IGraphSpace.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\SizeChangedEventArgs.cs" />

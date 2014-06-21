@@ -38,6 +38,10 @@
       <RootProperty Name="Icon" />
       <RootProperty Name="Style" />
     </RootType>
+    <RootType FullName="Caliburn.Micro.Message">
+      <RootMethod Name="GetAttach" />
+      <RootMethod Name="SetAttach" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas" />
     <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
       <RootMethod Name="GetBehaviors" />
