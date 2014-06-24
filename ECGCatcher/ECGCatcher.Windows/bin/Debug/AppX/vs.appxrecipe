@@ -20,13 +20,13 @@
     <AppXManifest Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-06-21T15:25:36.612</Modified>
+      <Modified>2014-06-24T22:03:11.037</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\ECGCatcher.Windows.exe">
       <PackagePath>ECGCatcher.Windows.exe</PackagePath>
-      <Modified>2014-06-21T15:38:57.917</Modified>
+      <Modified>2014-06-24T22:03:10.635</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\packages\Caliburn.Micro.Core.2.0.0\lib\portable-net45+win8+wp8+wpa81\Caliburn.Micro.dll">
       <PackagePath>Caliburn.Micro.dll</PackagePath>
@@ -78,19 +78,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Resources\Dictionary.xbf">
       <PackagePath>Resources\Dictionary.xbf</PackagePath>
-      <Modified>2014-06-19T22:04:06.694</Modified>
+      <Modified>2014-06-24T22:01:45.233</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Views\MainView.xbf">
       <PackagePath>Views\MainView.xbf</PackagePath>
-      <Modified>2014-06-21T15:25:35.261</Modified>
+      <Modified>2014-06-24T22:03:10.139</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\ECGCatcher.Windows.xr.xml">
       <PackagePath>ECGCatcher.Windows.xr.xml</PackagePath>
-      <Modified>2014-06-21T15:25:35.154</Modified>
+      <Modified>2014-06-24T17:43:37.823</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-06-21T15:25:35.896</Modified>
+      <Modified>2014-06-24T22:03:10.765</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -74,18 +74,6 @@ namespace ECGCatcher.Models
             }
         }
 
-        private Transform _RenderTransform;
-        public Transform RenderTransform
-        {
-            get { return _RenderTransform; }
-            set
-            {
-                _RenderTransform = value;
-                NotifyOfPropertyChange(() => RenderTransform);
-            }
-        }
-        
-
         /// <summary>
         /// Occurs when [graphspace size changed].
         /// </summary>
@@ -118,7 +106,7 @@ namespace ECGCatcher.Models
         {
             ZeroLevelCoordinate = Height * 0.5;
             DataScaleFactor = CalculateScale(_MaxData);
-            PreviousPoint = new Point(0, ZeroLevelCoordinate); // TODO: should be width
+            PreviousPoint = new Point(Width, ZeroLevelCoordinate);
             GraphShiftFactor = 0;
         }
 

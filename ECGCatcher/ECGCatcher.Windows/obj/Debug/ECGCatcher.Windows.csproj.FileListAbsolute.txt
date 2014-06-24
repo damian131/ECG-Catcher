@@ -83,7 +83,6 @@ E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\XamlTyp
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\App.xaml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Resources\Dictionary.xaml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\App.xbf
-E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Resources\Dictionary.xbf
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\XamlSaveStateFile.xml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Views\MainView.xaml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Views\MainView.xbf

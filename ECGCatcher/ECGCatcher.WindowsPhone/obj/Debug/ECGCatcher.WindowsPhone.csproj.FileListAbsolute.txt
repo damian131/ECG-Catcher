@@ -84,7 +84,6 @@ E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Vi
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Resources\Dictionary.xaml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\App.xbf
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Views\MainView.xbf
-E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Resources\Dictionary.xbf
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\XamlSaveStateFile.xml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\ECGCatcher.WindowsPhone.exe
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\ECGCatcher.WindowsPhone.pdb

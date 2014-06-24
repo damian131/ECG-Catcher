@@ -17,7 +17,6 @@ namespace ECGCatcher
         double ActualWidth { get; set; }
         double ActualHeight { get; set; }
 
-        Transform RenderTransform { get; set; }
         UIElementCollection Children { get; set; }
 
         Point PreviousPoint { get; set; }

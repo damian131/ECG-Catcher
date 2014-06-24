@@ -12,42 +12,108 @@
     xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid Background="White">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="60"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="100"/>
-            </Grid.RowDefinitions>
-            <Grid Style="{StaticResource MainPanelGridStyle}">
-                <Image Source="ms-appx:///Resources/Images/Logo.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" RenderTransformOrigin="0.5,0.5" >
-                    <Image.RenderTransform>
-                        <CompositeTransform ScaleX="2" ScaleY="2"/>
-                    </Image.RenderTransform>
-                </Image>
-            </Grid>
-            <Grid Grid.Row="1">
-                <!--GRAPH SPACE-->
-                <Canvas>
-                    <Interactivity:Interaction.Behaviors>
-                        <common:GraphSpaceCanvasBehavior GraphSpace="{Binding Path=GraphSpace, Mode=OneWay}" />
-                    </Interactivity:Interaction.Behaviors>
-                </Canvas>
-            </Grid>
-            <Grid Grid.Row="2" Style="{StaticResource MainPanelGridStyle}">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
+    <Pivot Title="ECGCatcher">
+        <Pivot.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="LightCoral" Offset="0.469"/>
+                <GradientStop Color="#FFD30101" Offset="1"/>
+            </LinearGradientBrush>
+        </Pivot.Background>
 
-                <AppBarButton Grid.Column="0" Icon="Back" Style="{StaticResource MainPanelAppBarButtonPhoneStyle}"/>
-                <AppBarButton Grid.Column="1" Icon="Play" Style="{StaticResource MainPanelAppBarButtonPhoneStyle}"
+        <PivotItem Header="ECG Graph" Margin="0">
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="100"/>
+                    </Grid.RowDefinitions>
+                    <!--<Grid Style="{StaticResource MainPanelGridStyle}">
+                        <Image Source="ms-appx:///Resources/Images/Logo.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" RenderTransformOrigin="0.5,0.5" >
+                            <Image.RenderTransform>
+                                <CompositeTransform ScaleX="2" ScaleY="2"/>
+                            </Image.RenderTransform>
+                        </Image>
+                    </Grid>-->
+                    <Grid Grid.Row="0">
+                        <!--GRAPH SPACE-->
+                        <Canvas>
+                            <Interactivity:Interaction.Behaviors>
+                                <common:GraphSpaceCanvasBehavior GraphSpace="{Binding Path=GraphSpace, Mode=OneWay}" />
+                            </Interactivity:Interaction.Behaviors>
+                        </Canvas>
+                        <ItemsControl ItemsSource="{Binding Path=Drawer.CurrentPoints}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <Canvas RenderTransformOrigin="0.5,0.5"   >
+                                        <Canvas.RenderTransform>
+                                            <TranslateTransform X="{Binding Path=Drawer.Shifter.TranslateX, UpdateSourceTrigger=PropertyChanged}"/>
+                                        </Canvas.RenderTransform>
+                                    </Canvas>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Line Stroke="{Binding StrokeColor, Converter={StaticResource ColorToBrushConverter}}" X1="{Binding X1}" Y1="{Binding Y1}" X2="{Binding X2}" Y2="{Binding Y2}" StrokeThickness="{Binding StrokeThickness}" />
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </Grid>
+                    <Grid Grid.Row="1" Style="{StaticResource MainPanelGridStyle}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <AppBarButton Grid.Column="0" Icon="Back" Style="{StaticResource MainPanelAppBarButtonPhoneStyle}"
+                              caliburn:Message.Attach="[Event Click]=[Action LeftShiftButton_Clicked]"/>
+                        <AppBarButton Grid.Column="1" Icon="Play" Style="{StaticResource MainPanelAppBarButtonPhoneStyle}"
                               caliburn:Message.Attach="[Event Click]=[Action PlayButton_Clicked]"/>
-                <AppBarButton Grid.Column="2" Icon="Pause" Style="{StaticResource MainPanelAppBarButtonPhoneStyle}"/>
-                <AppBarButton Grid.Column="3" Icon="Forward" Style="{StaticResource MainPanelAppBarButtonPhoneStyle}"/>
+                        <AppBarButton Grid.Column="2" Icon="Pause" Style="{StaticResource MainPanelAppBarButtonPhoneStyle}"
+                              caliburn:Message.Attach="[Event Click]=[Action PauseButton_Clicked]"/>
+                        <AppBarButton Grid.Column="3" Icon="Forward" Style="{StaticResource MainPanelAppBarButtonPhoneStyle}"
+                              caliburn:Message.Attach="[Event Click]=[Action RightShiftButton_Clicked]"/>
+                    </Grid>
+                </Grid>
             </Grid>
-        </Grid>
-    </Grid>
+        </PivotItem>
+
+        <PivotItem Header="Bluetooth" Margin="0" >
+            <Grid Margin="0,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="10,0,10,0" HorizontalAlignment="Stretch" x:Name="ButtonListPairedDevices" Foreground="White"  BorderBrush="White"  caliburn:Message.Attach="[Event Click] = [Ation ButtonListPairedDevices_Clicked]" Content="Get Paired devices" Padding="0,0,0,0"/>
+                <TextBlock Grid.Row="1" Text="" x:Name="PairedDevicesMessage"  Margin="20,0,0,0" Grid.ColumnSpan="2" Foreground="Gray"/>
+                <ListBox Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="ListDevices" Margin="10,0,10,0" Foreground="Gray" BorderBrush="Gray" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"   >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding DisplayName}" FontSize="24"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <Button Grid.Row="4" Grid.Column="0" HorizontalAlignment="Stretch" Margin="10,0,10,0" x:Name="ButtonConnect" IsEnabled="{Binding IsNotConnected}" Foreground="White"  BorderBrush="White"  caliburn:Message.Attach="[Event Click] = [Ation ButtonConnect_Clicked]" Content="Connect" Padding="0,0,0,0"/>
+                <Button Grid.Row="4" Grid.Column="1" HorizontalAlignment="Stretch" Margin="10,0,10,0" x:Name="ButtonDisconnect" IsEnabled="{Binding IsConnected}" Foreground="White"  BorderBrush="White"  caliburn:Message.Attach="[Event Click] = [Ation ButtonDisconnect_Clicked]" Content="Disconnect" Padding="0,0,0,0"/>
+                <TextBlock Grid.Row="5" Text="State: " FontSize="18"  Margin="10,10,0,0" />
+                <TextBlock Grid.Row="5" Text="{Binding StateString}" FontSize="18" Grid.Column="1" Margin="10,10,0,0"  />
+                <ListBox Grid.Row="6" Margin="10" Grid.ColumnSpan="2" Grid.RowSpan="4" x:Name="ListLogs"  Foreground="Gray" BorderBrush="Gray" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"  />
+            </Grid>
+        </PivotItem>
+
+
+    </Pivot>
 </Page>
