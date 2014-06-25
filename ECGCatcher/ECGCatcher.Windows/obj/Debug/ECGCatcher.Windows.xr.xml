@@ -4,6 +4,9 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="IsOpen" />
+    <RootPropertyPathName Name="BluetoothPanel" />
+    <RootPropertyPathName Name="Status" />
     <RootPropertyPathName Name="Drawer" />
     <RootPropertyPathName Name="CurrentPoints" />
     <RootPropertyPathName Name="Shifter" />
@@ -24,35 +27,87 @@
       <RootProperty Name="MergedDictionaries" />
       <RootProperty Name="Source" />
     </RootType>
+    <RootType FullName="Callisto.Controls.CustomDialog">
+      <RootProperty Name="BackButtonVisibility" />
+      <RootProperty Name="IsOpen" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Title" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
+      <RootProperty Name="UpdateSourceTrigger" />
+      <RootProperty Name="Path" />
+      <RootProperty Name="Converter" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
-      <RootProperty Name="Background" />
       <RootProperty Name="Children" />
-      <RootProperty Name="RowDefinitions" />
-      <RootProperty Name="Style" />
+      <RootProperty Name="Width" />
       <RootProperty Name="ColumnDefinitions" />
-      <RootMethod Name="GetRow" />
-      <RootMethod Name="SetRow" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Style" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
-      <RootProperty Name="Height" />
+    <RootType FullName="Windows.UI.Xaml.VisualStateManager">
+      <RootMethod Name="GetVisualStateGroups" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
+      <RootProperty Name="Transitions" />
+      <RootProperty Name="States" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualTransition">
+      <RootProperty Name="GeneratedDuration" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualState">
+      <RootProperty Name="Storyboard" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard" />
+    <RootType FullName="Caliburn.Micro.View">
+      <RootMethod Name="GetModel" />
+      <RootMethod Name="SetModel" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
-      <RootProperty Name="Icon" />
-      <RootProperty Name="Style" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBox" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootMethod Name="GetVerticalScrollBarVisibility" />
+      <RootMethod Name="SetVerticalScrollBarVisibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Caliburn.Micro.Message">
       <RootMethod Name="GetAttach" />
       <RootMethod Name="SetAttach" />
+    </RootType>
+    <RootType FullName="ECGCatcher.Views.BluetoothView" />
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
+      <RootProperty Name="Icon" />
+      <RootProperty Name="Style" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.BitmapIcon">
+      <RootProperty Name="UriSource" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootProperty Name="RenderTransformOrigin" />
@@ -66,12 +121,6 @@
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemsPanel" />
       <RootProperty Name="ItemTemplate" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Path" />
-      <RootProperty Name="UpdateSourceTrigger" />
-      <RootProperty Name="Converter" />
-      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
       <RootProperty Name="Template" />

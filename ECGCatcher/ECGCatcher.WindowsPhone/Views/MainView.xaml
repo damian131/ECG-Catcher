@@ -27,13 +27,6 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="100"/>
                     </Grid.RowDefinitions>
-                    <!--<Grid Style="{StaticResource MainPanelGridStyle}">
-                        <Image Source="ms-appx:///Resources/Images/Logo.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" RenderTransformOrigin="0.5,0.5" >
-                            <Image.RenderTransform>
-                                <CompositeTransform ScaleX="2" ScaleY="2"/>
-                            </Image.RenderTransform>
-                        </Image>
-                    </Grid>-->
                     <Grid Grid.Row="0">
                         <!--GRAPH SPACE-->
                         <Canvas>
@@ -78,8 +71,8 @@
                 </Grid>
             </Grid>
         </PivotItem>
-
-        <PivotItem Header="Bluetooth" Margin="0" >
+        
+        <PivotItem Header="Bluetooth" Margin="0" caliburn:View.Model="{Binding BluetoothPanel}" >
             <Grid Margin="0,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition />

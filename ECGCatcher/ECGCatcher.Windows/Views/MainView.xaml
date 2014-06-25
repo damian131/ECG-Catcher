@@ -11,10 +11,10 @@
     xmlns:common="using:ECGCatcher.Common"
     xmlns:model="using:ECGCatcher.Models"
     mc:Ignorable="d">
-    
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        
-        
+
+
         <Grid Background="White">
             <Grid.RowDefinitions>
                 <RowDefinition Height="60"/>
@@ -22,7 +22,7 @@
                 <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
             <Grid Style="{StaticResource MainPanelGridStyle}">
-                <Image Source="ms-appx:///Resources/Images/Logo.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" RenderTransformOrigin="0.5,0.5" >
+                <Image Source="ms-appx:///Resources/Images/Logo.png" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" RenderTransformOrigin="0.5,0.5" >
                     <Image.RenderTransform>
                         <CompositeTransform ScaleX="2" ScaleY="2"/>
                     </Image.RenderTransform>
@@ -58,15 +58,22 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
                 <AppBarButton Grid.Column="0" Icon="Back" Style="{StaticResource MainPanelAppBarButtonStoreStyle}"
                               caliburn:Message.Attach="[Event Click]=[Action LeftShiftButton_Clicked]"/>
                 <AppBarButton Grid.Column="1" Icon="Play" Style="{StaticResource MainPanelAppBarButtonStoreStyle}"
                               caliburn:Message.Attach="[Event Click]=[Action PlayButton_Clicked]"/>
-                <AppBarButton Grid.Column="2" Icon="Pause" Style="{StaticResource MainPanelAppBarButtonStoreStyle}"
+                <AppBarButton Grid.Column="2" Style="{StaticResource MainPanelAppBarButtonStoreStyle}"
+                              caliburn:Message.Attach="[Event Click]=[Action BluetoothButton_Clicked]">
+                    <AppBarButton.Icon>
+                        <BitmapIcon UriSource="ms-appx:///Resources/Images/bluetooth-icon.png"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+                <AppBarButton Grid.Column="3" Icon="Pause" Style="{StaticResource MainPanelAppBarButtonStoreStyle}"
                               caliburn:Message.Attach="[Event Click]=[Action PauseButton_Clicked]"/>
-                <AppBarButton Grid.Column="3" Icon="Forward" Style="{StaticResource MainPanelAppBarButtonStoreStyle}"
+                <AppBarButton Grid.Column="4" Icon="Forward" Style="{StaticResource MainPanelAppBarButtonStoreStyle}"
                               caliburn:Message.Attach="[Event Click]=[Action RightShiftButton_Clicked]"/>
             </Grid>
         </Grid>

@@ -102,3 +102,4 @@ E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Mu
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Caliburn.Micro.Extensions.pri.xml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Caliburn.Micro.Platform.pri.xml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\ProjectArchitectures.txt
+E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Resources\Dictionary.xbf

@@ -25,9 +25,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\GraphDrawer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\GraphShifter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\GraphSpace.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IDialog.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\IGraphSpace.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\SizeChangedEventArgs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ECGBluetoothRfcommClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BluetoothPanelViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -37,6 +39,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Images\bluetooth-icon.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\Images\Bluetooth_logo.png" />
     <Content Include="$(MSBuildThisFileDirectory)Resources\Images\Logo.png" />
   </ItemGroup>
 </Project>

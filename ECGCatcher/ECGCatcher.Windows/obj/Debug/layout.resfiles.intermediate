@@ -1,3 +1,5 @@
+Resources\Images\Bluetooth_logo.png
+Resources\Images\bluetooth-icon.png
 Resources\Images\Logo.png
 Assets\Logo.scale-100.png
 Assets\SmallLogo.scale-100.png
@@ -6,4 +8,5 @@ Assets\StoreLogo.scale-100.png
 App.xbf
 ECGCatcher.Windows.xr.xml
 Resources\Dictionary.xbf
+Views\BluetoothView.xbf
 Views\MainView.xbf

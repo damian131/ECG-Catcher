@@ -4,6 +4,7 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="BluetoothPanel" />
     <RootPropertyPathName Name="StateString" />
     <RootPropertyPathName Name="IsConnected" />
     <RootPropertyPathName Name="IsNotConnected" />
@@ -51,6 +52,16 @@
       <RootProperty Name="Header" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Caliburn.Micro.View">
+      <RootMethod Name="GetModel" />
+      <RootMethod Name="SetModel" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="UpdateSourceTrigger" />
+      <RootProperty Name="Converter" />
+      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Margin" />
@@ -104,12 +115,6 @@
       <RootMethod Name="SetHorizontalScrollBarVisibility" />
       <RootMethod Name="GetVerticalScrollBarVisibility" />
       <RootMethod Name="SetVerticalScrollBarVisibility" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Path" />
-      <RootProperty Name="UpdateSourceTrigger" />
-      <RootProperty Name="Converter" />
-      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />

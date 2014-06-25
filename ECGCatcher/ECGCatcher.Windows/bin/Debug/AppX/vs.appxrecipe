@@ -20,13 +20,13 @@
     <AppXManifest Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-06-24T22:03:11.037</Modified>
+      <Modified>2014-06-25T13:27:26.267</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\ECGCatcher.Windows.exe">
       <PackagePath>ECGCatcher.Windows.exe</PackagePath>
-      <Modified>2014-06-24T22:03:10.635</Modified>
+      <Modified>2014-06-25T13:38:21.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\packages\Caliburn.Micro.Core.2.0.0\lib\portable-net45+win8+wp8+wpa81\Caliburn.Micro.dll">
       <PackagePath>Caliburn.Micro.dll</PackagePath>
@@ -39,6 +39,10 @@
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\packages\Caliburn.Micro.2.0.0\lib\win81\Caliburn.Micro.Platform.dll">
       <PackagePath>Caliburn.Micro.Platform.dll</PackagePath>
       <Modified>2014-06-12T20:56:02.441</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\packages\Callisto.1.4.0\lib\netcore451\Callisto.dll">
+      <PackagePath>Callisto.dll</PackagePath>
+      <Modified>2014-06-24T23:12:13.994</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\packages\Caliburn.Micro.2.0.0\lib\win81\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
@@ -68,6 +72,14 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-06-12T22:27:10.719</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\Images\bluetooth-icon.png">
+      <PackagePath>Resources\Images\bluetooth-icon.png</PackagePath>
+      <Modified>2014-06-25T10:32:02.862</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\Images\Bluetooth_logo.png">
+      <PackagePath>Resources\Images\Bluetooth_logo.png</PackagePath>
+      <Modified>2014-06-25T09:47:42.771</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\Images\Logo.png">
       <PackagePath>Resources\Images\Logo.png</PackagePath>
       <Modified>2014-06-12T22:10:06.501</Modified>
@@ -78,19 +90,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Resources\Dictionary.xbf">
       <PackagePath>Resources\Dictionary.xbf</PackagePath>
-      <Modified>2014-06-24T22:01:45.233</Modified>
+      <Modified>2014-06-25T10:16:47.148</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Views\BluetoothView.xbf">
+      <PackagePath>Views\BluetoothView.xbf</PackagePath>
+      <Modified>2014-06-25T13:35:53.898</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Views\MainView.xbf">
       <PackagePath>Views\MainView.xbf</PackagePath>
-      <Modified>2014-06-24T22:03:10.139</Modified>
+      <Modified>2014-06-25T13:35:53.899</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\ECGCatcher.Windows.xr.xml">
       <PackagePath>ECGCatcher.Windows.xr.xml</PackagePath>
-      <Modified>2014-06-24T17:43:37.823</Modified>
+      <Modified>2014-06-25T13:33:15.661</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\packages\Callisto.1.4.0\lib\netcore451\Callisto\themes\Generic.xbf">
+      <PackagePath>Callisto\themes\Generic.xbf</PackagePath>
+      <Modified>2014-06-24T23:12:13.997</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-06-24T22:03:10.765</Modified>
+      <Modified>2014-06-25T13:27:25.795</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

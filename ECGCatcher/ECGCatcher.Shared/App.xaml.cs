@@ -27,7 +27,11 @@ namespace ECGCatcher
             container.RegisterWinRTServices();
 
             container.PerRequest<MainViewModel>()
-                     .Singleton<IGraphSpace, GraphSpace>();
+                     .Singleton<IGraphSpace, GraphSpace>()
+#if WINDOWS_APP
+                     .PerRequest<BluetoothViewModel>()
+#endif
+                     ;
             
         }
 

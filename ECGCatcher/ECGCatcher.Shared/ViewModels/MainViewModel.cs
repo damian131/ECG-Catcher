@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.UI.Xaml.Media;
+using ECGCatcher.Common;
 
 namespace ECGCatcher.ViewModels
 {
@@ -15,6 +16,10 @@ namespace ECGCatcher.ViewModels
         public MainViewModel(IGraphSpace graphSpace) {
             GraphSpace = graphSpace;
             Drawer = new GraphDrawer(GraphSpace);
+
+#if WINDOWS_PHONE_APP
+            BluetoothPanel = new BluetoothPanelViewModel();
+#endif
         }
 
         private IGraphSpace _GraphSpace;
@@ -27,6 +32,21 @@ namespace ECGCatcher.ViewModels
                 NotifyOfPropertyChange(() => GraphSpace);
             }
         }
+
+#if WINDOWS_PHONE_APP
+
+        private BluetoothPanelViewModel _BluetoothPanel;
+        public BluetoothPanelViewModel BluetoothPanel
+        {
+            get { return _BluetoothPanel; }
+            set
+            {
+                _BluetoothPanel = value;
+                NotifyOfPropertyChange(() => BluetoothPanel);
+            }
+        }
+        
+#endif
 
         public GraphDrawer Drawer { get; private set; }
 
@@ -68,7 +88,7 @@ namespace ECGCatcher.ViewModels
                 Drawer.PauseDrawingGraph();
         }
 
-        private void ButtonConnect_Clicked() // TODO: Callisto dialog for win8 app
+        private void ButtonConnect_Clicked()
         {
 
         }
@@ -82,6 +102,14 @@ namespace ECGCatcher.ViewModels
         {
 
         }
+
+#if WINDOWS_APP
+        async private void BluetoothButton_Clicked()
+        {
+            var bluetoothDialog = IoC.Get<BluetoothViewModel>();
+            await bluetoothDialog.ShowDialogAsync();
+        }
+#endif
 
         #endregion //EVENTS
 

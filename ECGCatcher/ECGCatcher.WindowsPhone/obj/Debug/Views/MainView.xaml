@@ -27,13 +27,6 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="100"/>
                     </Grid.RowDefinitions>
-                    <!--<Grid Style="{StaticResource MainPanelGridStyle}">
-                        <Image Source="ms-appx:///Resources/Images/Logo.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" RenderTransformOrigin="0.5,0.5" >
-                            <Image.RenderTransform>
-                                <CompositeTransform ScaleX="2" ScaleY="2"/>
-                            </Image.RenderTransform>
-                        </Image>
-                    </Grid>-->
                     <Grid Grid.Row="0">
                         <!--GRAPH SPACE-->
                         <Canvas>
@@ -78,8 +71,8 @@
                 </Grid>
             </Grid>
         </PivotItem>
-
-        <PivotItem Header="Bluetooth" Margin="0" >
+        
+        <PivotItem Header="Bluetooth" Margin="0" caliburn:View.Model="{Binding BluetoothPanel}" >
             <Grid Margin="0,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -99,7 +92,7 @@
                 </Grid.ColumnDefinitions>
                 <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="10,0,10,0" HorizontalAlignment="Stretch" x:Name="ButtonListPairedDevices" Foreground="White"  BorderBrush="White"  caliburn:Message.Attach="[Event Click] = [Ation ButtonListPairedDevices_Clicked]" Content="Get Paired devices" Padding="0,0,0,0"/>
                 <TextBlock Grid.Row="1" Text="" x:Name="PairedDevicesMessage"  Margin="20,0,0,0" Grid.ColumnSpan="2" Foreground="Gray"/>
-                <ListBox Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="ListDevices" Margin="20,0,10,0" Foreground="Gray" BorderBrush="Gray" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"   >
+                <ListBox Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="ListDevices" Margin="10,0,10,0" Foreground="Gray" BorderBrush="Gray" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"   >
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding DisplayName}" FontSize="24"/>

@@ -28,6 +28,9 @@
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\packages\Caliburn.Micro.2.0.0\lib\win81\Caliburn.Micro.Platform.dll">
       <PackagePath>Caliburn.Micro.Platform.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\packages\Callisto.1.4.0\lib\netcore451\Callisto.dll">
+      <PackagePath>Callisto.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\packages\Caliburn.Micro.2.0.0\lib\win81\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
     </AppxPackagedFile>
@@ -50,6 +53,12 @@
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\Images\bluetooth-icon.png">
+      <PackagePath>Resources\Images\bluetooth-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\Images\Bluetooth_logo.png">
+      <PackagePath>Resources\Images\Bluetooth_logo.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\Images\Logo.png">
       <PackagePath>Resources\Images\Logo.png</PackagePath>
     </AppxPackagedFile>
@@ -59,11 +68,17 @@
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Resources\Dictionary.xbf">
       <PackagePath>Resources\Dictionary.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Views\BluetoothView.xbf">
+      <PackagePath>Views\BluetoothView.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Views\MainView.xbf">
       <PackagePath>Views\MainView.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\ECGCatcher.Windows.xr.xml">
       <PackagePath>ECGCatcher.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\packages\Callisto.1.4.0\lib\netcore451\Callisto\themes\Generic.xbf">
+      <PackagePath>Callisto\themes\Generic.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
