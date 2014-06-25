@@ -46,6 +46,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Children" />
       <RootProperty Name="Width" />
+      <RootProperty Name="DataContext" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Background" />
@@ -71,10 +72,6 @@
       <RootProperty Name="Storyboard" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard" />
-    <RootType FullName="Caliburn.Micro.View">
-      <RootMethod Name="GetModel" />
-      <RootMethod Name="SetModel" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
     </RootType>

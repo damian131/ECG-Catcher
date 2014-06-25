@@ -148,45 +148,39 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[18];
+            _typeNameTable = new string[15];
             _typeNameTable[0] = "Caliburn.Micro.CaliburnApplication";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
-            _typeNameTable[2] = "Caliburn.Micro.View";
+            _typeNameTable[2] = "Caliburn.Micro.Message";
             _typeNameTable[3] = "Object";
-            _typeNameTable[4] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[5] = "System.Nullable`1<Boolean>";
-            _typeNameTable[6] = "System.ValueType";
-            _typeNameTable[7] = "Caliburn.Micro.Message";
-            _typeNameTable[8] = "String";
-            _typeNameTable[9] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[10] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[11] = "Windows.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[12] = "ECGCatcher.Common.GraphSpaceCanvasBehavior";
-            _typeNameTable[13] = "ECGCatcher.IGraphSpace";
-            _typeNameTable[14] = "ECGCatcher.Views.MainView";
-            _typeNameTable[15] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[16] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[17] = "ECGCatcher.Common.ColorToBrushConverter";
+            _typeNameTable[4] = "String";
+            _typeNameTable[5] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[6] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[7] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[8] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[9] = "ECGCatcher.Common.GraphSpaceCanvasBehavior";
+            _typeNameTable[10] = "ECGCatcher.IGraphSpace";
+            _typeNameTable[11] = "ECGCatcher.Views.MainView";
+            _typeNameTable[12] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[13] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[14] = "ECGCatcher.Common.ColorToBrushConverter";
 
-            _typeTable = new global::System.Type[18];
+            _typeTable = new global::System.Type[15];
             _typeTable[0] = typeof(global::Caliburn.Micro.CaliburnApplication);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
-            _typeTable[2] = typeof(global::Caliburn.Micro.View);
+            _typeTable[2] = typeof(global::Caliburn.Micro.Message);
             _typeTable[3] = typeof(global::System.Object);
-            _typeTable[4] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[5] = typeof(global::System.Nullable<global::System.Boolean>);
-            _typeTable[6] = typeof(global::System.ValueType);
-            _typeTable[7] = typeof(global::Caliburn.Micro.Message);
-            _typeTable[8] = typeof(global::System.String);
-            _typeTable[9] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[10] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[11] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
-            _typeTable[12] = typeof(global::ECGCatcher.Common.GraphSpaceCanvasBehavior);
-            _typeTable[13] = typeof(global::ECGCatcher.IGraphSpace);
-            _typeTable[14] = typeof(global::ECGCatcher.Views.MainView);
-            _typeTable[15] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[16] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[17] = typeof(global::ECGCatcher.Common.ColorToBrushConverter);
+            _typeTable[4] = typeof(global::System.String);
+            _typeTable[5] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[6] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[7] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[9] = typeof(global::ECGCatcher.Common.GraphSpaceCanvasBehavior);
+            _typeTable[10] = typeof(global::ECGCatcher.IGraphSpace);
+            _typeTable[11] = typeof(global::ECGCatcher.Views.MainView);
+            _typeTable[12] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[13] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[14] = typeof(global::ECGCatcher.Common.ColorToBrushConverter);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -221,11 +215,11 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_10_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_12_GraphSpaceCanvasBehavior() { return new global::ECGCatcher.Common.GraphSpaceCanvasBehavior(); }
-        private object Activate_14_MainView() { return new global::ECGCatcher.Views.MainView(); }
-        private object Activate_17_ColorToBrushConverter() { return new global::ECGCatcher.Common.ColorToBrushConverter(); }
-        private void VectorAdd_10_BehaviorCollection(object instance, object item)
+        private object Activate_7_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_9_GraphSpaceCanvasBehavior() { return new global::ECGCatcher.Common.GraphSpaceCanvasBehavior(); }
+        private object Activate_11_MainView() { return new global::ECGCatcher.Views.MainView(); }
+        private object Activate_14_ColorToBrushConverter() { return new global::ECGCatcher.Common.ColorToBrushConverter(); }
+        private void VectorAdd_7_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
@@ -251,11 +245,10 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
                 xamlType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Caliburn.Micro.View
+            case 2:   //  Caliburn.Micro.Message
                 userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.AddMemberName("Model");
-                userType.AddMemberName("ApplyConventions");
-                userType.AddMemberName("Context");
+                userType.AddMemberName("Attach");
+                userType.AddMemberName("Handler");
                 xamlType = userType;
                 break;
 
@@ -263,83 +256,65 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
                 xamlType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 4:   //  Windows.UI.Xaml.DependencyObject
+            case 4:   //  String
                 xamlType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 5:   //  System.Nullable`1<Boolean>
-                userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 6:   //  System.ValueType
-                userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                xamlType = userType;
-                break;
-
-            case 7:   //  Caliburn.Micro.Message
-                userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.AddMemberName("Attach");
-                userType.AddMemberName("Handler");
-                xamlType = userType;
-                break;
-
-            case 8:   //  String
+            case 5:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 6:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 10:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 7:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_10_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_7_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 11:   //  Windows.UI.Xaml.DependencyObjectCollection
+            case 8:   //  Windows.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  ECGCatcher.Common.GraphSpaceCanvasBehavior
+            case 9:   //  ECGCatcher.Common.GraphSpaceCanvasBehavior
                 userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_12_GraphSpaceCanvasBehavior;
+                userType.Activator = Activate_9_GraphSpaceCanvasBehavior;
                 userType.AddMemberName("GraphSpace");
                 userType.AddMemberName("AssociatedObject");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  ECGCatcher.IGraphSpace
+            case 10:   //  ECGCatcher.IGraphSpace
                 userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  ECGCatcher.Views.MainView
+            case 11:   //  ECGCatcher.Views.MainView
                 userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_MainView;
+                userType.Activator = Activate_11_MainView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  Windows.UI.Xaml.Controls.Page
+            case 12:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 16:   //  Windows.UI.Xaml.Controls.UserControl
+            case 13:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 17:   //  ECGCatcher.Common.ColorToBrushConverter
+            case 14:   //  ECGCatcher.Common.ColorToBrushConverter
                 userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_17_ColorToBrushConverter;
+                userType.Activator = Activate_14_ColorToBrushConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -401,65 +376,41 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
             return foundXamlType;
         }
 
-        private object get_0_View_Model(object instance)
-        {
-            return global::Caliburn.Micro.View.GetModel((global::Windows.UI.Xaml.DependencyObject)instance);
-        }
-        private void set_0_View_Model(object instance, object Value)
-        {
-            global::Caliburn.Micro.View.SetModel((global::Windows.UI.Xaml.DependencyObject)instance, (global::System.Object)Value);
-        }
-        private object get_1_View_ApplyConventions(object instance)
-        {
-            return global::Caliburn.Micro.View.GetApplyConventions((global::Windows.UI.Xaml.DependencyObject)instance);
-        }
-        private void set_1_View_ApplyConventions(object instance, object Value)
-        {
-            global::Caliburn.Micro.View.SetApplyConventions((global::Windows.UI.Xaml.DependencyObject)instance, (global::System.Nullable<global::System.Boolean>)Value);
-        }
-        private object get_2_View_Context(object instance)
-        {
-            return global::Caliburn.Micro.View.GetContext((global::Windows.UI.Xaml.DependencyObject)instance);
-        }
-        private void set_2_View_Context(object instance, object Value)
-        {
-            global::Caliburn.Micro.View.SetContext((global::Windows.UI.Xaml.DependencyObject)instance, (global::System.Object)Value);
-        }
-        private object get_3_Message_Attach(object instance)
+        private object get_0_Message_Attach(object instance)
         {
             return global::Caliburn.Micro.Message.GetAttach((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_3_Message_Attach(object instance, object Value)
+        private void set_0_Message_Attach(object instance, object Value)
         {
             global::Caliburn.Micro.Message.SetAttach((global::Windows.UI.Xaml.DependencyObject)instance, (global::System.String)Value);
         }
-        private object get_4_Message_Handler(object instance)
+        private object get_1_Message_Handler(object instance)
         {
             return global::Caliburn.Micro.Message.GetHandler((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_4_Message_Handler(object instance, object Value)
+        private void set_1_Message_Handler(object instance, object Value)
         {
             global::Caliburn.Micro.Message.SetHandler((global::Windows.UI.Xaml.DependencyObject)instance, (global::System.Object)Value);
         }
-        private object get_5_Interaction_Behaviors(object instance)
+        private object get_2_Interaction_Behaviors(object instance)
         {
             return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_5_Interaction_Behaviors(object instance, object Value)
+        private void set_2_Interaction_Behaviors(object instance, object Value)
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_6_GraphSpaceCanvasBehavior_GraphSpace(object instance)
+        private object get_3_GraphSpaceCanvasBehavior_GraphSpace(object instance)
         {
             var that = (global::ECGCatcher.Common.GraphSpaceCanvasBehavior)instance;
             return that.GraphSpace;
         }
-        private void set_6_GraphSpaceCanvasBehavior_GraphSpace(object instance, object Value)
+        private void set_3_GraphSpaceCanvasBehavior_GraphSpace(object instance, object Value)
         {
             var that = (global::ECGCatcher.Common.GraphSpaceCanvasBehavior)instance;
             that.GraphSpace = (global::ECGCatcher.IGraphSpace)Value;
         }
-        private object get_7_GraphSpaceCanvasBehavior_AssociatedObject(object instance)
+        private object get_4_GraphSpaceCanvasBehavior_AssociatedObject(object instance)
         {
             var that = (global::ECGCatcher.Common.GraphSpaceCanvasBehavior)instance;
             return that.AssociatedObject;
@@ -472,65 +423,41 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "Caliburn.Micro.View.Model":
-                userType = (global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Caliburn.Micro.View");
-                xamlMember = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlMember(this, "Model", "Object");
-                xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
-                xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_0_View_Model;
-                xamlMember.Setter = set_0_View_Model;
-                break;
-            case "Caliburn.Micro.View.ApplyConventions":
-                userType = (global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Caliburn.Micro.View");
-                xamlMember = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlMember(this, "ApplyConventions", "System.Nullable`1<Boolean>");
-                xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
-                xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_1_View_ApplyConventions;
-                xamlMember.Setter = set_1_View_ApplyConventions;
-                break;
-            case "Caliburn.Micro.View.Context":
-                userType = (global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Caliburn.Micro.View");
-                xamlMember = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlMember(this, "Context", "Object");
-                xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
-                xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_2_View_Context;
-                xamlMember.Setter = set_2_View_Context;
-                break;
             case "Caliburn.Micro.Message.Attach":
                 userType = (global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Caliburn.Micro.Message");
                 xamlMember = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlMember(this, "Attach", "String");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_3_Message_Attach;
-                xamlMember.Setter = set_3_Message_Attach;
+                xamlMember.Getter = get_0_Message_Attach;
+                xamlMember.Setter = set_0_Message_Attach;
                 break;
             case "Caliburn.Micro.Message.Handler":
                 userType = (global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Caliburn.Micro.Message");
                 xamlMember = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlMember(this, "Handler", "Object");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_4_Message_Handler;
-                xamlMember.Setter = set_4_Message_Handler;
+                xamlMember.Getter = get_1_Message_Handler;
+                xamlMember.Setter = set_1_Message_Handler;
                 break;
             case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
                 userType = (global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
                 xamlMember = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_5_Interaction_Behaviors;
-                xamlMember.Setter = set_5_Interaction_Behaviors;
+                xamlMember.Getter = get_2_Interaction_Behaviors;
+                xamlMember.Setter = set_2_Interaction_Behaviors;
                 break;
             case "ECGCatcher.Common.GraphSpaceCanvasBehavior.GraphSpace":
                 userType = (global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ECGCatcher.Common.GraphSpaceCanvasBehavior");
                 xamlMember = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlMember(this, "GraphSpace", "ECGCatcher.IGraphSpace");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_GraphSpaceCanvasBehavior_GraphSpace;
-                xamlMember.Setter = set_6_GraphSpaceCanvasBehavior_GraphSpace;
+                xamlMember.Getter = get_3_GraphSpaceCanvasBehavior_GraphSpace;
+                xamlMember.Setter = set_3_GraphSpaceCanvasBehavior_GraphSpace;
                 break;
             case "ECGCatcher.Common.GraphSpaceCanvasBehavior.AssociatedObject":
                 userType = (global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ECGCatcher.Common.GraphSpaceCanvasBehavior");
                 xamlMember = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_7_GraphSpaceCanvasBehavior_AssociatedObject;
+                xamlMember.Getter = get_4_GraphSpaceCanvasBehavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             }

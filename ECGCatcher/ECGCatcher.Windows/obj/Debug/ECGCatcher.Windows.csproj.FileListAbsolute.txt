@@ -103,7 +103,6 @@ E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Multipl
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Caliburn.Micro.Extensions.pri.xml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Caliburn.Micro.Platform.pri.xml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\ProjectArchitectures.txt
-E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\ECGCatcher.Windows.csprojResolveAssemblyReference.cache
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Views\BluetoothView.g.i.cs
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Views\BluetoothView.g.cs
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Views\BluetoothView.xaml
@@ -113,3 +112,4 @@ E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Views\B
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Callisto.dll
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Callisto.pri
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Callisto.pri.xml
+E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\ECGCatcher.Windows.csprojResolveAssemblyReference.cache

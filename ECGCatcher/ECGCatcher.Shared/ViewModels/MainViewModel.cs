@@ -22,7 +22,7 @@ namespace ECGCatcher.ViewModels
 #endif
         }
 
-        private IGraphSpace _GraphSpace;
+        private IGraphSpace _GraphSpace; 
         public IGraphSpace GraphSpace
         {
             get { return _GraphSpace; }
