@@ -91,7 +91,7 @@
                 </Grid.ColumnDefinitions>
                 <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="10,0,10,0" HorizontalAlignment="Stretch" x:Name="ButtonListPairedDevices" Foreground="White"  BorderBrush="White"  caliburn:Message.Attach="[Event Click] = [Action GetPairedDeviceButton_Clicked]" Content="Get Paired devices" Padding="0,0,0,0"/>
                 <!--<TextBlock Grid.Row="1" Text="" x:Name="PairedDevicesMessage"  Margin="20,0,0,0" Grid.ColumnSpan="2" Foreground="Gray"/>-->
-                <ListBox Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2"  x:Name="ListDevices" Margin="10,0,10,0" Foreground="Gray" BorderBrush="Gray" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"   >
+                <ListBox Grid.Row="2" Grid.ColumnSpan="2" ItemsSource="{Binding Devices}" SelectedIndex="{Binding SelectedIndex}" Grid.RowSpan="2"  x:Name="ListDevices" Margin="10,0,10,0" Foreground="Gray" BorderBrush="Gray" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"   >
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding DisplayName}" FontSize="24"/>
@@ -101,7 +101,7 @@
                 <Button Grid.Row="4" Grid.Column="0" HorizontalAlignment="Stretch" Margin="10,0,10,0" x:Name="ButtonConnect" IsEnabled="{Binding IsNotConnected}" Foreground="White"  BorderBrush="White"  caliburn:Message.Attach="[Event Click] = [Action ConnectButton_Clicked]" Content="Connect" Padding="0,0,0,0"/>
                 <Button Grid.Row="4" Grid.Column="1" HorizontalAlignment="Stretch" Margin="10,0,10,0" x:Name="ButtonDisconnect" IsEnabled="{Binding IsConnected}" Foreground="White"  BorderBrush="White"  caliburn:Message.Attach="[Event Click] = [Action DisconnectButton_Clicked]" Content="Disconnect" Padding="0,0,0,0"/>
                 <TextBlock Grid.Row="5" Text="State: " FontSize="18"  Margin="10,10,0,0" />
-                <TextBlock Grid.Row="5" Text="{Binding StateString}" FontSize="18" Grid.Column="1" Margin="10,10,0,0"  />
+                <TextBlock Grid.Row="5" Text="{Binding Status}" FontSize="18" Grid.Column="1" Margin="10,10,0,0"  />
                 <ListBox Grid.Row="6" Margin="10" Grid.ColumnSpan="2" Grid.RowSpan="4" x:Name="ListLogs"  Foreground="Gray" BorderBrush="Gray" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"  />
             </Grid>
         </PivotItem>

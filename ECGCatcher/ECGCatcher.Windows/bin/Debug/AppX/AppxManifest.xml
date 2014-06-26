@@ -28,7 +28,8 @@
     </Application>
   </Applications>
   <Capabilities>
-    <Capability Name="internetClient" />
+    <Capability Name="privateNetworkClientServer" />
+    <DeviceCapability Name="proximity" />
   </Capabilities>
   <build:Metadata>
     <build:Item Name="SharedGUID" Value="8571ca3b-1195-44b9-a45e-40a90456853e" />

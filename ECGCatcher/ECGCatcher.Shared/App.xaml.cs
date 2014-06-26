@@ -27,13 +27,13 @@ namespace ECGCatcher
             container.RegisterWinRTServices();
 
             container.PerRequest<MainViewModel>()
-                     .Singleton<IGraphSpace, GraphSpace>(); // bo popatrz tutaj jest to jakies kurwa szare, a dla , przeciez jest win8 ustawiony jako start up...
+                     .Singleton<IGraphSpace, GraphSpace>();
 #if WINDOWS_APP
                      container.PerRequest<BluetoothViewModel>() ;
 #endif
                      
             
-        }//hm, mimo wszystko sie wykonuje, popierdolone to jest...zastanawia mnie czemu sie nie przestawia ten viewmodel...powiedz mi czy to Shared to jest jakis inny Assembly niż reszta projektu ? hm mów po ludzku :D, hm, chyba ten sam*
+        }
 
         protected override void PrepareViewFirst(Frame rootFrame)
         {

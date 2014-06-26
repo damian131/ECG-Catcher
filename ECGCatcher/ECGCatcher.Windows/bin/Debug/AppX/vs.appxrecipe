@@ -8,7 +8,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>c73f0cdc-c8fc-4d98-8196-f822e0281812</PackageIdentityName>
     <IntermediateOutputPath>E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>24750027923E9660785F7D0ABEC85FEC983BF85009A22B8D1D308C611F5AB271</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>9B7559D81C7A3BAE936F9C53298E2F7A3490BB3EA914DA46D688CCDDF7476699</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>c73f0cdc-c8fc-4d98-8196-f822e0281812_1.0.0.0_neutral__jb3w85h2egbk2</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c73f0cdc-c8fc-4d98-8196-f822e0281812_jb3w85h2egbk2!App</RegisteredUserModeAppID>
     <RegisteredPackageID>c73f0cdc-c8fc-4d98-8196-f822e0281812</RegisteredPackageID>
@@ -20,13 +20,13 @@
     <AppXManifest Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-06-25T15:36:57.258</Modified>
+      <Modified>2014-06-26T11:54:00.101</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\ECGCatcher.Windows.exe">
       <PackagePath>ECGCatcher.Windows.exe</PackagePath>
-      <Modified>2014-06-25T15:40:53.339</Modified>
+      <Modified>2014-06-26T11:53:59.179</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\packages\Caliburn.Micro.Core.2.0.0\lib\portable-net45+win8+wp8+wpa81\Caliburn.Micro.dll">
       <PackagePath>Caliburn.Micro.dll</PackagePath>
@@ -86,23 +86,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2014-06-25T15:36:55.439</Modified>
+      <Modified>2014-06-26T11:53:58.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Resources\Dictionary.xbf">
       <PackagePath>Resources\Dictionary.xbf</PackagePath>
-      <Modified>2014-06-25T15:36:55.440</Modified>
+      <Modified>2014-06-26T11:53:58.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Views\BluetoothView.xbf">
       <PackagePath>Views\BluetoothView.xbf</PackagePath>
-      <Modified>2014-06-25T15:40:52.562</Modified>
+      <Modified>2014-06-26T11:53:58.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\Views\MainView.xbf">
       <PackagePath>Views\MainView.xbf</PackagePath>
-      <Modified>2014-06-25T15:40:52.563</Modified>
+      <Modified>2014-06-26T11:53:58.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\ECGCatcher.Windows.xr.xml">
       <PackagePath>ECGCatcher.Windows.xr.xml</PackagePath>
-      <Modified>2014-06-25T15:40:52.537</Modified>
+      <Modified>2014-06-25T20:17:39.058</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\packages\Callisto.1.4.0\lib\netcore451\Callisto\themes\Generic.xbf">
       <PackagePath>Callisto\themes\Generic.xbf</PackagePath>
@@ -110,7 +110,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-06-25T15:36:56.641</Modified>
+      <Modified>2014-06-26T11:53:59.522</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

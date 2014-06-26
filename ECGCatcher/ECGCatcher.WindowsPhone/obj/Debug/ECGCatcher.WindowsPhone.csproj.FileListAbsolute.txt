@@ -71,7 +71,6 @@ E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\bin\Debug\Ca
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\bin\Debug\Caliburn.Micro.Extensions.pri
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\bin\Debug\Caliburn.Micro.Platform.xml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\bin\Debug\Caliburn.Micro.Platform.pri
-E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\ECGCatcher.WindowsPhone.csprojResolveAssemblyReference.cache
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\App.g.i.cs
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\App.g.cs
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Views\MainView.g.i.cs
@@ -84,6 +83,7 @@ E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Vi
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Resources\Dictionary.xaml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\App.xbf
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Views\MainView.xbf
+E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Resources\Dictionary.xbf
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\XamlSaveStateFile.xml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\ECGCatcher.WindowsPhone.exe
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\ECGCatcher.WindowsPhone.pdb
@@ -102,4 +102,4 @@ E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Mu
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Caliburn.Micro.Extensions.pri.xml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Caliburn.Micro.Platform.pri.xml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\ProjectArchitectures.txt
-E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Resources\Dictionary.xbf
+E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\ECGCatcher.WindowsPhone.csprojResolveAssemblyReference.cache

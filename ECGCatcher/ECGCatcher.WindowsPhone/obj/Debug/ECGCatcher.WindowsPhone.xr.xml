@@ -5,9 +5,11 @@
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="BluetoothPanel" />
-    <RootPropertyPathName Name="StateString" />
+    <RootPropertyPathName Name="Status" />
     <RootPropertyPathName Name="IsConnected" />
     <RootPropertyPathName Name="IsNotConnected" />
+    <RootPropertyPathName Name="Devices" />
+    <RootPropertyPathName Name="SelectedIndex" />
     <RootPropertyPathName Name="DisplayName" />
     <RootPropertyPathName Name="Drawer" />
     <RootPropertyPathName Name="CurrentPoints" />
@@ -96,6 +98,8 @@
       <RootMethod Name="SetAttach" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedIndex" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="BorderBrush" />
