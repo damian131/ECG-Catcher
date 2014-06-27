@@ -6,8 +6,8 @@
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="BluetoothPanel" />
     <RootPropertyPathName Name="Status" />
-    <RootPropertyPathName Name="IsConnected" />
-    <RootPropertyPathName Name="IsNotConnected" />
+    <RootPropertyPathName Name="DisconnectEnabled" />
+    <RootPropertyPathName Name="ConnectEnabled" />
     <RootPropertyPathName Name="Devices" />
     <RootPropertyPathName Name="SelectedIndex" />
     <RootPropertyPathName Name="DisplayName" />

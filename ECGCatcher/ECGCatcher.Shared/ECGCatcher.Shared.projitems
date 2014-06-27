@@ -17,18 +17,19 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Common\Behaviors\GraphSpaceCanvasBehavior.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Common\Converters\ColorToBrushConverter.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Bluetooth\BluetoothClient.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Bluetooth\BluetoothCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Bluetooth\BluetoothDevice.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Bluetooth\BluetoothService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Bluetooth\BluetoothSpecification.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Bluetooth\ECGBluetoothService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Bluetooth\IBluetoothService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ECGPoint.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\GraphDrawer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\GraphShifter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\GraphSpace.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\IDialog.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\IGraphSpace.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Simulation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\SizeChangedEventArgs.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\ECGBluetoothRfcommClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BluetoothPanelViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainViewModel.cs" />
   </ItemGroup>
@@ -42,5 +43,7 @@
     <Content Include="$(MSBuildThisFileDirectory)Resources\Images\bluetooth-icon.png" />
     <Content Include="$(MSBuildThisFileDirectory)Resources\Images\Bluetooth_logo.png" />
     <Content Include="$(MSBuildThisFileDirectory)Resources\Images\Logo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\SampleECGData\ecgca102.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Resources\SampleECGData\ecgca154.txt" />
   </ItemGroup>
 </Project>

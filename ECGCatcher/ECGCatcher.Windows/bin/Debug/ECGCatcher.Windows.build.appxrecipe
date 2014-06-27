@@ -62,6 +62,12 @@
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\Images\Logo.png">
       <PackagePath>Resources\Images\Logo.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\SampleECGData\ecgca102.txt">
+      <PackagePath>Resources\SampleECGData\ecgca102.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Shared\Resources\SampleECGData\ecgca154.txt">
+      <PackagePath>Resources\SampleECGData\ecgca154.txt</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>

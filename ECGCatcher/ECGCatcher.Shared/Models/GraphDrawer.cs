@@ -1,5 +1,7 @@
 ﻿using Caliburn.Micro;
+using ECGCatcher.ViewModels;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
@@ -27,7 +29,8 @@ namespace ECGCatcher.Models
         #region CONSTANT FACTORS
         private readonly Color _StrokeColor = Colors.Red;
         private readonly double _StrokeThickness = 3;
-        public readonly int DataOffset = 10;
+        public readonly int DataOffset = 3;
+        public readonly int ShiftOffsetMultiplier = 10;
         #endregion // CONSTANT FACTORS
 
         public GraphDrawer(IGraphSpace graphSpace){
@@ -37,9 +40,12 @@ namespace ECGCatcher.Models
             CurrentPoints = new ObservableCollection<ECGPoint>();
 
             CurrentStatus = GraphDrawerStatus.Stopped;
-            //IfDrawingStarted = false;
-            //IfContinueDrawing = false;
+
+            GraphData = new ConcurrentQueue<double>();
         }
+
+        // Thread-safe collection of graph data provided by bluetooth connection
+        public ConcurrentQueue<double> GraphData { get; set; }
 
         private ObservableCollection<ECGPoint> _CurrentPoints;
         public ObservableCollection<ECGPoint> CurrentPoints
@@ -54,17 +60,11 @@ namespace ECGCatcher.Models
 
         public GraphShifter Shifter { get; private set; }
         public GraphDrawerStatus CurrentStatus { get; private set; }
-        //public Boolean IfDrawingStarted { get; private set; }
-        //public Boolean IfContinueDrawing { get; private set; }
 
-        private List<int> _SourceData;
-
-        public void StartDrawingGraph( List<int> sourceData )
+        public void StartDrawingGraph()
         {
-            //IfDrawingStarted = true;
             CurrentStatus = GraphDrawerStatus.Started;
 
-            _SourceData = sourceData; // optimal ?
             DrawData();
             //Task.Run(() => DrawData() );
         }
@@ -72,42 +72,47 @@ namespace ECGCatcher.Models
 
         async private void DrawData()
         {
-            foreach (var coordinate in _SourceData)
-            {
-                while ( CurrentStatus == GraphDrawerStatus.Paused)
-                    await Task.Delay(1000);
+            //var isServiceConnected = IoC.Get<BluetoothPanelViewModel>().IsConnected; TODO: change it, Ninject?
 
-                double y = _GraphSpace.ZeroLevelCoordinate - coordinate * _GraphSpace.DataScaleFactor; // scaled coordinate
-                Point p = new Point(_GraphSpace.PreviousPoint.X + DataOffset, y);
+            //while (isServiceConnected) //TODO: check it!
+            //{
 
-                var ecgPoint = new ECGPoint()
+                double coordinate;
+                while (GraphData.TryDequeue(out coordinate)) //TODO: test it!
                 {
-                    #region ECG POINT PROPERTIES
-                    X1 = _GraphSpace.PreviousPoint.X,
-                    Y1 = _GraphSpace.PreviousPoint.Y,
-                    X2 = p.X,
-                    Y2 = p.Y,
-                    StrokeColor = _StrokeColor,
-                    StrokeThickness = _StrokeThickness
-                    #endregion EGC POINT PROPERTIES
-                };
+
+                    while (CurrentStatus == GraphDrawerStatus.Paused)
+                        await Task.Delay(1000);
+
+                    double y = _GraphSpace.ZeroLevelCoordinate - coordinate * _GraphSpace.DataScaleFactor; // scaled coordinate
+                    Point p = new Point(_GraphSpace.PreviousPoint.X + DataOffset, y);
+
+                    var ecgPoint = new ECGPoint()
+                    {
+                        #region ECG POINT PROPERTIES
+                        X1 = _GraphSpace.PreviousPoint.X,
+                        Y1 = _GraphSpace.PreviousPoint.Y,
+                        X2 = p.X,
+                        Y2 = p.Y,
+                        StrokeColor = _StrokeColor,
+                        StrokeThickness = _StrokeThickness
+                        #endregion EGC POINT PROPERTIES
+                    };
 
                     //await Windows.ApplicationModel.Core.CoreApplication.MainView.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                     //CurrentPoints.Add(ecgPoint)); 
 
-                CurrentPoints.Add(ecgPoint);
-               
-                if (p.X + Shifter.TranslateX >= _GraphSpace.Width)
-                    Shifter.ShiftGraph(DataOffset);
+                    CurrentPoints.Add(ecgPoint);
 
-                _GraphSpace.PreviousPoint = new Point(p.X, p.Y);
+                    if (p.X + Shifter.TranslateX >= _GraphSpace.Width)
+                        Shifter.ShiftGraph(DataOffset);
 
-                await Task.Delay(200);
-            }
+                    _GraphSpace.PreviousPoint = new Point(p.X, p.Y);
+
+                    await Task.Delay( TimeSpan.FromMilliseconds(0.5) ); // TODO: too slow, maybe draw it on additional thread
+                }
+            //}
         }
-
-
-
 
         public void PauseDrawingGraph()
         {

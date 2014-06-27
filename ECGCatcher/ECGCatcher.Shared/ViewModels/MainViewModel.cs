@@ -51,20 +51,37 @@ namespace ECGCatcher.ViewModels
         public GraphDrawer Drawer { get; private set; }
 
 
-        #region EVENTS
+        #region EVENT HANDLERS
 
-        private void PlayButton_Clicked()
+        async private void PlayButton_Clicked()
         {
-            List<int> testData = new List<int>();
-            var rand = new Random();
+            //var rand = new Random();
 
-            for (int i = 0; i < 1000; ++i)
-                testData.Add(rand.Next(-5000, 5000));
+            //for (int i = 0; i < 1000; ++i)
+            //    Drawer.GraphData.Enqueue(rand.Next(-5000, 5000));
 
             if (Drawer.CurrentStatus == GraphDrawerStatus.Stopped)
             {
+                #region SIMULATION
+                var s = new Simulation("ecgca154.txt");
+                String strData = await s.Run();
+
+                foreach (var str in strData.Split(' '))
+                {
+                    if (str != String.Empty)
+                    {
+                        double parsed;
+                        if (!double.TryParse(str, out parsed))
+                        {
+                            throw new InvalidCastException();
+                        }
+                        Drawer.GraphData.Enqueue(parsed);
+                    }
+                }
+                #endregion // SIMULATION
+
                 _GraphSpace.CalculateInitialFactors();
-                Drawer.StartDrawingGraph(testData);
+                Drawer.StartDrawingGraph();
             }
             else if (Drawer.CurrentStatus ==  GraphDrawerStatus.Paused)
                 Drawer.ContinueDrawingGraph();
@@ -73,34 +90,19 @@ namespace ECGCatcher.ViewModels
         private void RightShiftButton_Clicked()
         {
             if (Drawer.CurrentStatus != GraphDrawerStatus.Stopped)
-                Drawer.Shifter.ShiftGraph(Drawer.DataOffset);
+                Drawer.Shifter.ShiftGraph(Drawer.DataOffset * Drawer.ShiftOffsetMultiplier);
         }
 
         private void LeftShiftButton_Clicked()
         {
             if (Drawer.CurrentStatus != GraphDrawerStatus.Stopped)
-                Drawer.Shifter.ShiftGraph(-Drawer.DataOffset);
+                Drawer.Shifter.ShiftGraph(-Drawer.DataOffset * Drawer.ShiftOffsetMultiplier );
         }
 
         private void PauseButton_Clicked()
         {
             if (Drawer.CurrentStatus == GraphDrawerStatus.Started)
                 Drawer.PauseDrawingGraph();
-        }
-
-        private void ButtonConnect_Clicked()
-        {
-
-        }
-
-        private void ButtonDisconnect_Clicked()
-        {
-
-        }
-
-        private void ButtonListPairedDevices_Clicked()
-        {
-
         }
 
 #if WINDOWS_APP
@@ -111,7 +113,7 @@ namespace ECGCatcher.ViewModels
         }
 #endif
 
-        #endregion //EVENTS
+        #endregion //EVENT HANDLERS
 
     }
 }

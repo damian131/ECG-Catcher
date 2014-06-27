@@ -1,6 +1,8 @@
 Resources\Images\Bluetooth_logo.png
 Resources\Images\bluetooth-icon.png
 Resources\Images\Logo.png
+Resources\SampleECGData\ecgca102.txt
+Resources\SampleECGData\ecgca154.txt
 Assets\Logo.scale-100.png
 Assets\SmallLogo.scale-100.png
 Assets\SplashScreen.scale-100.png

@@ -6,6 +6,8 @@
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="IsOpen" />
     <RootPropertyPathName Name="BluetoothPanel" />
+    <RootPropertyPathName Name="DisconnectEnabled" />
+    <RootPropertyPathName Name="ConnectEnabled" />
     <RootPropertyPathName Name="Devices" />
     <RootPropertyPathName Name="SelectedIndex" />
     <RootPropertyPathName Name="DisplayName" />
@@ -102,6 +104,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="IsEnabled" />
     </RootType>
     <RootType FullName="Caliburn.Micro.Message">
       <RootMethod Name="GetAttach" />

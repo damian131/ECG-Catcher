@@ -25,4 +25,7 @@
       </m3:VisualElements>
     </Application>
   </Applications>
+  <Capabilities>
+    <DeviceCapability Name="proximity" />
+  </Capabilities>
 </Package>

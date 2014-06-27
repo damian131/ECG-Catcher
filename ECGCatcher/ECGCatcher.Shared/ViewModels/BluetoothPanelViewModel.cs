@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using Caliburn.Micro;
 using System.Collections.ObjectModel;
-using BluetoothRfcomm;
-using BluetoothRfcommClientWP8;
 using Windows.Networking.Proximity;
 using System.Threading.Tasks;
+using ECGCatcher.Models.Bluetooth;
 
 namespace ECGCatcher.ViewModels
 {
@@ -18,12 +17,38 @@ namespace ECGCatcher.ViewModels
         Disconnected,
         NoDeviceFound,
         DeviceFound,
-        BluetoothOff
+        BluetoothOff,
+        //    "Access to the device is denied because the application was not granted access",
+        //    NotifyType.StatusMessage);
+        NoAccess,
+        //    "The Chat service is not advertising the Service Name attribute (attribute id=0x100). " +
+        //    "Please verify that you are running the BluetoothRfcommChat server.",
+        WrongService,
+        //    "The Chat service is using an unexpected format for the Service Name attribute. " +
+        //    "Please verify that you are running the BluetoothRfcommChat server.",
+        UnexpectedDataFormat,
+        UnexpectedConnectionError
     }
 
     public class BluetoothPanelViewModel : Screen
     {
-        private readonly String[] StatusTable = { "Not initialized", "Searching...", "Connected", "Disconnected", "No Device Found", "Device found", "Bluetooth is turned off"};
+        private readonly String[] StatusTable = { 
+                                                    #region STATUS STATEMENTS
+                                                    "Not initialized", 
+                                                    "Searching...", 
+                                                    "Connected", 
+                                                    "Disconnected", 
+                                                    "No Device Found", 
+                                                    "Device found", 
+                                                    "Bluetooth is turned off", 
+                                                    "No application access", 
+                                                    "Wrong service", 
+                                                    "Unexpected data format", 
+                                                    "Unexpected connection error"
+                                                    #endregion
+                                                };
+
+        private IBluetoothService _Client;
 
         public BluetoothPanelViewModel() {
             UpdateStatus(BluetoothStatus.NotInitialized);
@@ -34,10 +59,13 @@ namespace ECGCatcher.ViewModels
             //Devices.Add(new BluetoothDevice("dupa", "salata", "tescior"));
             //Devices.Add(new BluetoothDevice("hahha", "jsdijs", "test2"));
 
-            _Client = new ECGBluetoothRfcommClient(BluetoothRfcommGlobal.BluetoothServiceUuid, BluetoothRfcommGlobal.BluetoothServiceDisplayName);
-        }
+            _Client = new ECGBluetoothService(BluetoothSpecification.RfcommServiceUuid);
 
-        private IBluetoothClient _Client;
+            ConnectEnabled = false;
+            DisconnectEnabled = false;
+
+            _Client.Disconnect();
+        }
 
         private String _Status;
         public String Status
@@ -61,12 +89,6 @@ namespace ECGCatcher.ViewModels
             }
         }
 
-        private void UpdateStatus(BluetoothStatus status)
-        {
-            Status = StatusTable[(int)status];
-        }
-        
-
         /// <summary>
         /// Collection of available devices.
         /// </summary>
@@ -87,39 +109,98 @@ namespace ECGCatcher.ViewModels
             }
         }
 
-
-        #region EVENTS
-
-        private void GetPairedDeviceButton_Clicked()
+        private bool _ConnectEnabled;
+        public bool ConnectEnabled
         {
-            //PeerFinder.Start();
-            //var currentBluetoothStatus = await _Client.Initialization();
-
-            //if (currentBluetoothStatus == BluetoothClientReturnCode.Success)
-            //{
-            //    UpdateStatus(BluetoothStatus.Searching);
-
-            //FillListPairedDevices();
-
-            ////if (await FillListPairedDevices())
-            ////    UpdateStatus(BluetoothStatus.DeviceFound);
-
-            //}
-            //else if (currentBluetoothStatus == BluetoothClientReturnCode.InitBluetoothOff)
-            //    UpdateStatus(BluetoothStatus.BluetoothOff);
+            get { return _ConnectEnabled; }
+            set
+            {
+                _ConnectEnabled = value;
+                NotifyOfPropertyChange(() => ConnectEnabled);
+            }
         }
 
-        async void FillListPairedDevices()
+        private bool _DisconnectEnabled;
+        public bool DisconnectEnabled
         {
-            List<BluetoothDevice> List = null;
-            PeerFinder.Start();
+            get { return _DisconnectEnabled; }
+            set
+            {
+                _DisconnectEnabled = value;
+
+                if (_DisconnectEnabled)
+                    IsConnected = true;
+                else
+                    IsConnected = false;
+
+                NotifyOfPropertyChange(() => DisconnectEnabled);
+            }
+        }
+
+        public Boolean IsConnected { get; private set; }
+
+        #region EVENT HANDLERS
+
+        async private void GetPairedDeviceButton_Clicked()
+        {
+                UpdateStatus(BluetoothStatus.Searching);
+
+                bool ifFoundedAnyService = await FillListPairedDevices();
+
+                if (ifFoundedAnyService)
+                {
+                    UpdateStatus(BluetoothStatus.DeviceFound);
+                    ConnectEnabled = true;
+                }
+                else
+                {
+                    UpdateStatus(BluetoothStatus.NoDeviceFound);
+                    ConnectEnabled = false;
+                }
+                DisconnectEnabled = false;
+        }
+
+        async private void ConnectButton_Clicked()
+        {
+            var currentStatus = await _Client.Connect(SelectedIndex);
+            UpdateStatus( currentStatus );
+
+            if (currentStatus == BluetoothStatus.Connected)
+            {
+                ConnectEnabled = false;
+                DisconnectEnabled = true;
+            }
+
+        }
+
+        private void DisconnectButton_Clicked()
+        {
+            _Client.Disconnect();
+            UpdateStatus(BluetoothStatus.Disconnected);
+
+            ConnectEnabled = true;
+            DisconnectEnabled = false;
+        }
+
+        #endregion // EVENT HANDLERS
+
+        #region METHODS
+
+        private void UpdateStatus(BluetoothStatus status)
+        {
+            Status = StatusTable[(int)status];
+        }
+
+        async Task<bool> FillListPairedDevices()
+        {
+            List<string> List = null;
 
             try
             {
-
                 List = await _Client.GetListPairedDevices();
 
-            }catch( Exception ex)
+            }
+            catch (Exception ex)
             {
 
             }
@@ -129,31 +210,21 @@ namespace ECGCatcher.ViewModels
 
                 if (List.Count == 0)
                 {
-                    UpdateStatus(BluetoothStatus.NoDeviceFound);
+                    return false;
                 }
                 else
                 {
                     // Add peers to list
-                    foreach (var device in List)
+                    foreach (var deviceName in List)
                     {
-                        Devices.Add(device);
+                        Devices.Add(new BluetoothDevice("", deviceName, deviceName));
                     }
-                    //return true;
+                    return true;
                 }
             }
-            //return false;
+            return false;
         }
 
-        private void ConnectButton_Clicked()
-        {
-
-        }
-
-        private void DisconnectButton_Clicked()
-        {
-
-        }
-
-        #endregion
+        #endregion //METHODS
     }
 }

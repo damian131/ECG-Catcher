@@ -31,6 +31,9 @@
       </m3:VisualElements>
     </Application>
   </Applications>
+  <Capabilities>
+    <DeviceCapability Name="proximity" />
+  </Capabilities>
   <build:Metadata>
     <build:Item Name="SharedGUID" Value="8571ca3b-1195-44b9-a45e-40a90456853e" />
     <build:Item Name="CodeSharingProject" Value="248F659F-DAC5-46E8-AC09-60EC9FC95053" />
