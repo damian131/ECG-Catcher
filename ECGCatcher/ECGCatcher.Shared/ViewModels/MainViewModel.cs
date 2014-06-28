@@ -23,8 +23,18 @@ namespace ECGCatcher.ViewModels
 {
     public class MainViewModel : Screen
     {
+        /// <summary>
+        /// Gets the drawer. It is responsible for drawing the received graph data and store it in the queue from connected device.
+        /// </summary>
+        /// <value>
+        /// The drawer.
+        /// </value>
         public GraphDrawer Drawer { get; private set; }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainViewModel"/> class.
+        /// </summary>
+        /// <param name="graphSpace">The graph space.</param>
         public MainViewModel(IGraphSpace graphSpace) {
             GraphSpace = graphSpace;
             Drawer = new GraphDrawer(GraphSpace);
@@ -36,7 +46,13 @@ namespace ECGCatcher.ViewModels
 
         #region BINDED PROPERTIES
 
-        private IGraphSpace _GraphSpace; 
+        private IGraphSpace _GraphSpace;
+        /// <summary>
+        /// Gets or sets the graph space.
+        /// </summary>
+        /// <value>
+        /// The graph space.
+        /// </value>
         public IGraphSpace GraphSpace
         {
             get { return _GraphSpace; }

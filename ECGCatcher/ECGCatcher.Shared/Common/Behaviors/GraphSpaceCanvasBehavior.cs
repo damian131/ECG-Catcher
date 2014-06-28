@@ -80,8 +80,6 @@ namespace ECGCatcher.Common
             }
         }
 
-       
-
         public void Detach()
         {
             AssociatedObject = null;

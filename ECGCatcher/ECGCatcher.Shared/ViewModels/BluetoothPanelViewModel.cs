@@ -9,6 +9,9 @@ using ECGCatcher.Models.Bluetooth;
 
 namespace ECGCatcher.ViewModels
 {
+    /// <summary>
+    /// Describses current bluetooth connection status.
+    /// </summary>
     public enum BluetoothStatus
     {
         NotInitialized,
@@ -29,8 +32,14 @@ namespace ECGCatcher.ViewModels
         UnexpectedConnectionError
     }
 
+    /// <summary>
+    /// Class responsible for bluetooth panel items and communication with them.
+    /// </summary>
     public class BluetoothPanelViewModel : Screen
     {
+        /// <summary>
+        /// The status table - includes messages associated with Bluetooth status.
+        /// </summary>
         private readonly String[] StatusTable = { 
                                                     #region STATUS STATEMENTS
                                                     "Not initialized", 
@@ -47,8 +56,17 @@ namespace ECGCatcher.ViewModels
                                                     #endregion
                                                 };
         private IBluetoothService _Client;
+        /// <summary>
+        /// Gets a value indicating whether the service is connected.
+        /// </summary>
+        /// <value>
+        /// <c>true</c> if this service is connected; otherwise, <c>false</c>.
+        /// </value>
         public Boolean IsConnected { get; private set; }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BluetoothPanelViewModel"/> class.
+        /// </summary>
         public BluetoothPanelViewModel()
         {
             UpdateStatus(BluetoothStatus.NotInitialized);
@@ -64,6 +82,12 @@ namespace ECGCatcher.ViewModels
 
         #region BINDED PROPERTIES
         private String _Status;
+        /// <summary>
+        /// Gets or sets the current bluettoth connection status.
+        /// </summary>
+        /// <value>
+        /// The current bluettoth connection status.
+        /// </value>
         public String Status
         {
             get { return _Status; }
@@ -75,6 +99,12 @@ namespace ECGCatcher.ViewModels
         }
 
         private int _SelectedIndex;
+        /// <summary>
+        /// Gets or sets the index of the selected available device.
+        /// </summary>
+        /// <value>
+        /// The index of the selected available device.
+        /// </value>
         public int SelectedIndex
         {
             get { return _SelectedIndex; }
@@ -106,6 +136,12 @@ namespace ECGCatcher.ViewModels
         }
 
         private bool _ConnectEnabled;
+        /// <summary>
+        /// Gets or sets a value indicating whether [connect enabled].
+        /// </summary>
+        /// <value>
+        ///   <c>true</c> if [connect enabled]; otherwise, <c>false</c>.
+        /// </value>
         public bool ConnectEnabled
         {
             get { return _ConnectEnabled; }
@@ -117,6 +153,12 @@ namespace ECGCatcher.ViewModels
         }
 
         private bool _DisconnectEnabled;
+        /// <summary>
+        /// Gets or sets a value indicating whether [disconnect enabled].
+        /// </summary>
+        /// <value>
+        ///   <c>true</c> if [disconnect enabled]; otherwise, <c>false</c>.
+        /// </value>
         public bool DisconnectEnabled
         {
             get { return _DisconnectEnabled; }
@@ -134,6 +176,12 @@ namespace ECGCatcher.ViewModels
         }
 
         private bool _IsCheckedSimulation;
+        /// <summary>
+        /// Gets or sets a value indicating whether simulation mode is checked.
+        /// </summary>
+        /// <value>
+        /// <c>true</c> if this instance is checked simulation mode is started; otherwise, <c>false</c>.
+        /// </value>
         public bool IsCheckedSimulation
         {
             get { return _IsCheckedSimulation; }
@@ -154,6 +202,9 @@ namespace ECGCatcher.ViewModels
 
         #region EVENT HANDLERS
 
+        /// <summary>
+        /// Handles the get paired device click.
+        /// </summary>
         async private void GetPairedDeviceButton_Clicked()
         {
             Devices.Clear();
@@ -175,6 +226,9 @@ namespace ECGCatcher.ViewModels
             DisconnectEnabled = false;
         }
 
+        /// <summary>
+        /// Handles the connect bluetooth connection click.
+        /// </summary>
         async private void ConnectButton_Clicked()
         {
             var currentStatus = await _Client.Connect(SelectedIndex);
@@ -188,6 +242,9 @@ namespace ECGCatcher.ViewModels
 
         }
 
+        /// <summary>
+        /// Handles the disconnect bluetooth connection click.
+        /// </summary>
         private void DisconnectButton_Clicked()
         {
             _Client.Disconnect();
@@ -201,11 +258,19 @@ namespace ECGCatcher.ViewModels
 
         #region METHODS
 
+        /// <summary>
+        /// Updates the current bluetooth connection status.
+        /// </summary>
+        /// <param name="status">The status.</param>
         private void UpdateStatus(BluetoothStatus status)
         {
             Status = StatusTable[(int)status];
         }
 
+        /// <summary>
+        /// Gets and fills the list of paired devices.
+        /// </summary>
+        /// <returns></returns>
         async Task<bool> FillListPairedDevices()
         {
             List<string> List = null;

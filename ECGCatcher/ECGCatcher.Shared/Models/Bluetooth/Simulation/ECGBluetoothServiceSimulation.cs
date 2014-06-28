@@ -7,14 +7,31 @@ using Windows.Storage.Streams;
 
 namespace ECGCatcher.Models.Bluetooth
 {
+    
+
+    /// <summary>
+    /// Simulates bluetooth connection with specifide frame format
+    /// LENGTH:DATA:DATA:DATA.. x20
+    /// </summary>
     public class ECGBluetoothServiceSimulation : ECGBluetoothService
     {
 
+        /// <summary>
+        /// The ecg data sample files
+        /// </summary>
         private readonly String[] ECGBaseName = { "ecgca102.txt", "ecgca154.txt" };
-
+        private Simulation simulation;
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ECGBluetoothServiceSimulation"/> class.
+        /// </summary>
+        /// <param name="UUID">The UUID.</param>
         public ECGBluetoothServiceSimulation( Guid UUID ) : base( UUID ){
         }
 
+        /// <summary>
+        /// Gets the list paired faked devices.
+        /// </summary>
+        /// <returns></returns>
         public override async Task<List<string>> GetListPairedDevices(){
             await Task.FromResult(0);
 
@@ -26,8 +43,13 @@ namespace ECGCatcher.Models.Bluetooth
             return FakedDeviceList;
         }
 
-        private Simulation simulation;
+        
 
+        /// <summary>
+        /// Connects the specified selected service and reads faked ecg data.
+        /// </summary>
+        /// <param name="SelectedServiceIndex">Index of the selected service.</param>
+        /// <returns></returns>
         public async override Task<BluetoothStatus> Connect(int SelectedServiceIndex){
 
             simulation = new Simulation(ECGBaseName[SelectedServiceIndex]);
@@ -41,6 +63,10 @@ namespace ECGCatcher.Models.Bluetooth
             return BluetoothStatus.Connected;
         }
 
+        /// <summary>
+        /// Starts faked ecg data loop and reads data until data receiving status equals start.
+        /// </summary>
+        /// <param name="dataReader">The data reader.</param>
         protected async override void ReceiveStringLoop(DataReader dataReader)
         {
             if (Status == DataReceivingStatus.Start)

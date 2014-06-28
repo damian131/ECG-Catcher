@@ -13,14 +13,20 @@ namespace ECGCatcher.Models.Bluetooth
     {
         //GraphDrawer dataDrawer;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ECGBluetoothService"/> class.
+        /// </summary>
+        /// <param name="UUID">The UUID.</param>
         public ECGBluetoothService(Guid UUID) // TODO: remove IoC.Get, solution: use Ninject?
             : base(UUID)
         {
             //var dataDrawer = IoC.Get<MainViewModel>().Drawer;
         }
 
-        
-
+        /// <summary>
+        /// Starts data loop and reads data from specified data reader until the data receiving status equals started.
+        /// </summary>
+        /// <param name="dataReader">The data reader.</param>
         protected async override void ReceiveStringLoop(DataReader dataReader)
         {
             if (Status == DataReceivingStatus.Start)
@@ -66,6 +72,9 @@ namespace ECGCatcher.Models.Bluetooth
             }
         }
 
+        /// <summary>
+        /// Disconnects this service.
+        /// </summary>
         public override void Disconnect()
         {
 
@@ -91,6 +100,10 @@ namespace ECGCatcher.Models.Bluetooth
 
         }
 
+        /// <summary>
+        /// Adds the received data to queue container.
+        /// </summary>
+        /// <param name="readData">The read data.</param>
         protected void AddReceivedDataToContainer(String readData)
         {
             String[] splitData = readData.Split(BluetoothSpecification.CustomDataSeparator);

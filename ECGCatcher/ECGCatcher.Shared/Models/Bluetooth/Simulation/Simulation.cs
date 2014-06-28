@@ -11,15 +11,31 @@ namespace ECGCatcher.Models
 {
     public class Simulation
     {
+        /// <summary>
+        /// The file name
+        /// </summary>
         private string fileName;
+        /// <summary>
+        /// Gets the faked data which is read from the faked data reader buffer.
+        /// </summary>
+        /// <value>
+        /// The faked data.
+        /// </value>
         public Queue<String> FakedData { get; private set; }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Simulation"/> class.
+        /// </summary>
+        /// <param name="fileName">Name of the file.</param>
         public Simulation(String fileName)
         {
             this.fileName = fileName;
             this.FakedData = new Queue<String>();
         }
 
+        /// <summary>
+        /// Splits received string from the fail and aggregates it in the FakedData container.
+        /// </summary>
         async public void Run()
         {
             StorageFile sfile = await StorageFile.GetFileFromApplicationUriAsync( new Uri("ms-appx:///Resources/SampleECGData/" + fileName) );
@@ -36,6 +52,10 @@ namespace ECGCatcher.Models
 
         }
 
+        /// <summary>
+        /// Nexts the faked data. Return faked data reader with specified frame format.
+        /// </summary>
+        /// <returns></returns>
         public async Task<DataReader> NextFakedData(){
 
             await Task.Delay(100); // TODO: posiible problem with thread integration

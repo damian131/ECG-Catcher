@@ -33,6 +33,10 @@ namespace ECGCatcher.Models
         public readonly int ShiftOffsetMultiplier = 10;
         #endregion // CONSTANT FACTORS
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GraphDrawer"/> class.
+        /// </summary>
+        /// <param name="graphSpace">The graph space.</param>
         public GraphDrawer(IGraphSpace graphSpace)
         {
             _GraphSpace = graphSpace;
@@ -45,10 +49,21 @@ namespace ECGCatcher.Models
             GraphData = new ConcurrentQueue<double>();
         }
 
-        // Thread-safe collection of graph data provided by bluetooth connection
+        /// <summary>
+        /// Thread-safe collection of graph data provided by bluetooth connection
+        /// </summary>
+        /// <value>
+        /// The graph data.
+        /// </value>
         public ConcurrentQueue<double> GraphData { get; set; }
 
         private ObservableCollection<ECGPoint> _CurrentPoints;
+        /// <summary>
+        /// Gets or sets the current points displayed on the graph space.
+        /// </summary>
+        /// <value>
+        /// The current points.
+        /// </value>
         public ObservableCollection<ECGPoint> CurrentPoints
         {
             get { return _CurrentPoints; }
@@ -59,9 +74,24 @@ namespace ECGCatcher.Models
             }
         }
 
+        /// <summary>
+        /// Gets the shifter. Responsible for graph shifting.
+        /// </summary>
+        /// <value>
+        /// The shifter.
+        /// </value>
         public GraphShifter Shifter { get; private set; }
+        /// <summary>
+        /// Gets the current status of graph drawing.
+        /// </summary>
+        /// <value>
+        /// The current status.
+        /// </value>
         public GraphDrawerStatus CurrentStatus { get; private set; }
 
+        /// <summary>
+        /// Starts the drawing graph. Initialized required operations before graph drawing and starts drawing data on the graph space.
+        /// </summary>
         public void StartDrawingGraph()
         {
             CurrentStatus = GraphDrawerStatus.Started;
@@ -80,6 +110,9 @@ namespace ECGCatcher.Models
         }
 
 
+        /// <summary>
+        /// Draws the data on the graph space until container is empty or graph status is changed to stopped.
+        /// </summary>
         async private void DrawData()
         {
             // TODO: it could draw or try to draw until there is available bluetooth connection
@@ -120,16 +153,25 @@ namespace ECGCatcher.Models
             }
         }
 
+        /// <summary>
+        /// Pauses the drawing graph.
+        /// </summary>
         public void PauseDrawingGraph()
         {
             CurrentStatus = GraphDrawerStatus.Paused;
         }
 
+        /// <summary>
+        /// Continues the drawing graph.
+        /// </summary>
         public void ContinueDrawingGraph()
         {
             CurrentStatus = GraphDrawerStatus.Started;
         }
 
+        /// <summary>
+        /// Restores the data state.
+        /// </summary>
         public void RestoreStartingState()
         {
             Shifter.RestoreStartingShift();
