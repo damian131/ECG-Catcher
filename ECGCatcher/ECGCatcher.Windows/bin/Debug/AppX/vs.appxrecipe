@@ -20,13 +20,13 @@
     <AppXManifest Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-06-28T10:16:07.286</Modified>
+      <Modified>2014-06-28T14:30:31.149</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\ECGCatcher.Windows.exe">
       <PackagePath>ECGCatcher.Windows.exe</PackagePath>
-      <Modified>2014-06-28T10:16:06.488</Modified>
+      <Modified>2014-06-28T15:01:47.310</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\packages\Caliburn.Micro.Core.2.0.0\lib\portable-net45+win8+wp8+wpa81\Caliburn.Micro.dll">
       <PackagePath>Caliburn.Micro.dll</PackagePath>
@@ -118,7 +118,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-06-28T10:16:06.654</Modified>
+      <Modified>2014-06-28T14:30:30.555</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -103,3 +103,4 @@ E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Ca
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\Caliburn.Micro.Platform.pri.xml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\ProjectArchitectures.txt
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\obj\Debug\ECGCatcher.WindowsPhone.csprojResolveAssemblyReference.cache
+E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.WindowsPhone\bin\Debug\ECGCatcher.WindowsPhone.XML

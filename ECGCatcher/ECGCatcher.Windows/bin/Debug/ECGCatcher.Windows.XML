@@ -1,0 +1,665 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ECGCatcher.Windows</name>
+    </assembly>
+    <members>
+        <member name="M:ECGCatcher.Common.Extensions.ShowDialogAsync(RGraphics.Models.IDialog)">
+            <summary>
+            Shows the dialog asynchronous.
+            </summary>
+            <param name="viewModel">The view model.</param>
+            <returns></returns>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="T:RGraphics.Models.IDialog">
+            <summary>
+            Dialog interface
+            </summary>
+        </member>
+        <member name="P:RGraphics.Models.IDialog.IsOpen">
+            <summary>
+            Gets or sets a value indicating whether this instance is open.
+            </summary>
+            <value>
+              <c>true</c> if this instance is open; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.ViewModels.BluetoothViewModel.IsOpen">
+            <summary>
+            Determines whether the bluetooth dialog is opened
+            </summary>
+            <value>
+              <c>true</c> if this instance is open; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:ECGCatcher.Views.BluetoothView">
+            <summary>
+            An empty page that can be used on its own or navigated to within a Frame.
+            </summary>
+        </member>
+        <member name="T:ECGCatcher.Views.MainView">
+            <summary>
+            An empty page that can be used on its own or navigated to within a Frame.
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.Common.GraphSpaceCanvasBehavior.ActualSizeChanged(System.Object,ECGCatcher.Models.SizeChangedEventArgs)">
+            <summary>
+            Refreshes UI - called when Image's size has changed.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:ECGCatcher.Models.SizeChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ECGCatcher.Common.GraphSpaceCanvasBehavior.GraphSpaceSizeChanged(System.Object,ECGCatcher.Models.SizeChangedEventArgs)">
+            <summary>
+            Updates UI when size of the graphspace has changed.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:ECGCatcher.Models.SizeChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ECGCatcher.Common.ColorToBrushConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts the specified value. Color to Brush.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="targetType">Type of the target.</param>
+            <param name="parameter">The parameter.</param>
+            <param name="language">The language.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ECGCatcher.Common.ColorToBrushConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts the back. Brush to color.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="targetType">Type of the target.</param>
+            <param name="parameter">The parameter.</param>
+            <param name="language">The language.</param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:ECGCatcher.BluetoothDevice.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ECGCatcher.BluetoothDevice"/> class.
+            </summary>
+            <param name="hostName">Name of the host.</param>
+            <param name="serviceName">Name of the service.</param>
+            <param name="displayName">The display name.</param>
+        </member>
+        <member name="P:ECGCatcher.BluetoothDevice.DisplayName">
+             <summary>
+             Summary:
+                 Gets the display name of the peer.
+            
+             Returns:
+                 The display name of the peer.
+             </summary>
+             <value>
+             The display name.
+             </value>
+        </member>
+        <member name="P:ECGCatcher.BluetoothDevice.HostName">
+             <summary>
+             Summary:
+                 Gets the hostname or IP address of the peer.
+            
+             Returns:
+                The hostname or IP address of the peer.
+             </summary>
+             <value>
+             The name of the host.
+             </value>
+        </member>
+        <member name="P:ECGCatcher.BluetoothDevice.ServiceName">
+             <summary>
+             Summary:
+                 Gets the service name or TCP port number of the peer.
+            
+             Returns:
+                 The service name or TCP port number of the peer.
+             </summary>
+             <value>
+             The name of the service.
+             </value>
+        </member>
+        <member name="M:ECGCatcher.Models.Bluetooth.IBluetoothService.GetListPairedDevices">
+            <summary>
+            Gets the list paired devices with unique UID number.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECGCatcher.Models.Bluetooth.IBluetoothService.Connect(System.Int32)">
+            <summary>
+            Connects the specified selected service and starts data reading from the service.
+            </summary>
+            <param name="SelectedServiceIndex">Index of the selected service.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ECGCatcher.Models.Bluetooth.IBluetoothService.Disconnect">
+            <summary>
+            Disconnects the service and closes all sockets.
+            </summary>
+        </member>
+        <member name="F:ECGCatcher.Models.Bluetooth.BluetoothSpecification.RfcommServiceUuid">
+            <summary>
+            The Server's custom service Uuid: 34B1CF4D-1069-4AD6-89B6-E161D79BE4D8
+            </summary>
+        </member>
+        <member name="F:ECGCatcher.Models.Bluetooth.BluetoothSpecification.CustomDataSeparator">
+            <summary>
+            The custom data character which separate specifided provided data from bluetooth connection
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.Models.Bluetooth.ECGBluetoothService.#ctor(System.Guid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ECGCatcher.Models.Bluetooth.ECGBluetoothService"/> class.
+            </summary>
+            <param name="UUID">The UUID.</param>
+        </member>
+        <member name="M:ECGCatcher.Models.Bluetooth.ECGBluetoothService.ReceiveStringLoop(Windows.Storage.Streams.DataReader)">
+            <summary>
+            Starts data loop and reads data from specified data reader until the data receiving status equals started.
+            </summary>
+            <param name="dataReader">The data reader.</param>
+        </member>
+        <member name="M:ECGCatcher.Models.Bluetooth.ECGBluetoothService.Disconnect">
+            <summary>
+            Disconnects this service.
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.Models.Bluetooth.ECGBluetoothService.AddReceivedDataToContainer(System.String)">
+            <summary>
+            Adds the received data to queue container.
+            </summary>
+            <param name="readData">The read data.</param>
+        </member>
+        <member name="T:ECGCatcher.Models.Bluetooth.ECGBluetoothServiceSimulation">
+            <summary>
+            Simulates bluetooth connection with specifide frame format
+            LENGTH:DATA:DATA:DATA.. x20
+            </summary>
+        </member>
+        <member name="F:ECGCatcher.Models.Bluetooth.ECGBluetoothServiceSimulation.ECGBaseName">
+            <summary>
+            The ecg data sample files
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.Models.Bluetooth.ECGBluetoothServiceSimulation.#ctor(System.Guid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ECGCatcher.Models.Bluetooth.ECGBluetoothServiceSimulation"/> class.
+            </summary>
+            <param name="UUID">The UUID.</param>
+        </member>
+        <member name="M:ECGCatcher.Models.Bluetooth.ECGBluetoothServiceSimulation.GetListPairedDevices">
+            <summary>
+            Gets the list paired faked devices.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECGCatcher.Models.Bluetooth.ECGBluetoothServiceSimulation.Connect(System.Int32)">
+            <summary>
+            Connects the specified selected service and reads faked ecg data.
+            </summary>
+            <param name="SelectedServiceIndex">Index of the selected service.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ECGCatcher.Models.Bluetooth.ECGBluetoothServiceSimulation.ReceiveStringLoop(Windows.Storage.Streams.DataReader)">
+            <summary>
+            Starts faked ecg data loop and reads data until data receiving status equals start.
+            </summary>
+            <param name="dataReader">The data reader.</param>
+        </member>
+        <member name="F:ECGCatcher.Models.Simulation.fileName">
+            <summary>
+            The file name
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.Models.Simulation.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ECGCatcher.Models.Simulation"/> class.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="M:ECGCatcher.Models.Simulation.Run">
+            <summary>
+            Splits received string from the fail and aggregates it in the FakedData container.
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.Models.Simulation.NextFakedData">
+            <summary>
+            Nexts the faked data. Return faked data reader with specified frame format.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ECGCatcher.Models.Simulation.FakedData">
+            <summary>
+            Gets the faked data which is read from the faked data reader buffer.
+            </summary>
+            <value>
+            The faked data.
+            </value>
+        </member>
+        <member name="T:ECGCatcher.Models.ECGPoint">
+            <summary>
+            Specifies the ECG point with binded properties.
+            </summary>
+        </member>
+        <member name="P:ECGCatcher.Models.ECGPoint.StrokeColor">
+            <summary>
+            Gets or sets the color of the stroke.
+            </summary>
+            <value>
+            The color of the stroke.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.Models.ECGPoint.X1">
+            <summary>
+            Gets or sets the x1.
+            </summary>
+            <value>
+            The x1.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.Models.ECGPoint.X2">
+            <summary>
+            Gets or sets the x2.
+            </summary>
+            <value>
+            The x2.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.Models.ECGPoint.Y1">
+            <summary>
+            Gets or sets the y1.
+            </summary>
+            <value>
+            The y1.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.Models.ECGPoint.Y2">
+            <summary>
+            Gets or sets the y2.
+            </summary>
+            <value>
+            The y2.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.Models.ECGPoint.StrokeThickness">
+            <summary>
+            Gets or sets the stroke thickness.
+            </summary>
+            <value>
+            The stroke thickness.
+            </value>
+        </member>
+        <member name="M:ECGCatcher.Models.GraphDrawer.#ctor(ECGCatcher.IGraphSpace)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ECGCatcher.Models.GraphDrawer"/> class.
+            </summary>
+            <param name="graphSpace">The graph space.</param>
+        </member>
+        <member name="M:ECGCatcher.Models.GraphDrawer.StartDrawingGraph">
+            <summary>
+            Starts the drawing graph. Initialized required operations before graph drawing and starts drawing data on the graph space.
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.Models.GraphDrawer.DrawData">
+            <summary>
+            Draws the data on the graph space until container is empty or graph status is changed to stopped.
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.Models.GraphDrawer.PauseDrawingGraph">
+            <summary>
+            Pauses the drawing graph.
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.Models.GraphDrawer.ContinueDrawingGraph">
+            <summary>
+            Continues the drawing graph.
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.Models.GraphDrawer.RestoreStartingState">
+            <summary>
+            Restores the data state.
+            </summary>
+        </member>
+        <member name="P:ECGCatcher.Models.GraphDrawer.GraphData">
+            <summary>
+            Thread-safe collection of graph data provided by bluetooth connection
+            </summary>
+            <value>
+            The graph data.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.Models.GraphDrawer.CurrentPoints">
+            <summary>
+            Gets or sets the current points displayed on the graph space.
+            </summary>
+            <value>
+            The current points.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.Models.GraphDrawer.Shifter">
+            <summary>
+            Gets the shifter. Responsible for graph shifting.
+            </summary>
+            <value>
+            The shifter.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.Models.GraphDrawer.CurrentStatus">
+            <summary>
+            Gets the current status of graph drawing.
+            </summary>
+            <value>
+            The current status.
+            </value>
+        </member>
+        <member name="M:ECGCatcher.Models.GraphShifter.#ctor(ECGCatcher.IGraphSpace)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ECGCatcher.Models.GraphShifter"/> class.
+            </summary>
+            <param name="graphSpace">The graph space.</param>
+        </member>
+        <member name="M:ECGCatcher.Models.GraphShifter.ShiftGraph(System.Int32)">
+            <summary>
+            Shifts the graph by specified data offset.
+            </summary>
+            <param name="DataOffset">The data offset.</param>
+        </member>
+        <member name="M:ECGCatcher.Models.GraphShifter.RestoreStartingShift">
+            <summary>
+            Restores the starting shift. Backs to the zero level.
+            </summary>
+        </member>
+        <member name="P:ECGCatcher.Models.GraphShifter.TranslateX">
+            <summary>
+            Gets or sets the translate x. Specified graph shift from the base point.
+            </summary>
+            <value>
+            The translate x.
+            </value>
+        </member>
+        <member name="M:ECGCatcher.IGraphSpace.CalculateInitialFactors">
+            <summary>
+            Calculates the initial factors before drawing graph.
+            </summary>
+        </member>
+        <member name="P:ECGCatcher.IGraphSpace.Width">
+            <summary>
+            Gets or sets the width.
+            </summary>
+            <value>
+            The width.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.IGraphSpace.Height">
+            <summary>
+            Gets or sets the height.
+            </summary>
+            <value>
+            The height.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.IGraphSpace.ActualWidth">
+            <summary>
+            Gets or sets the actual width.
+            </summary>
+            <value>
+            The actual width.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.IGraphSpace.ActualHeight">
+            <summary>
+            Gets or sets the actual height.
+            </summary>
+            <value>
+            The actual height.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.IGraphSpace.Children">
+            <summary>
+            Gets or sets the children of the graph space.
+            </summary>
+            <value>
+            The children of the graph space.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.IGraphSpace.PreviousPoint">
+            <summary>
+            Gets or sets the previous point. Specifies the last displayed point on the graph space.
+            </summary>
+            <value>
+            The previous point.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.IGraphSpace.ZeroLevelCoordinate">
+            <summary>
+            Gets or sets the zero level coordinate. Specifies middle of the graph space.
+            </summary>
+            <value>
+            The zero level coordinate.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.IGraphSpace.DataScaleFactor">
+            <summary>
+            Gets or sets the data scale factor. Used to specified scale data level.
+            </summary>
+            <value>
+            The data scale factor.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.IGraphSpace.GraphShiftFactor">
+            <summary>
+            Gets or sets the graph shift factor. Used to specified shift according to base point.
+            </summary>
+            <value>
+            The graph shift factor.
+            </value>
+        </member>
+        <member name="E:ECGCatcher.IGraphSpace.GraphSpaceSizeChanged">
+            <summary>
+            Occurs when [graphspace size changed].
+            </summary>
+        </member>
+        <member name="E:ECGCatcher.IGraphSpace.ActualSizeChanged">
+            <summary>
+            Occurs when [actual size changed].
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.Models.GraphSpace.OnWorkspaceSizeChanged(ECGCatcher.Models.SizeChangedEventArgs)">
+            <summary>
+            Raises the <see cr="E:WorkspaceSizeChanged"/> event.
+            </summary>
+            <param name="e">The <see cref="T:ECGCatcher.Models.SizeChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:ECGCatcher.Models.GraphSpace.OnActualSizeChanged(ECGCatcher.Models.SizeChangedEventArgs)">
+            <summary>
+            Raises the <see cref="E:ActualSizeChanged"/> event.
+            </summary>
+            <param name="e">The <see cref="T:ECGCatcher.Models.SizeChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="E:ECGCatcher.Models.GraphSpace.GraphSpaceSizeChanged">
+            <summary>
+            Occurs when [graphspace size changed].
+            </summary>
+        </member>
+        <member name="E:ECGCatcher.Models.GraphSpace.ActualSizeChanged">
+            <summary>
+            Occurs when [actual size changed].
+            </summary>
+        </member>
+        <member name="T:RGraphics.Models.IDialog`1">
+            <summary>
+            Dialog generic interface
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:RGraphics.Models.IDialog`1.Result">
+            <summary>
+            Gets the result.
+            </summary>
+            <value>
+            The result.
+            </value>
+        </member>
+        <member name="T:ECGCatcher.Models.SizeChangedEventArgs">
+            <summary>
+            Manages handling of the size changed event args.
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.Models.SizeChangedEventArgs.#ctor(System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ECGCatcher.Models.SizeChangedEventArgs"/> class.
+            </summary>
+            <param name="newWidth">The new width.</param>
+            <param name="newHeight">The new height.</param>
+        </member>
+        <member name="P:ECGCatcher.Models.SizeChangedEventArgs.NewWidth">
+            <summary>
+            Gets the new width.
+            </summary>
+            <value>
+            The new width.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.Models.SizeChangedEventArgs.NewHeight">
+            <summary>
+            Gets the new height.
+            </summary>
+            <value>
+            The new height.
+            </value>
+        </member>
+        <member name="T:ECGCatcher.ViewModels.BluetoothStatus">
+            <summary>
+            Describses current bluetooth connection status.
+            </summary>
+        </member>
+        <member name="T:ECGCatcher.ViewModels.BluetoothPanelViewModel">
+            <summary>
+            Class responsible for bluetooth panel items and communication with them.
+            </summary>
+        </member>
+        <member name="F:ECGCatcher.ViewModels.BluetoothPanelViewModel.StatusTable">
+            <summary>
+            The status table - includes messages associated with Bluetooth status.
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.ViewModels.BluetoothPanelViewModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ECGCatcher.ViewModels.BluetoothPanelViewModel"/> class.
+            </summary>
+        </member>
+        <member name="F:ECGCatcher.ViewModels.BluetoothPanelViewModel._Devices">
+            <summary>
+            Collection of available devices.
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.ViewModels.BluetoothPanelViewModel.GetPairedDeviceButton_Clicked">
+            <summary>
+            Handles the get paired device click.
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.ViewModels.BluetoothPanelViewModel.ConnectButton_Clicked">
+            <summary>
+            Handles the connect bluetooth connection click.
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.ViewModels.BluetoothPanelViewModel.DisconnectButton_Clicked">
+            <summary>
+            Handles the disconnect bluetooth connection click.
+            </summary>
+        </member>
+        <member name="M:ECGCatcher.ViewModels.BluetoothPanelViewModel.UpdateStatus(ECGCatcher.ViewModels.BluetoothStatus)">
+            <summary>
+            Updates the current bluetooth connection status.
+            </summary>
+            <param name="status">The status.</param>
+        </member>
+        <member name="M:ECGCatcher.ViewModels.BluetoothPanelViewModel.FillListPairedDevices">
+            <summary>
+            Gets and fills the list of paired devices.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ECGCatcher.ViewModels.BluetoothPanelViewModel.IsConnected">
+            <summary>
+            Gets a value indicating whether the service is connected.
+            </summary>
+            <value>
+            <c>true</c> if this service is connected; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.ViewModels.BluetoothPanelViewModel.Status">
+            <summary>
+            Gets or sets the current bluettoth connection status.
+            </summary>
+            <value>
+            The current bluettoth connection status.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.ViewModels.BluetoothPanelViewModel.SelectedIndex">
+            <summary>
+            Gets or sets the index of the selected available device.
+            </summary>
+            <value>
+            The index of the selected available device.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.ViewModels.BluetoothPanelViewModel.Devices">
+            <summary>
+            Gets or sets the devices collection.
+            </summary>
+            <value>
+            The shapes.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.ViewModels.BluetoothPanelViewModel.ConnectEnabled">
+            <summary>
+            Gets or sets a value indicating whether [connect enabled].
+            </summary>
+            <value>
+              <c>true</c> if [connect enabled]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.ViewModels.BluetoothPanelViewModel.DisconnectEnabled">
+            <summary>
+            Gets or sets a value indicating whether [disconnect enabled].
+            </summary>
+            <value>
+              <c>true</c> if [disconnect enabled]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.ViewModels.BluetoothPanelViewModel.IsCheckedSimulation">
+            <summary>
+            Gets or sets a value indicating whether simulation mode is checked.
+            </summary>
+            <value>
+            <c>true</c> if this instance is checked simulation mode is started; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:ECGCatcher.ViewModels.MainViewModel.#ctor(ECGCatcher.IGraphSpace)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ECGCatcher.ViewModels.MainViewModel"/> class.
+            </summary>
+            <param name="graphSpace">The graph space.</param>
+        </member>
+        <member name="P:ECGCatcher.ViewModels.MainViewModel.Drawer">
+            <summary>
+            Gets the drawer. It is responsible for drawing the received graph data and store it in the queue from connected device.
+            </summary>
+            <value>
+            The drawer.
+            </value>
+        </member>
+        <member name="P:ECGCatcher.ViewModels.MainViewModel.GraphSpace">
+            <summary>
+            Gets or sets the graph space.
+            </summary>
+            <value>
+            The graph space.
+            </value>
+        </member>
+    </members>
+</doc>

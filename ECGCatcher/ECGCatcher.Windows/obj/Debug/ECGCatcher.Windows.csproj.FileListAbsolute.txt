@@ -113,3 +113,4 @@ E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Calibur
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Caliburn.Micro.Platform.pri.xml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\Callisto.pri.xml
 E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\obj\Debug\ProjectArchitectures.txt
+E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\bin\Debug\ECGCatcher.Windows.XML

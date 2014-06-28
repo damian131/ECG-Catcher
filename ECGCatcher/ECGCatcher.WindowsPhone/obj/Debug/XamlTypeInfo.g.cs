@@ -787,3 +787,5 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
 }
 
 
+
+
