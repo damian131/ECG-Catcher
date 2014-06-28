@@ -19,13 +19,12 @@ namespace ECGCatcher.ViewModels
         DeviceFound,
         BluetoothOff,
         //    "Access to the device is denied because the application was not granted access",
-        //    NotifyType.StatusMessage);
         NoAccess,
-        //    "The Chat service is not advertising the Service Name attribute (attribute id=0x100). " +
+        //    "The ECG service is not advertising the Service Name attribute (attribute id=0x100). " +
         //    "Please verify that you are running the BluetoothRfcommChat server.",
         WrongService,
-        //    "The Chat service is using an unexpected format for the Service Name attribute. " +
-        //    "Please verify that you are running the BluetoothRfcommChat server.",
+        //    "The ECG service is using an unexpected format for the Service Name attribute. " +
+        //    "Please verify that you are running the BluetoothRfcommECG server.",
         UnexpectedDataFormat,
         UnexpectedConnectionError
     }
@@ -47,26 +46,23 @@ namespace ECGCatcher.ViewModels
                                                     "Unexpected connection error"
                                                     #endregion
                                                 };
-
         private IBluetoothService _Client;
+        public Boolean IsConnected { get; private set; }
 
-        public BluetoothPanelViewModel() {
+        public BluetoothPanelViewModel()
+        {
             UpdateStatus(BluetoothStatus.NotInitialized);
             SelectedIndex = -1;
 
             Devices = new ObservableCollection<BluetoothDevice>();
 
-            //Devices.Add(new BluetoothDevice("dupa", "salata", "tescior"));
-            //Devices.Add(new BluetoothDevice("hahha", "jsdijs", "test2"));
-
-            _Client = new ECGBluetoothService(BluetoothSpecification.RfcommServiceUuid);
-
             ConnectEnabled = false;
             DisconnectEnabled = false;
 
-            _Client.Disconnect();
+            IsCheckedSimulation = false;
         }
 
+        #region BINDED PROPERTIES
         private String _Status;
         public String Status
         {
@@ -137,33 +133,52 @@ namespace ECGCatcher.ViewModels
             }
         }
 
-        public Boolean IsConnected { get; private set; }
+        private bool _IsCheckedSimulation;
+        public bool IsCheckedSimulation
+        {
+            get { return _IsCheckedSimulation; }
+            set
+            {
+                _IsCheckedSimulation = value;
+
+                if (_IsCheckedSimulation)
+                    _Client = new ECGBluetoothServiceSimulation(BluetoothSpecification.RfcommServiceUuid);
+                else
+                    _Client = new ECGBluetoothService(BluetoothSpecification.RfcommServiceUuid);
+
+                NotifyOfPropertyChange(() => IsCheckedSimulation);
+            }
+        }
+
+        #endregion //BINDED PROPERTIES
 
         #region EVENT HANDLERS
 
         async private void GetPairedDeviceButton_Clicked()
         {
-                UpdateStatus(BluetoothStatus.Searching);
+            Devices.Clear();
 
-                bool ifFoundedAnyService = await FillListPairedDevices();
+            UpdateStatus(BluetoothStatus.Searching);
 
-                if (ifFoundedAnyService)
-                {
-                    UpdateStatus(BluetoothStatus.DeviceFound);
-                    ConnectEnabled = true;
-                }
-                else
-                {
-                    UpdateStatus(BluetoothStatus.NoDeviceFound);
-                    ConnectEnabled = false;
-                }
-                DisconnectEnabled = false;
+            bool ifFoundedAnyService = await FillListPairedDevices();
+
+            if (ifFoundedAnyService)
+            {
+                UpdateStatus(BluetoothStatus.DeviceFound);
+                ConnectEnabled = true;
+            }
+            else
+            {
+                UpdateStatus(BluetoothStatus.NoDeviceFound);
+                ConnectEnabled = false;
+            }
+            DisconnectEnabled = false;
         }
 
         async private void ConnectButton_Clicked()
         {
             var currentStatus = await _Client.Connect(SelectedIndex);
-            UpdateStatus( currentStatus );
+            UpdateStatus(currentStatus);
 
             if (currentStatus == BluetoothStatus.Connected)
             {

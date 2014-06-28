@@ -11,6 +11,7 @@
     <RootPropertyPathName Name="Devices" />
     <RootPropertyPathName Name="SelectedIndex" />
     <RootPropertyPathName Name="DisplayName" />
+    <RootPropertyPathName Name="IsCheckedSimulation" />
     <RootPropertyPathName Name="Status" />
     <RootPropertyPathName Name="Drawer" />
     <RootPropertyPathName Name="CurrentPoints" />
@@ -54,6 +55,7 @@
       <RootProperty Name="DataContext" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Background" />
       <RootProperty Name="Style" />
       <RootMethod Name="GetColumn" />
@@ -83,10 +85,13 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Text" />
-      <RootProperty Name="FontSize" />
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="IsChecked" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="ItemsSource" />
@@ -112,6 +117,12 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="ECGCatcher.Views.BluetoothView" />
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />

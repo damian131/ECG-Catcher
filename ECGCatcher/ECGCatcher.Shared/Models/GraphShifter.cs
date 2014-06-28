@@ -30,5 +30,10 @@ namespace ECGCatcher.Models
         {
             TranslateX -= DataOffset;
         }
+
+        public void RestoreStartingShift()
+        {
+            TranslateX = 0;
+        }
     }
 }

@@ -13,13 +13,13 @@ namespace ECGCatcher
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-        private global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        private global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
 
         public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
         {
             if(_provider == null)
             {
-                _provider = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByType(type);
         }
@@ -28,7 +28,7 @@ namespace ECGCatcher
         {
             if(_provider == null)
             {
-                _provider = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByName(fullName);
         }
@@ -40,7 +40,7 @@ namespace ECGCatcher
     }
 }
 
-namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
+namespace ECGCatcher.ECGCatcher_Windows_XamlTypeInfo
 {
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", "4.0.0.0")]    
@@ -59,7 +59,7 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
             {
                 xamlType = CreateXamlType(typeIndex);
             }
-            var userXamlType = xamlType as global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType;
+            var userXamlType = xamlType as global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType;
             if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
             {
                 global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForType(type);
@@ -95,7 +95,7 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
             {
                 xamlType = CreateXamlType(typeIndex);
             }
-            var userXamlType = xamlType as global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType;
+            var userXamlType = xamlType as global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType;
             if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
             {
                 global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForName(typeName);
@@ -148,39 +148,51 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[15];
+            _typeNameTable = new string[21];
             _typeNameTable[0] = "Caliburn.Micro.CaliburnApplication";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
-            _typeNameTable[2] = "Caliburn.Micro.Message";
-            _typeNameTable[3] = "Object";
-            _typeNameTable[4] = "String";
-            _typeNameTable[5] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[6] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[7] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[8] = "Windows.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[9] = "ECGCatcher.Common.GraphSpaceCanvasBehavior";
-            _typeNameTable[10] = "ECGCatcher.IGraphSpace";
-            _typeNameTable[11] = "ECGCatcher.Views.MainView";
-            _typeNameTable[12] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[13] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[14] = "ECGCatcher.Common.ColorToBrushConverter";
+            _typeNameTable[2] = "Callisto.Controls.CustomDialog";
+            _typeNameTable[3] = "Windows.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[4] = "Windows.UI.Xaml.Visibility";
+            _typeNameTable[5] = "Boolean";
+            _typeNameTable[6] = "String";
+            _typeNameTable[7] = "System.Windows.Input.ICommand";
+            _typeNameTable[8] = "Object";
+            _typeNameTable[9] = "Caliburn.Micro.Message";
+            _typeNameTable[10] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[11] = "ECGCatcher.Views.BluetoothView";
+            _typeNameTable[12] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[13] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[14] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[15] = "ECGCatcher.Common.GraphSpaceCanvasBehavior";
+            _typeNameTable[16] = "ECGCatcher.IGraphSpace";
+            _typeNameTable[17] = "ECGCatcher.Views.MainView";
+            _typeNameTable[18] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[19] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[20] = "ECGCatcher.Common.ColorToBrushConverter";
 
-            _typeTable = new global::System.Type[15];
+            _typeTable = new global::System.Type[21];
             _typeTable[0] = typeof(global::Caliburn.Micro.CaliburnApplication);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
-            _typeTable[2] = typeof(global::Caliburn.Micro.Message);
-            _typeTable[3] = typeof(global::System.Object);
-            _typeTable[4] = typeof(global::System.String);
-            _typeTable[5] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[6] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[7] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
-            _typeTable[9] = typeof(global::ECGCatcher.Common.GraphSpaceCanvasBehavior);
-            _typeTable[10] = typeof(global::ECGCatcher.IGraphSpace);
-            _typeTable[11] = typeof(global::ECGCatcher.Views.MainView);
-            _typeTable[12] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[13] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[14] = typeof(global::ECGCatcher.Common.ColorToBrushConverter);
+            _typeTable[2] = typeof(global::Callisto.Controls.CustomDialog);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
+            _typeTable[4] = typeof(global::Windows.UI.Xaml.Visibility);
+            _typeTable[5] = typeof(global::System.Boolean);
+            _typeTable[6] = typeof(global::System.String);
+            _typeTable[7] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[8] = typeof(global::System.Object);
+            _typeTable[9] = typeof(global::Caliburn.Micro.Message);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[11] = typeof(global::ECGCatcher.Views.BluetoothView);
+            _typeTable[12] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[13] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[14] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[15] = typeof(global::ECGCatcher.Common.GraphSpaceCanvasBehavior);
+            _typeTable[16] = typeof(global::ECGCatcher.IGraphSpace);
+            _typeTable[17] = typeof(global::ECGCatcher.Views.MainView);
+            _typeTable[18] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[19] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[20] = typeof(global::ECGCatcher.Common.ColorToBrushConverter);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -215,11 +227,13 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_7_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_9_GraphSpaceCanvasBehavior() { return new global::ECGCatcher.Common.GraphSpaceCanvasBehavior(); }
-        private object Activate_11_MainView() { return new global::ECGCatcher.Views.MainView(); }
-        private object Activate_14_ColorToBrushConverter() { return new global::ECGCatcher.Common.ColorToBrushConverter(); }
-        private void VectorAdd_7_BehaviorCollection(object instance, object item)
+        private object Activate_2_CustomDialog() { return new global::Callisto.Controls.CustomDialog(); }
+        private object Activate_11_BluetoothView() { return new global::ECGCatcher.Views.BluetoothView(); }
+        private object Activate_13_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_15_GraphSpaceCanvasBehavior() { return new global::ECGCatcher.Common.GraphSpaceCanvasBehavior(); }
+        private object Activate_17_MainView() { return new global::ECGCatcher.Views.MainView(); }
+        private object Activate_20_ColorToBrushConverter() { return new global::ECGCatcher.Common.ColorToBrushConverter(); }
+        private void VectorAdd_13_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
@@ -228,8 +242,8 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
-            global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlSystemBaseType xamlType = null;
-            global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType userType;
+            global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlSystemBaseType xamlType = null;
+            global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType userType;
             string typeName = _typeNameTable[typeIndex];
             global::System.Type type = _typeTable[typeIndex];
 
@@ -237,84 +251,120 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
             {
 
             case 0:   //  Caliburn.Micro.CaliburnApplication
-                userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Application"));
+                userType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Application"));
                 xamlType = userType;
                 break;
 
             case 1:   //  Windows.UI.Xaml.Application
-                xamlType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Caliburn.Micro.Message
-                userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+            case 2:   //  Callisto.Controls.CustomDialog
+                userType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
+                userType.Activator = Activate_2_CustomDialog;
+                userType.AddMemberName("BackButtonVisibility");
+                userType.AddMemberName("IsOpen");
+                userType.AddMemberName("Title");
+                userType.AddMemberName("BackButtonCommand");
+                userType.AddMemberName("BackButtonCommandParameter");
+                xamlType = userType;
+                break;
+
+            case 3:   //  Windows.UI.Xaml.Controls.ContentControl
+                xamlType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 4:   //  Windows.UI.Xaml.Visibility
+                xamlType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 5:   //  Boolean
+                xamlType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  String
+                xamlType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  System.Windows.Input.ICommand
+                userType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 8:   //  Object
+                xamlType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  Caliburn.Micro.Message
+                userType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Attach");
                 userType.AddMemberName("Handler");
                 xamlType = userType;
                 break;
 
-            case 3:   //  Object
-                xamlType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 10:   //  Windows.UI.Xaml.DependencyObject
+                xamlType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 4:   //  String
-                xamlType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 11:   //  ECGCatcher.Views.BluetoothView
+                userType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Callisto.Controls.CustomDialog"));
+                userType.Activator = Activate_11_BluetoothView;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
 
-            case 5:   //  Windows.UI.Xaml.DependencyObject
-                xamlType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 6:   //  Microsoft.Xaml.Interactivity.Interaction
-                userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+            case 12:   //  Microsoft.Xaml.Interactivity.Interaction
+                userType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 7:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
-                userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_7_BehaviorCollection;
+            case 13:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+                userType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
+                userType.CollectionAdd = VectorAdd_13_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 8:   //  Windows.UI.Xaml.DependencyObjectCollection
-                xamlType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 14:   //  Windows.UI.Xaml.DependencyObjectCollection
+                xamlType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  ECGCatcher.Common.GraphSpaceCanvasBehavior
-                userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_9_GraphSpaceCanvasBehavior;
+            case 15:   //  ECGCatcher.Common.GraphSpaceCanvasBehavior
+                userType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_15_GraphSpaceCanvasBehavior;
                 userType.AddMemberName("GraphSpace");
                 userType.AddMemberName("AssociatedObject");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  ECGCatcher.IGraphSpace
-                userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+            case 16:   //  ECGCatcher.IGraphSpace
+                userType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  ECGCatcher.Views.MainView
-                userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_MainView;
+            case 17:   //  ECGCatcher.Views.MainView
+                userType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_17_MainView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 18:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 13:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 19:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 14:   //  ECGCatcher.Common.ColorToBrushConverter
-                userType = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_14_ColorToBrushConverter;
+            case 20:   //  ECGCatcher.Common.ColorToBrushConverter
+                userType = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_20_ColorToBrushConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -332,6 +382,8 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
                     _otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
                     global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
                     provider = new global::Caliburn.Micro.XamlMetadataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
+                    _otherProviders.Add(provider); 
+                    provider = new global::Callisto.Callisto_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     _otherProviders.Add(provider); 
                 }
                 return _otherProviders;
@@ -376,41 +428,91 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
             return foundXamlType;
         }
 
-        private object get_0_Message_Attach(object instance)
+        private object get_0_CustomDialog_BackButtonVisibility(object instance)
+        {
+            var that = (global::Callisto.Controls.CustomDialog)instance;
+            return that.BackButtonVisibility;
+        }
+        private void set_0_CustomDialog_BackButtonVisibility(object instance, object Value)
+        {
+            var that = (global::Callisto.Controls.CustomDialog)instance;
+            that.BackButtonVisibility = (global::Windows.UI.Xaml.Visibility)Value;
+        }
+        private object get_1_CustomDialog_IsOpen(object instance)
+        {
+            var that = (global::Callisto.Controls.CustomDialog)instance;
+            return that.IsOpen;
+        }
+        private void set_1_CustomDialog_IsOpen(object instance, object Value)
+        {
+            var that = (global::Callisto.Controls.CustomDialog)instance;
+            that.IsOpen = (global::System.Boolean)Value;
+        }
+        private object get_2_CustomDialog_Title(object instance)
+        {
+            var that = (global::Callisto.Controls.CustomDialog)instance;
+            return that.Title;
+        }
+        private void set_2_CustomDialog_Title(object instance, object Value)
+        {
+            var that = (global::Callisto.Controls.CustomDialog)instance;
+            that.Title = (global::System.String)Value;
+        }
+        private object get_3_CustomDialog_BackButtonCommand(object instance)
+        {
+            var that = (global::Callisto.Controls.CustomDialog)instance;
+            return that.BackButtonCommand;
+        }
+        private void set_3_CustomDialog_BackButtonCommand(object instance, object Value)
+        {
+            var that = (global::Callisto.Controls.CustomDialog)instance;
+            that.BackButtonCommand = (global::System.Windows.Input.ICommand)Value;
+        }
+        private object get_4_CustomDialog_BackButtonCommandParameter(object instance)
+        {
+            var that = (global::Callisto.Controls.CustomDialog)instance;
+            return that.BackButtonCommandParameter;
+        }
+        private void set_4_CustomDialog_BackButtonCommandParameter(object instance, object Value)
+        {
+            var that = (global::Callisto.Controls.CustomDialog)instance;
+            that.BackButtonCommandParameter = (global::System.Object)Value;
+        }
+        private object get_5_Message_Attach(object instance)
         {
             return global::Caliburn.Micro.Message.GetAttach((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_0_Message_Attach(object instance, object Value)
+        private void set_5_Message_Attach(object instance, object Value)
         {
             global::Caliburn.Micro.Message.SetAttach((global::Windows.UI.Xaml.DependencyObject)instance, (global::System.String)Value);
         }
-        private object get_1_Message_Handler(object instance)
+        private object get_6_Message_Handler(object instance)
         {
             return global::Caliburn.Micro.Message.GetHandler((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_1_Message_Handler(object instance, object Value)
+        private void set_6_Message_Handler(object instance, object Value)
         {
             global::Caliburn.Micro.Message.SetHandler((global::Windows.UI.Xaml.DependencyObject)instance, (global::System.Object)Value);
         }
-        private object get_2_Interaction_Behaviors(object instance)
+        private object get_7_Interaction_Behaviors(object instance)
         {
             return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_2_Interaction_Behaviors(object instance, object Value)
+        private void set_7_Interaction_Behaviors(object instance, object Value)
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_3_GraphSpaceCanvasBehavior_GraphSpace(object instance)
+        private object get_8_GraphSpaceCanvasBehavior_GraphSpace(object instance)
         {
             var that = (global::ECGCatcher.Common.GraphSpaceCanvasBehavior)instance;
             return that.GraphSpace;
         }
-        private void set_3_GraphSpaceCanvasBehavior_GraphSpace(object instance, object Value)
+        private void set_8_GraphSpaceCanvasBehavior_GraphSpace(object instance, object Value)
         {
             var that = (global::ECGCatcher.Common.GraphSpaceCanvasBehavior)instance;
             that.GraphSpace = (global::ECGCatcher.IGraphSpace)Value;
         }
-        private object get_4_GraphSpaceCanvasBehavior_AssociatedObject(object instance)
+        private object get_9_GraphSpaceCanvasBehavior_AssociatedObject(object instance)
         {
             var that = (global::ECGCatcher.Common.GraphSpaceCanvasBehavior)instance;
             return that.AssociatedObject;
@@ -418,46 +520,81 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
-            global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlMember xamlMember = null;
-            global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType userType;
+            global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlMember xamlMember = null;
+            global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType userType;
 
             switch (longMemberName)
             {
+            case "Callisto.Controls.CustomDialog.BackButtonVisibility":
+                userType = (global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Callisto.Controls.CustomDialog");
+                xamlMember = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlMember(this, "BackButtonVisibility", "Windows.UI.Xaml.Visibility");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_0_CustomDialog_BackButtonVisibility;
+                xamlMember.Setter = set_0_CustomDialog_BackButtonVisibility;
+                break;
+            case "Callisto.Controls.CustomDialog.IsOpen":
+                userType = (global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Callisto.Controls.CustomDialog");
+                xamlMember = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlMember(this, "IsOpen", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_1_CustomDialog_IsOpen;
+                xamlMember.Setter = set_1_CustomDialog_IsOpen;
+                break;
+            case "Callisto.Controls.CustomDialog.Title":
+                userType = (global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Callisto.Controls.CustomDialog");
+                xamlMember = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlMember(this, "Title", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_2_CustomDialog_Title;
+                xamlMember.Setter = set_2_CustomDialog_Title;
+                break;
+            case "Callisto.Controls.CustomDialog.BackButtonCommand":
+                userType = (global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Callisto.Controls.CustomDialog");
+                xamlMember = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlMember(this, "BackButtonCommand", "System.Windows.Input.ICommand");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_3_CustomDialog_BackButtonCommand;
+                xamlMember.Setter = set_3_CustomDialog_BackButtonCommand;
+                break;
+            case "Callisto.Controls.CustomDialog.BackButtonCommandParameter":
+                userType = (global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Callisto.Controls.CustomDialog");
+                xamlMember = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlMember(this, "BackButtonCommandParameter", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_4_CustomDialog_BackButtonCommandParameter;
+                xamlMember.Setter = set_4_CustomDialog_BackButtonCommandParameter;
+                break;
             case "Caliburn.Micro.Message.Attach":
-                userType = (global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Caliburn.Micro.Message");
-                xamlMember = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlMember(this, "Attach", "String");
+                userType = (global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Caliburn.Micro.Message");
+                xamlMember = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlMember(this, "Attach", "String");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_0_Message_Attach;
-                xamlMember.Setter = set_0_Message_Attach;
+                xamlMember.Getter = get_5_Message_Attach;
+                xamlMember.Setter = set_5_Message_Attach;
                 break;
             case "Caliburn.Micro.Message.Handler":
-                userType = (global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Caliburn.Micro.Message");
-                xamlMember = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlMember(this, "Handler", "Object");
+                userType = (global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Caliburn.Micro.Message");
+                xamlMember = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlMember(this, "Handler", "Object");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_1_Message_Handler;
-                xamlMember.Setter = set_1_Message_Handler;
+                xamlMember.Getter = get_6_Message_Handler;
+                xamlMember.Setter = set_6_Message_Handler;
                 break;
             case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
-                userType = (global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
-                xamlMember = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
+                userType = (global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
+                xamlMember = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_2_Interaction_Behaviors;
-                xamlMember.Setter = set_2_Interaction_Behaviors;
+                xamlMember.Getter = get_7_Interaction_Behaviors;
+                xamlMember.Setter = set_7_Interaction_Behaviors;
                 break;
             case "ECGCatcher.Common.GraphSpaceCanvasBehavior.GraphSpace":
-                userType = (global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ECGCatcher.Common.GraphSpaceCanvasBehavior");
-                xamlMember = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlMember(this, "GraphSpace", "ECGCatcher.IGraphSpace");
+                userType = (global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ECGCatcher.Common.GraphSpaceCanvasBehavior");
+                xamlMember = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlMember(this, "GraphSpace", "ECGCatcher.IGraphSpace");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_3_GraphSpaceCanvasBehavior_GraphSpace;
-                xamlMember.Setter = set_3_GraphSpaceCanvasBehavior_GraphSpace;
+                xamlMember.Getter = get_8_GraphSpaceCanvasBehavior_GraphSpace;
+                xamlMember.Setter = set_8_GraphSpaceCanvasBehavior_GraphSpace;
                 break;
             case "ECGCatcher.Common.GraphSpaceCanvasBehavior.AssociatedObject":
-                userType = (global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ECGCatcher.Common.GraphSpaceCanvasBehavior");
-                xamlMember = new global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_4_GraphSpaceCanvasBehavior_AssociatedObject;
+                userType = (global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ECGCatcher.Common.GraphSpaceCanvasBehavior");
+                xamlMember = new global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
+                xamlMember.Getter = get_9_GraphSpaceCanvasBehavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             }
@@ -516,9 +653,9 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", "4.0.0.0")]    
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class XamlUserType : global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlSystemBaseType
+    internal class XamlUserType : global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlSystemBaseType
     {
-        global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
         global::Windows.UI.Xaml.Markup.IXamlType _baseType;
         bool _isArray;
         bool _isMarkupExtension;
@@ -532,7 +669,7 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
         global::System.Collections.Generic.Dictionary<string, string> _memberNames;
         global::System.Collections.Generic.Dictionary<string, object> _enumValues;
 
-        public XamlUserType(global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
+        public XamlUserType(global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
             :base(fullName, fullType)
         {
             _provider = provider;
@@ -725,7 +862,7 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {
-        global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
         string _name;
         bool _isAttachable;
         bool _isDependencyProperty;
@@ -734,7 +871,7 @@ namespace ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo
         string _typeName;
         string _targetTypeName;
 
-        public XamlMember(global::ECGCatcher.ECGCatcher_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
+        public XamlMember(global::ECGCatcher.ECGCatcher_Windows_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
         {
             _name = name;
             _typeName = typeName;

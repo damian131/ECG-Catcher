@@ -924,6 +924,3 @@ namespace ECGCatcher.ECGCatcher_Windows_XamlTypeInfo
 }
 
 
-
-
-

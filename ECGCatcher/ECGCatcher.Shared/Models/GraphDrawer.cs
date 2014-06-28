@@ -33,7 +33,8 @@ namespace ECGCatcher.Models
         public readonly int ShiftOffsetMultiplier = 10;
         #endregion // CONSTANT FACTORS
 
-        public GraphDrawer(IGraphSpace graphSpace){
+        public GraphDrawer(IGraphSpace graphSpace)
+        {
             _GraphSpace = graphSpace;
             Shifter = new GraphShifter(_GraphSpace);
 
@@ -65,6 +66,15 @@ namespace ECGCatcher.Models
         {
             CurrentStatus = GraphDrawerStatus.Started;
 
+            double coordinate;
+            if (!GraphData.TryDequeue(out coordinate))
+            {
+                CurrentStatus = GraphDrawerStatus.Stopped;
+                return;
+            }
+
+            _GraphSpace.PreviousPoint = new Point(_GraphSpace.Width, _GraphSpace.ZeroLevelCoordinate - coordinate * _GraphSpace.DataScaleFactor);
+
             DrawData();
             //Task.Run(() => DrawData() );
         }
@@ -72,46 +82,42 @@ namespace ECGCatcher.Models
 
         async private void DrawData()
         {
-            //var isServiceConnected = IoC.Get<BluetoothPanelViewModel>().IsConnected; TODO: change it, Ninject?
+            // TODO: it could draw or try to draw until there is available bluetooth connection
 
-            //while (isServiceConnected) //TODO: check it!
-            //{
+            double coordinate;
+            while (GraphData.TryDequeue(out coordinate) && CurrentStatus != GraphDrawerStatus.Stopped)
+            {
 
-                double coordinate;
-                while (GraphData.TryDequeue(out coordinate)) //TODO: test it!
+                while (CurrentStatus == GraphDrawerStatus.Paused)
+                    await Task.Delay(1000);
+
+                double y = _GraphSpace.ZeroLevelCoordinate - coordinate * _GraphSpace.DataScaleFactor; // scaled coordinate
+                Point p = new Point(_GraphSpace.PreviousPoint.X + DataOffset, y);
+
+                var ecgPoint = new ECGPoint()
                 {
+                    #region ECG POINT PROPERTIES
+                    X1 = _GraphSpace.PreviousPoint.X,
+                    Y1 = _GraphSpace.PreviousPoint.Y,
+                    X2 = p.X,
+                    Y2 = p.Y,
+                    StrokeColor = _StrokeColor,
+                    StrokeThickness = _StrokeThickness
+                    #endregion EGC POINT PROPERTIES
+                };
 
-                    while (CurrentStatus == GraphDrawerStatus.Paused)
-                        await Task.Delay(1000);
+                //await Windows.ApplicationModel.Core.CoreApplication.MainView.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                //CurrentPoints.Add(ecgPoint)); 
 
-                    double y = _GraphSpace.ZeroLevelCoordinate - coordinate * _GraphSpace.DataScaleFactor; // scaled coordinate
-                    Point p = new Point(_GraphSpace.PreviousPoint.X + DataOffset, y);
+                CurrentPoints.Add(ecgPoint);
 
-                    var ecgPoint = new ECGPoint()
-                    {
-                        #region ECG POINT PROPERTIES
-                        X1 = _GraphSpace.PreviousPoint.X,
-                        Y1 = _GraphSpace.PreviousPoint.Y,
-                        X2 = p.X,
-                        Y2 = p.Y,
-                        StrokeColor = _StrokeColor,
-                        StrokeThickness = _StrokeThickness
-                        #endregion EGC POINT PROPERTIES
-                    };
+                if (p.X + Shifter.TranslateX >= _GraphSpace.Width)
+                    Shifter.ShiftGraph(DataOffset);
 
-                    //await Windows.ApplicationModel.Core.CoreApplication.MainView.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
-                    //CurrentPoints.Add(ecgPoint)); 
+                _GraphSpace.PreviousPoint = new Point(p.X, p.Y);
 
-                    CurrentPoints.Add(ecgPoint);
-
-                    if (p.X + Shifter.TranslateX >= _GraphSpace.Width)
-                        Shifter.ShiftGraph(DataOffset);
-
-                    _GraphSpace.PreviousPoint = new Point(p.X, p.Y);
-
-                    await Task.Delay( TimeSpan.FromMilliseconds(0.5) ); // TODO: too slow, maybe draw it on additional thread
-                }
-            //}
+                await Task.Delay(TimeSpan.FromMilliseconds(0.5)); // TODO: too slow, maybe draw it on additional thread
+            }
         }
 
         public void PauseDrawingGraph()
@@ -122,6 +128,15 @@ namespace ECGCatcher.Models
         public void ContinueDrawingGraph()
         {
             CurrentStatus = GraphDrawerStatus.Started;
+        }
+
+        public void RestoreStartingState()
+        {
+            Shifter.RestoreStartingShift();
+            CurrentPoints.Clear();
+
+            CurrentStatus = GraphDrawerStatus.Stopped;
+            GraphData = new ConcurrentQueue<double>();
         }
     }
 }

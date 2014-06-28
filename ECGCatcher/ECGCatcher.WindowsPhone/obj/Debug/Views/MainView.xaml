@@ -95,7 +95,7 @@
                         Content="Get Paired devices" Padding="0,0,0,0"/>
                 <!--<TextBlock Grid.Row="1" Text="" x:Name="PairedDevicesMessage"  Margin="20,0,0,0" Grid.ColumnSpan="2" Foreground="Gray"/>-->
                 <ListBox Grid.Row="2" Grid.ColumnSpan="2" ItemsSource="{Binding Devices}" 
-                         SelectedIndex="{Binding SelectedIndex}" Grid.RowSpan="2"  
+                         SelectedIndex="{Binding SelectedIndex,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.RowSpan="2"  
                          x:Name="ListDevices" Margin="10,0,10,0" Foreground="Gray" BorderBrush="Gray" 
                          ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" >
                     <ListBox.ItemTemplate>

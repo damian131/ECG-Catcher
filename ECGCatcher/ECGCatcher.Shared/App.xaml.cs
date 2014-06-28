@@ -28,9 +28,9 @@ namespace ECGCatcher
 
             container.Singleton<MainViewModel>()
                      .Singleton<IGraphSpace, GraphSpace>()
-                     .PerRequest<BluetoothPanelViewModel>();
+                     .Singleton<BluetoothPanelViewModel>();
 #if WINDOWS_APP
-            container.PerRequest<BluetoothViewModel>() ;
+            container.Singleton<BluetoothViewModel>();
 #endif
                      
             

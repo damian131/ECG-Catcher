@@ -18,8 +18,8 @@ namespace ECGCatcher.Models
         public double ZeroLevelCoordinate { get; set; }
         public double DataScaleFactor { get; set; }
         public Int64 GraphShiftFactor { get; set; } // used to shifting a graph
-        //public int AmountOfDrawnData { get; set; }
 
+        #region BINDED PROPERTIES
         private double _Width;
         public double Width {
             get { return _Width; }
@@ -73,6 +73,9 @@ namespace ECGCatcher.Models
                 NotifyOfPropertyChange(() => Children);
             }
         }
+        #endregion // BINDED PROPERTIES
+
+        #region EVENT HANDLERS
 
         /// <summary>
         /// Occurs when [graphspace size changed].
@@ -102,11 +105,13 @@ namespace ECGCatcher.Models
                 ActualSizeChanged(this, e);
         }
 
+        #endregion EVENT HANDLERS
+
+        #region METHODS
         public void CalculateInitialFactors()
         {
             ZeroLevelCoordinate = Height * 0.5;
             DataScaleFactor = CalculateScale(_MaxData);
-            PreviousPoint = new Point(Width, ZeroLevelCoordinate);
             GraphShiftFactor = 0;
         }
 
@@ -119,5 +124,6 @@ namespace ECGCatcher.Models
 
             return scale;
         }
+        #endregion // METHODS
     }
 }

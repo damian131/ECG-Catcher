@@ -22,10 +22,14 @@ using System.Threading.Tasks;
 using ECGCatcher.ViewModels;
 using Caliburn.Micro;
 
-//using SDKTemplate;
-
 namespace ECGCatcher.Models.Bluetooth
 {
+
+    public enum DataReceivingStatus
+    {
+        Start,
+        Stop
+    }
 
     public partial class BluetoothService : IBluetoothService
     {
@@ -45,6 +49,8 @@ namespace ECGCatcher.Models.Bluetooth
         protected RfcommDeviceService Service;
         protected DeviceInformationCollection ServiceInfoCollection;
 
+        protected DataReceivingStatus Status { get; set; }
+
         public BluetoothService( Guid UUID )
         {
             this.UUID = UUID;
@@ -54,9 +60,10 @@ namespace ECGCatcher.Models.Bluetooth
             Service = null;
             ServiceInfoCollection = null;
 
+            Status = DataReceivingStatus.Stop;
         }
 
-        public async Task<List<string>> GetListPairedDevices()
+        public async virtual Task<List<string>> GetListPairedDevices()
         {
             // Clear any previous messages
 
@@ -76,18 +83,15 @@ namespace ECGCatcher.Models.Bluetooth
             }
             else
             {
-                ////MainPage.Current.NotifyUser(
-                //    "No chat services were found. Please pair with a device that is advertising the chat service.",
-                //    NotifyType.ErrorMessage);
+                //    "No ECG services were found. Please pair with a device that is advertising the ECG service.",
             }
             return null;
         }
 
-        public async Task<BluetoothStatus> Connect( int SelectedServiceIndex )
+        public async virtual Task<BluetoothStatus> Connect( int SelectedServiceIndex )
         {
             try
             {
-
                 var ServiceInfo = ServiceInfoCollection[SelectedServiceIndex];
                 Service = await RfcommDeviceService.FromIdAsync(ServiceInfo.Id);
 
@@ -122,6 +126,8 @@ namespace ECGCatcher.Models.Bluetooth
                 await Socket.ConnectAsync(Service.ConnectionHostName, Service.ConnectionServiceName);
 
                 Writer = new DataWriter(Socket.OutputStream);
+
+                Status = DataReceivingStatus.Start;
 
                 DataReader dataReader = new DataReader(Socket.InputStream);
                 ReceiveStringLoop(dataReader);
@@ -166,14 +172,13 @@ namespace ECGCatcher.Models.Bluetooth
                     }
                     else
                     {
-                        //MainPage.Current.NotifyUser("Read stream failed with error: " + ex.Message, NotifyType.ErrorMessage);
-                        Disconnect(); // TODO: update status
+                        Disconnect(); 
                     }
                 }
             }
         }
 
-        public void Disconnect()
+        public virtual void Disconnect()
         {
 
             if (Writer != null)
@@ -191,10 +196,6 @@ namespace ECGCatcher.Models.Bluetooth
                 }
             }
 
-            //RunButton.IsEnabled = true;
-            //ServiceSelector.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-            //ChatBox.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-            //ConversationList.Items.Clear();
         }
 
         //private async void SendButton_Click(object sender, RoutedEventArgs e)

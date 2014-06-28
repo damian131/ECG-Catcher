@@ -7,6 +7,8 @@ using Windows.Storage.Streams;
 
 namespace ECGCatcher.Models.Bluetooth
 {
+    
+
     public class ECGBluetoothService : BluetoothService
     {
         //GraphDrawer dataDrawer;
@@ -17,48 +19,79 @@ namespace ECGCatcher.Models.Bluetooth
             //var dataDrawer = IoC.Get<MainViewModel>().Drawer;
         }
 
+        
+
         protected async override void ReceiveStringLoop(DataReader dataReader)
         {
-            try
+            if (Status == DataReceivingStatus.Start)
             {
-                uint size = await dataReader.LoadAsync(sizeof(uint));
-                if (size < sizeof(uint))
-                {
-                    // The underlying socket was closed before we were able to read the whole data
-                    return;
-                }
 
-                uint stringLength = dataReader.ReadUInt32();
-                uint actualStringLength = await dataReader.LoadAsync(stringLength);
-                if (actualStringLength != stringLength)
+                try
                 {
-                    // The underlying socket was closed before we were able to read the whole data
-                    return;
-                }
-
-                String readStringData = dataReader.ReadString(stringLength);
-                AddReadDataToContainer(readStringData);
-
-                ReceiveStringLoop(dataReader);
-            }
-            catch (Exception ex)
-            {
-                lock (this)
-                {
-                    if (Socket == null)
+                    uint size = await dataReader.LoadAsync(sizeof(uint));
+                    if (size < sizeof(uint))
                     {
-                        // Do not print anything here -  the user closed the socket.
+                        // The underlying socket was closed before we were able to read the whole data
+                        return;
                     }
-                    else
+
+                    uint stringLength = dataReader.ReadUInt32();
+                    uint actualStringLength = await dataReader.LoadAsync(stringLength);
+                    if (actualStringLength != stringLength)
                     {
-                        //MainPage.Current.NotifyUser("Read stream failed with error: " + ex.Message, NotifyType.ErrorMessage);
-                        Disconnect(); // TODO: update status
+                        // The underlying socket was closed before we were able to read the whole data
+                        return;
+                    }
+
+                    String readStringData = dataReader.ReadString(stringLength);
+                    AddReceivedDataToContainer(readStringData);
+
+                    ReceiveStringLoop(dataReader);
+                }
+                catch (Exception ex)
+                {
+                    lock (this)
+                    {
+                        if (Socket == null)
+                        {
+                            // Do not print anything here -  the user closed the socket.
+                        }
+                        else
+                        {
+                            //MainPage.Current.NotifyUser("Read stream failed with error: " + ex.Message, NotifyType.ErrorMessage);
+                            Disconnect(); // TODO: update status
+                        }
                     }
                 }
             }
         }
 
-        private void AddReadDataToContainer(String readData)
+        public override void Disconnect()
+        {
+
+            if (Writer != null)
+            {
+                Writer.DetachStream();
+                Writer = null;
+            }
+
+            lock (this)
+            {
+                if (Socket != null)
+                {
+                    Socket.Dispose();
+                    Socket = null;
+                }
+            }
+
+            var dataDrawer = IoC.Get<MainViewModel>().Drawer;
+            dataDrawer.RestoreStartingState();
+
+            Status = DataReceivingStatus.Stop;
+
+        }
+
+        protected void AddReceivedDataToContainer(String readData)
         {
             String[] splitData = readData.Split(BluetoothSpecification.CustomDataSeparator);
 

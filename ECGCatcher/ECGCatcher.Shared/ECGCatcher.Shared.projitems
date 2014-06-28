@@ -22,13 +22,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Bluetooth\BluetoothSpecification.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Bluetooth\ECGBluetoothService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Bluetooth\IBluetoothService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Bluetooth\Simulation\ECGBluetoothServiceSimulation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Bluetooth\Simulation\Simulation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ECGPoint.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\GraphDrawer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\GraphShifter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\GraphSpace.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\IDialog.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\IGraphSpace.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Simulation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\SizeChangedEventArgs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BluetoothPanelViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainViewModel.cs" />

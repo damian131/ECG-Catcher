@@ -40,14 +40,21 @@
                     <RowDefinition Height="100"/>
                     <RowDefinition Height="50" />
                 </Grid.RowDefinitions>
-                
-                <TextBlock Text="Status:" FontSize="15" Grid.Column="0" Grid.Row="0" />
-                <TextBlock Text="{Binding Status, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Foreground="White" FontSize="15" Grid.Column="1" Grid.Row="0" />
-                
+
+                <Grid Grid.Column="0" Grid.Row="0" VerticalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Status:" FontSize="15" Grid.Column="0" Grid.Row="0" />
+                    <TextBlock Text="{Binding Status, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" FontWeight="Bold" Foreground="White" FontSize="15" Grid.Column="1" Grid.Row="0" />
+                </Grid>
+                <CheckBox Grid.Column="1" Grid.Row="0" IsChecked="{Binding IsCheckedSimulation, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Foreground="White" Margin="10,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="Simulation" />
+
                 <!--<ListBox x:Name="DeviceList" Grid.Column="0" Grid.Row="2" ScrollViewer.VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="2"/>-->
                 <!--<ListBox x:Name="LogList" Grid.Column="1" Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Auto"/>-->
 
-                <ListBox Grid.Row="2" Grid.Column="0" ItemsSource="{Binding Devices}" SelectedIndex="{Binding SelectedIndex}" Grid.ColumnSpan="2" x:Name="ListDevices" Foreground="Gray" BorderBrush="Gray" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"   >
+                <ListBox Grid.Row="2" Grid.Column="0" ItemsSource="{Binding Devices}" SelectedIndex="{Binding SelectedIndex,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2" x:Name="ListDevices" Foreground="Gray" BorderBrush="Gray" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"   >
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding DisplayName}" FontSize="24"/>
