@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="3d7ac782-9cab-4977-a919-7649ddb6076c" Title="ECGCatcher" Url="html/6c6b488d-e920-2e32-fb2d-6baade521329.htm">
+    <HelpTOCNode Id="7004d2f8-dc9a-4140-b690-f9bb3f59e18e" Title="App Class" Url="html/f27204fc-88ac-89fa-80f4-bb12d1b1c1e5.htm">
+      <HelpTOCNode Title="App Constructor " Url="html/14493df2-5439-a598-789b-3727b73342ce.htm" />
+      <HelpTOCNode Id="a3662d35-f2d6-45a6-8cd3-3d7336c3ce31" Title="App Methods" Url="html/f3c3f3d2-f5dd-54fa-025e-425e5fa127ba.htm">
+        <HelpTOCNode Title="Connect Method " Url="html/57500a4d-8a90-8a10-97a3-00ef11e6c4bf.htm" />
+        <HelpTOCNode Id="b4cf6e01-0fa5-4c41-b74a-06c916a9320c" Title="GetXamlType Method " Url="html/aba62e02-128a-dc09-939c-fc970d47bc6a.htm">
+          <HelpTOCNode Title="GetXamlType Method (String)" Url="html/30698dcc-fa46-77b8-e97c-8cd9ef6b60cf.htm" />
+          <HelpTOCNode Title="GetXamlType Method (Type)" Url="html/fc572b1f-f117-2539-179b-da2415ff81a1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetXmlnsDefinitions Method " Url="html/4b9e59b8-5b31-670e-7da0-3dcea7d8e9a8.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/51503c3b-a36f-9c68-f880-140f208c7a57.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="App Properties" Url="html/43a185d4-1cf5-ce1f-2768-61ea8da5b8ff.htm" />
+      <HelpTOCNode Title="App Events" Url="html/5f5db809-8b4c-a87d-39cc-143b5c2f6686.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="442242c9-70e1-4dc0-8893-7609680fc4fd" Title="BluetoothDevice Class" Url="html/8477600b-9c49-52ee-56b2-f69cf9c99854.htm">
+      <HelpTOCNode Title="BluetoothDevice Constructor " Url="html/13992944-6356-2ed0-8923-baac457f80c3.htm" />
+      <HelpTOCNode Title="BluetoothDevice Methods" Url="html/b977a384-7652-68a0-3c20-c2903c546c7d.htm" />
+      <HelpTOCNode Id="7ff93c6c-1e90-4a9e-8833-5a4dbdf8afe8" Title="BluetoothDevice Properties" Url="html/c8fd189f-380f-4416-e813-b8753e95d20b.htm">
+        <HelpTOCNode Title="DisplayName Property " Url="html/bf3e08b0-d4fe-6e1b-2302-678db770f157.htm" />
+        <HelpTOCNode Title="HostName Property " Url="html/48c71b73-d4b7-f47e-3f92-ffb8ac21b7a4.htm" />
+        <HelpTOCNode Title="ServiceName Property " Url="html/3fd5f841-02a2-74d8-6b16-acab3e61d939.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="06dd1a01-0eeb-455c-b14f-79ed69fd07e0" Title="IGraphSpace Interface" Url="html/2e9e4dd9-c6e7-6f69-c2f3-181fdc7777d5.htm">
+      <HelpTOCNode Id="5a058e7f-1f5e-4767-9328-e3dfbefb7fad" Title="IGraphSpace Methods" Url="html/f035f4dc-ccd4-540f-da3a-7cf83f142c7e.htm">
+        <HelpTOCNode Title="CalculateInitialFactors Method " Url="html/f7024dec-da5d-2c67-edd6-e8e02f90a7b7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="91941bbc-2924-4a81-b14d-f360185e3b72" Title="IGraphSpace Properties" Url="html/e5f9281a-1582-e62b-5102-1b1273a0e7f8.htm">
+        <HelpTOCNode Title="ActualHeight Property " Url="html/fea9be1c-38dd-4e04-ce8e-1c8d326776f8.htm" />
+        <HelpTOCNode Title="ActualWidth Property " Url="html/fa8d58b5-f94c-2e95-544c-97837ffae7e1.htm" />
+        <HelpTOCNode Title="Children Property " Url="html/d530634c-be52-0025-2093-b95a3e12c816.htm" />
+        <HelpTOCNode Title="DataScaleFactor Property " Url="html/a5b60f7b-92d7-0dbd-15db-734a8a23b8b8.htm" />
+        <HelpTOCNode Title="GraphShiftFactor Property " Url="html/3d601876-7368-2039-da75-8c89fb5f6377.htm" />
+        <HelpTOCNode Title="Height Property " Url="html/c7ba5c88-2390-efc7-fb81-d15e80a186a3.htm" />
+        <HelpTOCNode Title="PreviousPoint Property " Url="html/ab9a2038-af3c-5f42-668f-9e40909230b4.htm" />
+        <HelpTOCNode Title="Width Property " Url="html/84136d24-35a5-aac5-1e2f-2640d73c06c8.htm" />
+        <HelpTOCNode Title="ZeroLevelCoordinate Property " Url="html/1b97c343-055a-c168-a4c2-adc605d263f3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b2611091-98b3-44cc-bd2a-09ffe40c5e89" Title="IGraphSpace Events" Url="html/96fd9985-754e-5757-4b21-de66d82011d4.htm">
+        <HelpTOCNode Title="ActualSizeChanged Event" Url="html/9531ab7a-b135-c2b7-8632-3c9205ef39d3.htm" />
+        <HelpTOCNode Title="GraphSpaceSizeChanged Event" Url="html/9b608f34-9d45-9b4d-35be-80d79f7f9599.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Program Class" Url="html/810599d4-aca2-1c65-ef03-ddb88b856e0a.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="1eb773a1-8e5d-4e4e-a6a8-54dc5a1c4864" Title="ECGCatcher.Common" Url="html/8810c3b2-74e8-a1c6-1926-de80712822ba.htm">
+    <HelpTOCNode Id="382efc4e-1dd9-4d55-9c1d-61660f983adf" Title="ColorToBrushConverter Class" Url="html/f84817fe-32e3-02af-9016-df7fd6d92146.htm">
+      <HelpTOCNode Title="ColorToBrushConverter Constructor " Url="html/5fb2725c-9954-7ffa-46b0-df85b69dcf47.htm" />
+      <HelpTOCNode Id="3ece6bde-92e2-44bb-8720-56793c1cd0e7" Title="ColorToBrushConverter Methods" Url="html/cf19863f-43fe-c6dc-5d2c-d8a87e3316bf.htm">
+        <HelpTOCNode Title="Convert Method " Url="html/e1910673-a21c-1cbc-7d65-67593581f7c1.htm" />
+        <HelpTOCNode Title="ConvertBack Method " Url="html/a5cd6512-735c-c7c8-f548-31961ed1b826.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="52786dd6-7bea-4a18-8b73-9799d0eae582" Title="Extensions Class" Url="html/ff042a8a-08cb-ed8a-886f-e500937ebbe5.htm">
+      <HelpTOCNode Id="6e9e60c7-a1b4-4b74-b8aa-108d1e40064c" Title="Extensions Methods" Url="html/6b45e76b-2cc2-6b50-e76d-c41751cd7eb9.htm">
+        <HelpTOCNode Title="ShowDialogAsync Method " Url="html/06e3cfca-8a93-c3a3-5251-ae926909d43c.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="7a385281-f7b4-44e8-974b-d4bf7d420b6e" Title="GraphSpaceCanvasBehavior Class" Url="html/784c5205-0d76-d49c-8ac1-9b9eaa79e049.htm">
+      <HelpTOCNode Title="GraphSpaceCanvasBehavior Constructor " Url="html/fba8e5ef-42ea-8a76-cc06-0b074961de44.htm" />
+      <HelpTOCNode Id="c6b8f1de-a751-4ae7-b3de-775b0da762f3" Title="GraphSpaceCanvasBehavior Fields" Url="html/d02f9c99-cfc7-f747-f0fb-18d68f3b9de6.htm">
+        <HelpTOCNode Title="GraphSpaceProperty Field" Url="html/c6e14ce0-4c20-5e9e-78e3-3950480277d1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b4288afb-fd9a-4054-b335-a2d9e88688f3" Title="GraphSpaceCanvasBehavior Methods" Url="html/44451ec3-46cb-91a0-f147-e59c51bfe603.htm">
+        <HelpTOCNode Title="Attach Method " Url="html/78aba3af-7491-7443-58f2-857ead113d44.htm" />
+        <HelpTOCNode Title="Detach Method " Url="html/74f3e53b-165b-6602-a6a3-ce04a2390435.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f96cdc61-358b-4b2c-a697-2ab0aefb5c86" Title="GraphSpaceCanvasBehavior Properties" Url="html/b7997066-86ef-6c85-cc35-9fa6ff212425.htm">
+        <HelpTOCNode Title="AssociatedObject Property " Url="html/08f41f9d-4a76-2647-e9ed-8cc5581221a0.htm" />
+        <HelpTOCNode Title="GraphSpace Property " Url="html/6c779991-f0b7-a8ba-2b28-f4002d1eedf8.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="ee44f669-5583-4ba4-a4b9-a53767c8f4ad" Title="ECGCatcher.Models" Url="html/a5b79f97-484e-6e48-4220-7dfd7a341574.htm">
+    <HelpTOCNode Id="ac69c610-f227-441e-b6b6-1b8d8dae45fc" Title="ECGPoint Class" Url="html/00c663f4-a936-46fc-7dc2-2dc7f9f44172.htm">
+      <HelpTOCNode Title="ECGPoint Constructor " Url="html/7e978240-c291-47df-b402-31511e381577.htm" />
+      <HelpTOCNode Title="ECGPoint Methods" Url="html/328cc115-c9e0-71de-2525-0e3a7e231121.htm" />
+      <HelpTOCNode Id="b0ea6961-7212-44d5-b560-e079f94d33c9" Title="ECGPoint Properties" Url="html/eb3b6c9f-47cd-f291-f786-4f6623edd801.htm">
+        <HelpTOCNode Title="StrokeColor Property " Url="html/fb12161a-6d39-3d00-eb0b-efb8333a1d23.htm" />
+        <HelpTOCNode Title="StrokeThickness Property " Url="html/e0ce397a-6faa-b5e4-e35f-9e9d001269f7.htm" />
+        <HelpTOCNode Title="X1 Property " Url="html/fd480e81-c605-8cf1-c5df-7a4525cb8c4c.htm" />
+        <HelpTOCNode Title="X2 Property " Url="html/8dbb318b-48cb-2810-deec-c4126d5983d2.htm" />
+        <HelpTOCNode Title="Y1 Property " Url="html/c088e529-4336-e1a8-d24d-dcd2bf79053e.htm" />
+        <HelpTOCNode Title="Y2 Property " Url="html/a98f9d96-e4f4-0528-2f32-d568df0c5b79.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f9e7c952-6972-4e37-be3f-3f2badd5879b" Title="GraphDrawer Class" Url="html/21ac177c-cc75-3e1e-895a-ba1240e3b45d.htm">
+      <HelpTOCNode Title="GraphDrawer Constructor " Url="html/ddbb4bc9-6126-8df4-d888-a0e9c5360884.htm" />
+      <HelpTOCNode Id="e473cc9a-022c-462f-884f-bfc5dc45cc1c" Title="GraphDrawer Fields" Url="html/ee10b867-4d46-0776-cb1a-652db4a227e6.htm">
+        <HelpTOCNode Title="DataOffset Field" Url="html/41dd30f6-3e46-cf4f-d472-c997718e5bc0.htm" />
+        <HelpTOCNode Title="ShiftOffsetMultiplier Field" Url="html/9197f97c-0b0f-77a4-fe6d-710b9462dc63.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d1168b91-d2df-4df9-8497-9176619145dd" Title="GraphDrawer Methods" Url="html/c9b25240-7076-eb02-d219-1d98a3b8dca6.htm">
+        <HelpTOCNode Title="ContinueDrawingGraph Method " Url="html/9d795892-7cda-0bb4-8b17-0a69c7cdc9ef.htm" />
+        <HelpTOCNode Title="PauseDrawingGraph Method " Url="html/ec18f204-79b1-4fc8-dc83-b63725f861bc.htm" />
+        <HelpTOCNode Title="RestoreStartingState Method " Url="html/4dd51674-b144-ec8f-57e5-2142dfc1027e.htm" />
+        <HelpTOCNode Title="StartDrawingGraph Method " Url="html/b89c0419-ec74-78d3-0b2a-0c6febb2db41.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c57a8daa-475b-474b-9732-55c769ff2d62" Title="GraphDrawer Properties" Url="html/5180e197-31b3-b6f6-e6dd-3d84603cafe0.htm">
+        <HelpTOCNode Title="CurrentPoints Property " Url="html/a1396b4c-10a6-cccf-c7d7-dbc5865214e8.htm" />
+        <HelpTOCNode Title="CurrentStatus Property " Url="html/c5bae91d-927c-30cb-0e13-c94ed161df90.htm" />
+        <HelpTOCNode Title="GraphData Property " Url="html/f7e09b18-eb64-d015-670f-0bc0151d8a30.htm" />
+        <HelpTOCNode Title="Shifter Property " Url="html/e40ccde9-c42b-4567-e911-3bbf6abc8695.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="GraphDrawer Events" Url="html/f6a60cb7-4c1b-a9ff-f73d-070d41e5d125.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="GraphDrawerStatus Enumeration" Url="html/9abe8bad-6c15-3e64-cc00-4b8d76e0343f.htm" />
+    <HelpTOCNode Id="c7a1d3f4-415d-440c-bbbd-5d7ef1c56197" Title="GraphShifter Class" Url="html/a5439802-955d-1e1d-90cf-d7df520b84d6.htm">
+      <HelpTOCNode Title="GraphShifter Constructor " Url="html/145853a7-0a2a-1f53-4cd8-8a25d06f2105.htm" />
+      <HelpTOCNode Id="436e3499-e595-4117-837a-addac8f7ab35" Title="GraphShifter Methods" Url="html/ae957a54-634e-14e8-b0be-bc2526d888b7.htm">
+        <HelpTOCNode Title="RestoreStartingShift Method " Url="html/cd652f20-7a32-e869-243f-b6e45c5227b0.htm" />
+        <HelpTOCNode Title="ShiftGraph Method " Url="html/91f92c16-f11c-af32-7532-79ccda4d7436.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ec35615b-cbd3-40ae-8554-0464d854833f" Title="GraphShifter Properties" Url="html/830f3403-fdf7-6134-e844-d294a08729bd.htm">
+        <HelpTOCNode Title="TranslateX Property " Url="html/19b15e1b-4d86-96c8-8b04-62ce38eaf2af.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="GraphShifter Events" Url="html/8c455ba6-84d4-7c36-08c7-827acfe9297b.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="9f94556d-b104-4e5e-adec-593b67a8aa08" Title="GraphSpace Class" Url="html/411c0a56-e1d4-0248-2dbd-f99fe93ed3e6.htm">
+      <HelpTOCNode Title="GraphSpace Constructor " Url="html/87056d23-1360-284a-5889-300e15f5f9d2.htm" />
+      <HelpTOCNode Id="a4b691f8-ab5b-462f-9a67-8e0188bc0daa" Title="GraphSpace Methods" Url="html/95e68a5f-e2bb-eb1e-0341-b9dcff7effac.htm">
+        <HelpTOCNode Title="CalculateInitialFactors Method " Url="html/91f84490-1675-91f3-cef6-ee5aedc103db.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="99b48fb2-d88c-4d3a-a423-6366c7d21c48" Title="GraphSpace Properties" Url="html/f9d33823-7dde-b36b-e53a-4094acb09218.htm">
+        <HelpTOCNode Title="ActualHeight Property " Url="html/40e1f6a5-2231-1a79-bed5-f37caf376e1a.htm" />
+        <HelpTOCNode Title="ActualWidth Property " Url="html/507fc1c9-dbeb-8bdd-545a-41451f10fe03.htm" />
+        <HelpTOCNode Title="Children Property " Url="html/0f6a42c0-b2ef-3a41-8bee-71162a0496f0.htm" />
+        <HelpTOCNode Title="DataScaleFactor Property " Url="html/99d19b05-a3a0-a866-2a3e-9d287928b842.htm" />
+        <HelpTOCNode Title="GraphShiftFactor Property " Url="html/51ea48e9-a56d-93a3-03fa-6990e2026ed9.htm" />
+        <HelpTOCNode Title="Height Property " Url="html/90f0c402-65e6-5a97-7967-dbabb26f2330.htm" />
+        <HelpTOCNode Title="PreviousPoint Property " Url="html/fbef69de-2ce0-0cca-9be7-a7450ed78d09.htm" />
+        <HelpTOCNode Title="Width Property " Url="html/719dad5b-ca53-0d1e-bb5b-567540e43f31.htm" />
+        <HelpTOCNode Title="ZeroLevelCoordinate Property " Url="html/33bf787e-6fef-5077-ec67-07d10e199305.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4eb99d23-7f8a-46bd-82bd-d9182852cca6" Title="GraphSpace Events" Url="html/d2ccf9ed-0c81-e3cb-41fa-73f90ffd6c2e.htm">
+        <HelpTOCNode Title="ActualSizeChanged Event" Url="html/8ba4be8b-ca92-a69c-a39c-127faa5b0acb.htm" />
+        <HelpTOCNode Title="GraphSpaceSizeChanged Event" Url="html/7ba3154f-0e26-9429-2c04-2c5bbfbe44f7.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a2d76bed-78d2-4dac-b875-6068137a1df1" Title="Simulation Class" Url="html/69aafc98-f85c-8f85-e74f-789cb75d34ff.htm">
+      <HelpTOCNode Title="Simulation Constructor " Url="html/7373b38a-d18d-c441-baf6-f9c54bf8c5be.htm" />
+      <HelpTOCNode Id="d193c507-cc23-45a1-a12f-9b7f79d80bdb" Title="Simulation Methods" Url="html/9fdbe845-7283-46b1-979c-7105bbf7bef3.htm">
+        <HelpTOCNode Title="NextFakedData Method " Url="html/81c5bede-fb74-22d7-7f10-1fd04bcbc8e7.htm" />
+        <HelpTOCNode Title="Run Method " Url="html/8245b4e9-ff08-8a7c-91e6-75fed29d4d47.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="51c85004-110b-4538-855c-502d82a50ee2" Title="Simulation Properties" Url="html/74fa7467-acc8-ab97-f6cd-cdd440ec9d22.htm">
+        <HelpTOCNode Title="FakedData Property " Url="html/94d089d1-ff47-420c-5944-45b90eec79c9.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="eca0df9a-c93d-462e-99a2-6ca903592342" Title="SizeChangedEventArgs Class" Url="html/36c27a01-cd26-71c1-f9dd-c00d48af8205.htm">
+      <HelpTOCNode Title="SizeChangedEventArgs Constructor " Url="html/cbc27768-fe3b-dd12-61f8-0067e26dc422.htm" />
+      <HelpTOCNode Title="SizeChangedEventArgs Methods" Url="html/1720b3aa-d23c-610c-c0d0-3ad425c21f06.htm" />
+      <HelpTOCNode Id="19304574-2d0d-487b-a1b3-dab6a4a6190b" Title="SizeChangedEventArgs Properties" Url="html/d24fd81c-c7c4-cc66-5fdd-b19f74f0ae97.htm">
+        <HelpTOCNode Title="NewHeight Property " Url="html/89371248-e4e4-2195-70fd-793f88e177ee.htm" />
+        <HelpTOCNode Title="NewWidth Property " Url="html/549bedea-1917-b6b8-93a5-801c72e55d3a.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="e2f679d1-c0e5-4cbe-a320-6a2ec0146841" Title="ECGCatcher.Models.Bluetooth" Url="html/a851de44-5af7-0f1d-1217-7b5828da0d1a.htm">
+    <HelpTOCNode Id="b4cce77a-2089-462f-a813-0b9ab4c1de13" Title="BluetoothService Class" Url="html/2164eee8-f210-f42e-9aed-9213dc5e2b9c.htm">
+      <HelpTOCNode Title="BluetoothService Constructor " Url="html/d27c3451-2907-453a-577b-ba89cb283714.htm" />
+      <HelpTOCNode Id="42346df1-d296-4704-b65e-587f3afc75a6" Title="BluetoothService Fields" Url="html/0bb4cb43-66d3-f01c-ce71-22c33df3d4ac.htm">
+        <HelpTOCNode Title="SdpServiceNameAttributeId Field" Url="html/97ef89a2-d352-af89-2727-71f2f23553ea.htm" />
+        <HelpTOCNode Title="SdpServiceNameAttributeType Field" Url="html/f4ad0da0-c1fa-7ec6-48c5-cc995525af73.htm" />
+        <HelpTOCNode Title="Service Field" Url="html/2f1c07fc-cba5-386f-de17-d9335f57e4ff.htm" />
+        <HelpTOCNode Title="ServiceInfoCollection Field" Url="html/3b10ebaf-7933-cbab-d4a4-f2bdf61a547e.htm" />
+        <HelpTOCNode Title="Socket Field" Url="html/04df2547-de7e-f80b-3a72-361e024f8040.htm" />
+        <HelpTOCNode Title="UUID Field" Url="html/b5bb4796-247d-ff3a-5f3f-d2b62352779e.htm" />
+        <HelpTOCNode Title="Writer Field" Url="html/1f8f734d-f193-460d-b374-318d19d672bf.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="79d67fef-2bbb-408e-a995-6cdb48ca068b" Title="BluetoothService Methods" Url="html/e284a6d8-e745-3310-bbe4-b9d2435999e3.htm">
+        <HelpTOCNode Title="Connect Method " Url="html/36ec6331-d641-1825-1749-984680770918.htm" />
+        <HelpTOCNode Title="Disconnect Method " Url="html/5a584b48-0ab0-9267-5667-795b39d78424.htm" />
+        <HelpTOCNode Title="GetListPairedDevices Method " Url="html/1b2d888b-2fe5-8f4b-25db-1b21c5dc2afa.htm" />
+        <HelpTOCNode Title="ReceiveStringLoop Method " Url="html/d0403867-ece4-a49f-f0dc-ae10d4dd725f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2ad49237-e1f1-4beb-9da3-8b6bbee38001" Title="BluetoothService Properties" Url="html/b37af4e2-e1f4-198c-4120-75299d0943f3.htm">
+        <HelpTOCNode Title="Status Property " Url="html/9f00b268-d8ef-5885-85fe-0d3f72a0507d.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="97228920-6568-43ac-98fe-8b00cf6a0fce" Title="BluetoothSpecification Class" Url="html/624f16c8-b618-9788-0f76-5974995be993.htm">
+      <HelpTOCNode Title="BluetoothSpecification Constructor " Url="html/8644a356-2b1a-41fe-4664-b19eb2767046.htm" />
+      <HelpTOCNode Id="91a99f31-7a0d-45f4-9303-5e6d9029f0e3" Title="BluetoothSpecification Fields" Url="html/c68fe2ea-1530-fb4a-dd16-b88ebf469186.htm">
+        <HelpTOCNode Title="CustomDataSeparator Field" Url="html/ce92c819-0052-d89e-48bd-572d281ce0f3.htm" />
+        <HelpTOCNode Title="RfcommServiceUuid Field" Url="html/ccc4efa8-43eb-0e3d-7971-0fa89d99326a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="BluetoothSpecification Methods" Url="html/e6dc143a-e525-08d3-cf56-3d3413d0535f.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="DataReceivingStatus Enumeration" Url="html/0f71379e-a810-a442-6ec6-0435d272fb9c.htm" />
+    <HelpTOCNode Id="e451736b-78fe-48e2-b876-2b671799dc6b" Title="ECGBluetoothService Class" Url="html/940acfbc-7e40-5271-b1d2-b6a28bfb7e90.htm">
+      <HelpTOCNode Title="ECGBluetoothService Constructor " Url="html/25535ae5-1d3f-a1e0-a6aa-17aa6f37aa28.htm" />
+      <HelpTOCNode Title="ECGBluetoothService Fields" Url="html/a0f154ce-d7f7-21da-ff78-1cae89152456.htm" />
+      <HelpTOCNode Id="ab6cf30c-1b1d-4938-9554-8823adf345e6" Title="ECGBluetoothService Methods" Url="html/3ed01d17-bc2d-34c8-17a3-87484151fd97.htm">
+        <HelpTOCNode Title="AddReceivedDataToContainer Method " Url="html/f789bfbc-15d5-698c-7b78-f07e1d3bb886.htm" />
+        <HelpTOCNode Title="Disconnect Method " Url="html/cc8584c3-6e36-444a-abd7-e303a63ac7e0.htm" />
+        <HelpTOCNode Title="ReceiveStringLoop Method " Url="html/249c3a99-649d-9e3c-8109-c7fe867fbe34.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ECGBluetoothService Properties" Url="html/768b6df4-3d91-da65-489c-1a86be6f995e.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="84efae04-1f28-41a2-8772-74347e94d167" Title="ECGBluetoothServiceSimulation Class" Url="html/273a1a56-0e96-7e6c-e9ab-e4eadb8145c9.htm">
+      <HelpTOCNode Title="ECGBluetoothServiceSimulation Constructor " Url="html/1a6ddf3c-75ab-c6a9-b12f-cd920d3d01f2.htm" />
+      <HelpTOCNode Title="ECGBluetoothServiceSimulation Fields" Url="html/f5afa4c9-ce75-990c-18eb-2e693a2f0a81.htm" />
+      <HelpTOCNode Id="de11a661-9b7c-4401-a1c8-1442f5c49946" Title="ECGBluetoothServiceSimulation Methods" Url="html/d4dffc23-534c-4503-b94c-43a732f92eb9.htm">
+        <HelpTOCNode Title="Connect Method " Url="html/08cc573e-31c1-e999-c20e-a00e3068700f.htm" />
+        <HelpTOCNode Title="GetListPairedDevices Method " Url="html/adab8157-38d9-ad49-8e51-b67592b216ad.htm" />
+        <HelpTOCNode Title="ReceiveStringLoop Method " Url="html/3568b636-0f4d-296c-f2c0-b3cae6669b99.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ECGBluetoothServiceSimulation Properties" Url="html/b9cbd391-82ba-67d1-fd35-19f0508b6bc1.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="64d0c7c2-56e8-47c6-9bfd-fe965be56f27" Title="IBluetoothService Interface" Url="html/0481be78-8771-b9cc-7757-37e27aa3c57c.htm">
+      <HelpTOCNode Id="efa604ca-166a-40c6-914b-ddda57a1314b" Title="IBluetoothService Methods" Url="html/7cd6f553-f5d0-8a29-d019-592cff7837ba.htm">
+        <HelpTOCNode Title="Connect Method " Url="html/519f5198-5da0-398d-f5d4-13b0515e834a.htm" />
+        <HelpTOCNode Title="Disconnect Method " Url="html/54a04030-a6cd-45b4-5e56-6f888b04e925.htm" />
+        <HelpTOCNode Title="GetListPairedDevices Method " Url="html/22dc7c72-09fb-1974-561f-28e05ebe5fc9.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="8ac5c2f0-5e5a-44bd-9f7e-f78ec883506b" Title="ECGCatcher.ViewModels" Url="html/21309371-edad-03fb-b020-6f52c34e23eb.htm">
+    <HelpTOCNode Id="c4deabca-2095-48ae-b4cd-9fbd8999c186" Title="BluetoothPanelViewModel Class" Url="html/d7e7c7cd-759f-5385-cf97-bde98c4f2e57.htm">
+      <HelpTOCNode Title="BluetoothPanelViewModel Constructor " Url="html/050103d2-deff-49c8-663f-7e8cb06fbd08.htm" />
+      <HelpTOCNode Title="BluetoothPanelViewModel Methods" Url="html/4574d00f-990b-941f-1440-92b2e0305ee7.htm" />
+      <HelpTOCNode Id="6db28624-8913-460a-a4b8-8705fe704681" Title="BluetoothPanelViewModel Properties" Url="html/116596cf-2907-eefb-a13c-7ae36bcca202.htm">
+        <HelpTOCNode Title="ConnectEnabled Property " Url="html/703fb41e-70c7-6c1e-a592-1f6caba312e8.htm" />
+        <HelpTOCNode Title="Devices Property " Url="html/0b2b929d-9d47-7a03-b794-95478d64e4dd.htm" />
+        <HelpTOCNode Title="DisconnectEnabled Property " Url="html/0b5736d1-10ca-d1b0-b01b-bacf53daef7e.htm" />
+        <HelpTOCNode Title="IsCheckedSimulation Property " Url="html/65e99185-823a-1d11-b702-3ff384cd3891.htm" />
+        <HelpTOCNode Title="IsConnected Property " Url="html/1f88cd97-8072-d620-ff0a-905fb71fc9d2.htm" />
+        <HelpTOCNode Title="SelectedIndex Property " Url="html/7e514e3f-1c8c-15a3-0c39-1afde07b64e1.htm" />
+        <HelpTOCNode Title="Status Property " Url="html/e9430c52-09d9-9013-228b-0ad44e162d19.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="BluetoothPanelViewModel Events" Url="html/70585c70-180d-79c5-1cb0-29cfc17c009d.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="BluetoothStatus Enumeration" Url="html/58e975d7-1059-74dc-aaef-0c2b129dba34.htm" />
+    <HelpTOCNode Id="1911fd15-6b52-430a-ac13-d49a4e577896" Title="BluetoothViewModel Class" Url="html/51594b6d-cdee-4e46-6285-2cb2760f6746.htm">
+      <HelpTOCNode Title="BluetoothViewModel Constructor " Url="html/6bf8d6d7-9d94-4647-1a76-ae491f426a36.htm" />
+      <HelpTOCNode Title="BluetoothViewModel Methods" Url="html/5b093875-b1d7-053a-efb0-f26eea148def.htm" />
+      <HelpTOCNode Id="19ff9d5c-ce1d-4cec-a426-27fd90fe7ac5" Title="BluetoothViewModel Properties" Url="html/f388c80f-e98d-90f9-a264-646372225a60.htm">
+        <HelpTOCNode Title="BluetoothPanel Property " Url="html/6ee3c85f-a517-3b5f-d2e4-c6c18757b947.htm" />
+        <HelpTOCNode Title="IsOpen Property " Url="html/546dd965-36de-2675-b752-12f1c57f49c9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="BluetoothViewModel Events" Url="html/285899a8-c712-12cb-94af-03ec26b9d6b0.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="0458cc09-4823-4d6b-a6f7-3a5b91b840ad" Title="MainViewModel Class" Url="html/7394f45c-6585-d1e9-1ac7-529952b3be9a.htm">
+      <HelpTOCNode Title="MainViewModel Constructor " Url="html/b46d04a0-1093-93b1-b88e-d5d7489fc1f4.htm" />
+      <HelpTOCNode Title="MainViewModel Methods" Url="html/573c23cc-3015-22b0-c235-e2630542049d.htm" />
+      <HelpTOCNode Id="9abee752-eb7c-4874-a92d-2f8e983ecf2b" Title="MainViewModel Properties" Url="html/e86dfadd-4bb6-8116-28fc-d5ffd2f695ca.htm">
+        <HelpTOCNode Title="Drawer Property " Url="html/e92a0c83-2bf2-bbc6-e9d1-b7efd8ea8c0d.htm" />
+        <HelpTOCNode Title="GraphSpace Property " Url="html/6604d9fb-770c-47b7-c0a7-331dad02a3d8.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MainViewModel Events" Url="html/b8b1cc52-94e8-0bf0-fed1-3107c133d14a.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="71caafb1-4fb4-49d8-99ee-547d7ed4f11b" Title="ECGCatcher.Views" Url="html/43e6624b-ed51-d00d-0fb5-8231262c1937.htm">
+    <HelpTOCNode Id="c604d591-7cad-417f-8fdf-db9e5c4b2db0" Title="BluetoothView Class" Url="html/bacba2c3-09c5-a0b1-9d4d-49fc7097847a.htm">
+      <HelpTOCNode Title="BluetoothView Constructor " Url="html/396a6534-3ce5-7421-3170-52b3eb3872e1.htm" />
+      <HelpTOCNode Id="bfe839e8-f6b6-4038-8f3b-8d8c063d602a" Title="BluetoothView Methods" Url="html/f9aa6767-ce89-6305-320a-917242866eb2.htm">
+        <HelpTOCNode Title="Connect Method " Url="html/c96216ce-848e-3684-8a00-87d7b8ea89e1.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/deb82055-9016-7c44-c1e5-f66472a3987a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="BluetoothView Properties" Url="html/6d07456e-1cf2-7d3c-63e8-f226b79571f7.htm" />
+      <HelpTOCNode Title="BluetoothView Events" Url="html/6a6c8583-92e3-27ac-9dbb-0fcc8a6db5e3.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="cb4fc13f-1643-4222-9bd4-cd03ab06a523" Title="MainView Class" Url="html/72469a91-8802-c889-1691-c2b4855c1d84.htm">
+      <HelpTOCNode Title="MainView Constructor " Url="html/b09ebeae-d4b0-c7bd-99c1-314c27d2776a.htm" />
+      <HelpTOCNode Id="ccde1674-1881-4d04-a512-2a27c5812f1c" Title="MainView Methods" Url="html/6a5581b1-7a45-711a-bcb2-833e07c79459.htm">
+        <HelpTOCNode Title="Connect Method " Url="html/44fa2362-d3f5-1429-3c73-79e4733c206d.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/8dfe6ae2-eadd-0f93-c608-3de7daa8eb9e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MainView Properties" Url="html/5b58db05-56e2-22bb-748a-675156bb27a3.htm" />
+      <HelpTOCNode Title="MainView Events" Url="html/3089802d-c2cd-b183-3921-3e7dcd2f654d.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="2dc2d7b5-b87c-45c2-98f5-a94b9e13fee6" Title="RGraphics.Models" Url="html/db271dba-4746-78ba-1450-3dea48f5cfc6.htm">
+    <HelpTOCNode Id="2f03a447-712e-4678-9a41-63b47bec5246" Title="IDialog Interface" Url="html/9f33bf0b-8fa8-44cf-7416-906e47f90789.htm">
+      <HelpTOCNode Title="IDialog Methods" Url="html/f566d82c-dd8b-edf4-75c8-4215d3758e6a.htm" />
+      <HelpTOCNode Id="8dce14ac-0714-4326-bdba-bd678f1b2c44" Title="IDialog Properties" Url="html/db67e926-6a7c-fe3f-64a9-b71ce79572a8.htm">
+        <HelpTOCNode Title="IsOpen Property " Url="html/d3714685-cc3e-57e5-1296-aba363e8bd20.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8e458b08-1b1f-464b-a0ef-443406c3bc6f" Title="IDialog(T) Interface" Url="html/77706001-27b6-408e-cc06-f0b86899998c.htm">
+      <HelpTOCNode Title="IDialog(T) Methods" Url="html/4cc1a3d4-e2af-a975-2636-59b2ad71ba82.htm" />
+      <HelpTOCNode Id="79dc6016-139c-4345-ab39-cece473858e1" Title="IDialog(T) Properties" Url="html/42c69c0d-32ac-4c97-fda2-2591e7d69296.htm">
+        <HelpTOCNode Title="Result Property " Url="html/ce76f473-b237-236f-d61d-e19f322d0fda.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

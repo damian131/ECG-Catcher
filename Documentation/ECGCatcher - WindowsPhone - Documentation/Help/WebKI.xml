@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="ActualHeight property">
+    <HelpKINode Title="GraphSpace.ActualHeight Property " Url="html/40e1f6a5-2231-1a79-bed5-f37caf376e1a.htm" />
+    <HelpKINode Title="IGraphSpace.ActualHeight Property " Url="html/fea9be1c-38dd-4e04-ce8e-1c8d326776f8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ActualSizeChanged event">
+    <HelpKINode Title="GraphSpace.ActualSizeChanged Event" Url="html/8ba4be8b-ca92-a69c-a39c-127faa5b0acb.htm" />
+    <HelpKINode Title="IGraphSpace.ActualSizeChanged Event" Url="html/9531ab7a-b135-c2b7-8632-3c9205ef39d3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ActualWidth property">
+    <HelpKINode Title="GraphSpace.ActualWidth Property " Url="html/507fc1c9-dbeb-8bdd-545a-41451f10fe03.htm" />
+    <HelpKINode Title="IGraphSpace.ActualWidth Property " Url="html/fa8d58b5-f94c-2e95-544c-97837ffae7e1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddReceivedDataToContainer method" Url="html/f789bfbc-15d5-698c-7b78-f07e1d3bb886.htm" />
+  <HelpKINode Title="App class">
+    <HelpKINode Title="App Class" Url="html/f27204fc-88ac-89fa-80f4-bb12d1b1c1e5.htm" />
+    <HelpKINode Title="about App class" Url="html/f27204fc-88ac-89fa-80f4-bb12d1b1c1e5.htm" />
+    <HelpKINode Title="constructor" Url="html/14493df2-5439-a598-789b-3727b73342ce.htm" />
+    <HelpKINode Title="events" Url="html/5f5db809-8b4c-a87d-39cc-143b5c2f6686.htm" />
+    <HelpKINode Title="methods" Url="html/f3c3f3d2-f5dd-54fa-025e-425e5fa127ba.htm" />
+    <HelpKINode Title="properties" Url="html/43a185d4-1cf5-ce1f-2768-61ea8da5b8ff.htm" />
+  </HelpKINode>
+  <HelpKINode Title="App.App constructor" Url="html/14493df2-5439-a598-789b-3727b73342ce.htm" />
+  <HelpKINode Title="App.Connect method" Url="html/57500a4d-8a90-8a10-97a3-00ef11e6c4bf.htm" />
+  <HelpKINode Title="App.GetXamlType method" Url="html/aba62e02-128a-dc09-939c-fc970d47bc6a.htm" />
+  <HelpKINode Title="App.GetXmlnsDefinitions method" Url="html/4b9e59b8-5b31-670e-7da0-3dcea7d8e9a8.htm" />
+  <HelpKINode Title="App.InitializeComponent method" Url="html/51503c3b-a36f-9c68-f880-140f208c7a57.htm" />
+  <HelpKINode Title="AssociatedObject property" Url="html/08f41f9d-4a76-2647-e9ed-8cc5581221a0.htm" />
+  <HelpKINode Title="Attach method" Url="html/78aba3af-7491-7443-58f2-857ead113d44.htm" />
+  <HelpKINode Title="BluetoothDevice class">
+    <HelpKINode Title="BluetoothDevice Class" Url="html/8477600b-9c49-52ee-56b2-f69cf9c99854.htm" />
+    <HelpKINode Title="about BluetoothDevice class" Url="html/8477600b-9c49-52ee-56b2-f69cf9c99854.htm" />
+    <HelpKINode Title="constructor" Url="html/13992944-6356-2ed0-8923-baac457f80c3.htm" />
+    <HelpKINode Title="methods" Url="html/b977a384-7652-68a0-3c20-c2903c546c7d.htm" />
+    <HelpKINode Title="properties" Url="html/c8fd189f-380f-4416-e813-b8753e95d20b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BluetoothDevice.BluetoothDevice constructor" Url="html/13992944-6356-2ed0-8923-baac457f80c3.htm" />
+  <HelpKINode Title="BluetoothDevice.DisplayName property" Url="html/bf3e08b0-d4fe-6e1b-2302-678db770f157.htm" />
+  <HelpKINode Title="BluetoothDevice.HostName property" Url="html/48c71b73-d4b7-f47e-3f92-ffb8ac21b7a4.htm" />
+  <HelpKINode Title="BluetoothDevice.ServiceName property" Url="html/3fd5f841-02a2-74d8-6b16-acab3e61d939.htm" />
+  <HelpKINode Title="BluetoothOff enumeration member" Url="html/58e975d7-1059-74dc-aaef-0c2b129dba34.htm" />
+  <HelpKINode Title="BluetoothPanel property" Url="html/fa15126b-bdb9-10a9-145b-a4fce3605f35.htm" />
+  <HelpKINode Title="BluetoothPanelViewModel class">
+    <HelpKINode Title="BluetoothPanelViewModel Class" Url="html/d7e7c7cd-759f-5385-cf97-bde98c4f2e57.htm" />
+    <HelpKINode Title="about BluetoothPanelViewModel class" Url="html/d7e7c7cd-759f-5385-cf97-bde98c4f2e57.htm" />
+    <HelpKINode Title="constructor" Url="html/050103d2-deff-49c8-663f-7e8cb06fbd08.htm" />
+    <HelpKINode Title="events" Url="html/70585c70-180d-79c5-1cb0-29cfc17c009d.htm" />
+    <HelpKINode Title="methods" Url="html/4574d00f-990b-941f-1440-92b2e0305ee7.htm" />
+    <HelpKINode Title="properties" Url="html/116596cf-2907-eefb-a13c-7ae36bcca202.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BluetoothPanelViewModel.BluetoothPanelViewModel constructor" Url="html/050103d2-deff-49c8-663f-7e8cb06fbd08.htm" />
+  <HelpKINode Title="BluetoothPanelViewModel.ConnectEnabled property" Url="html/703fb41e-70c7-6c1e-a592-1f6caba312e8.htm" />
+  <HelpKINode Title="BluetoothPanelViewModel.Devices property" Url="html/0b2b929d-9d47-7a03-b794-95478d64e4dd.htm" />
+  <HelpKINode Title="BluetoothPanelViewModel.DisconnectEnabled property" Url="html/0b5736d1-10ca-d1b0-b01b-bacf53daef7e.htm" />
+  <HelpKINode Title="BluetoothPanelViewModel.IsCheckedSimulation property" Url="html/65e99185-823a-1d11-b702-3ff384cd3891.htm" />
+  <HelpKINode Title="BluetoothPanelViewModel.IsConnected property" Url="html/1f88cd97-8072-d620-ff0a-905fb71fc9d2.htm" />
+  <HelpKINode Title="BluetoothPanelViewModel.SelectedIndex property" Url="html/7e514e3f-1c8c-15a3-0c39-1afde07b64e1.htm" />
+  <HelpKINode Title="BluetoothPanelViewModel.Status property" Url="html/e9430c52-09d9-9013-228b-0ad44e162d19.htm" />
+  <HelpKINode Title="BluetoothService class">
+    <HelpKINode Title="BluetoothService Class" Url="html/2164eee8-f210-f42e-9aed-9213dc5e2b9c.htm" />
+    <HelpKINode Title="about BluetoothService class" Url="html/2164eee8-f210-f42e-9aed-9213dc5e2b9c.htm" />
+    <HelpKINode Title="constructor" Url="html/d27c3451-2907-453a-577b-ba89cb283714.htm" />
+    <HelpKINode Title="fields" Url="html/0bb4cb43-66d3-f01c-ce71-22c33df3d4ac.htm" />
+    <HelpKINode Title="methods" Url="html/e284a6d8-e745-3310-bbe4-b9d2435999e3.htm" />
+    <HelpKINode Title="properties" Url="html/b37af4e2-e1f4-198c-4120-75299d0943f3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BluetoothService.BluetoothService constructor" Url="html/d27c3451-2907-453a-577b-ba89cb283714.htm" />
+  <HelpKINode Title="BluetoothService.Connect method" Url="html/36ec6331-d641-1825-1749-984680770918.htm" />
+  <HelpKINode Title="BluetoothService.Disconnect method" Url="html/5a584b48-0ab0-9267-5667-795b39d78424.htm" />
+  <HelpKINode Title="BluetoothService.GetListPairedDevices method" Url="html/1b2d888b-2fe5-8f4b-25db-1b21c5dc2afa.htm" />
+  <HelpKINode Title="BluetoothService.ReceiveStringLoop method" Url="html/d0403867-ece4-a49f-f0dc-ae10d4dd725f.htm" />
+  <HelpKINode Title="BluetoothService.SdpServiceNameAttributeId field" Url="html/97ef89a2-d352-af89-2727-71f2f23553ea.htm" />
+  <HelpKINode Title="BluetoothService.SdpServiceNameAttributeType field" Url="html/f4ad0da0-c1fa-7ec6-48c5-cc995525af73.htm" />
+  <HelpKINode Title="BluetoothService.Service field" Url="html/2f1c07fc-cba5-386f-de17-d9335f57e4ff.htm" />
+  <HelpKINode Title="BluetoothService.ServiceInfoCollection field" Url="html/3b10ebaf-7933-cbab-d4a4-f2bdf61a547e.htm" />
+  <HelpKINode Title="BluetoothService.Socket field" Url="html/04df2547-de7e-f80b-3a72-361e024f8040.htm" />
+  <HelpKINode Title="BluetoothService.Status property" Url="html/9f00b268-d8ef-5885-85fe-0d3f72a0507d.htm" />
+  <HelpKINode Title="BluetoothService.UUID field" Url="html/b5bb4796-247d-ff3a-5f3f-d2b62352779e.htm" />
+  <HelpKINode Title="BluetoothService.Writer field" Url="html/1f8f734d-f193-460d-b374-318d19d672bf.htm" />
+  <HelpKINode Title="BluetoothSpecification class">
+    <HelpKINode Title="BluetoothSpecification Class" Url="html/624f16c8-b618-9788-0f76-5974995be993.htm" />
+    <HelpKINode Title="about BluetoothSpecification class" Url="html/624f16c8-b618-9788-0f76-5974995be993.htm" />
+    <HelpKINode Title="constructor" Url="html/8644a356-2b1a-41fe-4664-b19eb2767046.htm" />
+    <HelpKINode Title="fields" Url="html/c68fe2ea-1530-fb4a-dd16-b88ebf469186.htm" />
+    <HelpKINode Title="methods" Url="html/e6dc143a-e525-08d3-cf56-3d3413d0535f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BluetoothSpecification.BluetoothSpecification constructor" Url="html/8644a356-2b1a-41fe-4664-b19eb2767046.htm" />
+  <HelpKINode Title="BluetoothSpecification.CustomDataSeparator field" Url="html/ce92c819-0052-d89e-48bd-572d281ce0f3.htm" />
+  <HelpKINode Title="BluetoothSpecification.RfcommServiceUuid field" Url="html/ccc4efa8-43eb-0e3d-7971-0fa89d99326a.htm" />
+  <HelpKINode Title="BluetoothStatus enumeration" Url="html/58e975d7-1059-74dc-aaef-0c2b129dba34.htm" />
+  <HelpKINode Title="CalculateInitialFactors method">
+    <HelpKINode Title="GraphSpace.CalculateInitialFactors Method " Url="html/91f84490-1675-91f3-cef6-ee5aedc103db.htm" />
+    <HelpKINode Title="IGraphSpace.CalculateInitialFactors Method " Url="html/f7024dec-da5d-2c67-edd6-e8e02f90a7b7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Children property">
+    <HelpKINode Title="GraphSpace.Children Property " Url="html/0f6a42c0-b2ef-3a41-8bee-71162a0496f0.htm" />
+    <HelpKINode Title="IGraphSpace.Children Property " Url="html/d530634c-be52-0025-2093-b95a3e12c816.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ColorToBrushConverter class">
+    <HelpKINode Title="ColorToBrushConverter Class" Url="html/f84817fe-32e3-02af-9016-df7fd6d92146.htm" />
+    <HelpKINode Title="about ColorToBrushConverter class" Url="html/f84817fe-32e3-02af-9016-df7fd6d92146.htm" />
+    <HelpKINode Title="constructor" Url="html/5fb2725c-9954-7ffa-46b0-df85b69dcf47.htm" />
+    <HelpKINode Title="methods" Url="html/cf19863f-43fe-c6dc-5d2c-d8a87e3316bf.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ColorToBrushConverter.ColorToBrushConverter constructor" Url="html/5fb2725c-9954-7ffa-46b0-df85b69dcf47.htm" />
+  <HelpKINode Title="ColorToBrushConverter.Convert method" Url="html/e1910673-a21c-1cbc-7d65-67593581f7c1.htm" />
+  <HelpKINode Title="ColorToBrushConverter.ConvertBack method" Url="html/a5cd6512-735c-c7c8-f548-31961ed1b826.htm" />
+  <HelpKINode Title="Connect method">
+    <HelpKINode Title="App.Connect Method " Url="html/57500a4d-8a90-8a10-97a3-00ef11e6c4bf.htm" />
+    <HelpKINode Title="BluetoothService.Connect Method " Url="html/36ec6331-d641-1825-1749-984680770918.htm" />
+    <HelpKINode Title="ECGBluetoothServiceSimulation.Connect Method " Url="html/08cc573e-31c1-e999-c20e-a00e3068700f.htm" />
+    <HelpKINode Title="IBluetoothService.Connect Method " Url="html/519f5198-5da0-398d-f5d4-13b0515e834a.htm" />
+    <HelpKINode Title="MainView.Connect Method " Url="html/44fa2362-d3f5-1429-3c73-79e4733c206d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Connected enumeration member" Url="html/58e975d7-1059-74dc-aaef-0c2b129dba34.htm" />
+  <HelpKINode Title="ConnectEnabled property" Url="html/703fb41e-70c7-6c1e-a592-1f6caba312e8.htm" />
+  <HelpKINode Title="ContinueDrawingGraph method" Url="html/9d795892-7cda-0bb4-8b17-0a69c7cdc9ef.htm" />
+  <HelpKINode Title="Convert method" Url="html/e1910673-a21c-1cbc-7d65-67593581f7c1.htm" />
+  <HelpKINode Title="ConvertBack method" Url="html/a5cd6512-735c-c7c8-f548-31961ed1b826.htm" />
+  <HelpKINode Title="CurrentPoints property" Url="html/a1396b4c-10a6-cccf-c7d7-dbc5865214e8.htm" />
+  <HelpKINode Title="CurrentStatus property" Url="html/c5bae91d-927c-30cb-0e13-c94ed161df90.htm" />
+  <HelpKINode Title="CustomDataSeparator field" Url="html/ce92c819-0052-d89e-48bd-572d281ce0f3.htm" />
+  <HelpKINode Title="DataOffset field" Url="html/41dd30f6-3e46-cf4f-d472-c997718e5bc0.htm" />
+  <HelpKINode Title="DataReceivingStatus enumeration" Url="html/0f71379e-a810-a442-6ec6-0435d272fb9c.htm" />
+  <HelpKINode Title="DataScaleFactor property">
+    <HelpKINode Title="GraphSpace.DataScaleFactor Property " Url="html/99d19b05-a3a0-a866-2a3e-9d287928b842.htm" />
+    <HelpKINode Title="IGraphSpace.DataScaleFactor Property " Url="html/a5b60f7b-92d7-0dbd-15db-734a8a23b8b8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Detach method" Url="html/74f3e53b-165b-6602-a6a3-ce04a2390435.htm" />
+  <HelpKINode Title="DeviceFound enumeration member" Url="html/58e975d7-1059-74dc-aaef-0c2b129dba34.htm" />
+  <HelpKINode Title="Devices property" Url="html/0b2b929d-9d47-7a03-b794-95478d64e4dd.htm" />
+  <HelpKINode Title="Disconnect method">
+    <HelpKINode Title="BluetoothService.Disconnect Method " Url="html/5a584b48-0ab0-9267-5667-795b39d78424.htm" />
+    <HelpKINode Title="ECGBluetoothService.Disconnect Method " Url="html/cc8584c3-6e36-444a-abd7-e303a63ac7e0.htm" />
+    <HelpKINode Title="IBluetoothService.Disconnect Method " Url="html/54a04030-a6cd-45b4-5e56-6f888b04e925.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Disconnected enumeration member" Url="html/58e975d7-1059-74dc-aaef-0c2b129dba34.htm" />
+  <HelpKINode Title="DisconnectEnabled property" Url="html/0b5736d1-10ca-d1b0-b01b-bacf53daef7e.htm" />
+  <HelpKINode Title="DisplayName property" Url="html/bf3e08b0-d4fe-6e1b-2302-678db770f157.htm" />
+  <HelpKINode Title="Drawer property" Url="html/e92a0c83-2bf2-bbc6-e9d1-b7efd8ea8c0d.htm" />
+  <HelpKINode Title="ECGBluetoothService class">
+    <HelpKINode Title="ECGBluetoothService Class" Url="html/940acfbc-7e40-5271-b1d2-b6a28bfb7e90.htm" />
+    <HelpKINode Title="about ECGBluetoothService class" Url="html/940acfbc-7e40-5271-b1d2-b6a28bfb7e90.htm" />
+    <HelpKINode Title="constructor" Url="html/25535ae5-1d3f-a1e0-a6aa-17aa6f37aa28.htm" />
+    <HelpKINode Title="fields" Url="html/a0f154ce-d7f7-21da-ff78-1cae89152456.htm" />
+    <HelpKINode Title="methods" Url="html/3ed01d17-bc2d-34c8-17a3-87484151fd97.htm" />
+    <HelpKINode Title="properties" Url="html/768b6df4-3d91-da65-489c-1a86be6f995e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ECGBluetoothService.AddReceivedDataToContainer method" Url="html/f789bfbc-15d5-698c-7b78-f07e1d3bb886.htm" />
+  <HelpKINode Title="ECGBluetoothService.Disconnect method" Url="html/cc8584c3-6e36-444a-abd7-e303a63ac7e0.htm" />
+  <HelpKINode Title="ECGBluetoothService.ECGBluetoothService constructor" Url="html/25535ae5-1d3f-a1e0-a6aa-17aa6f37aa28.htm" />
+  <HelpKINode Title="ECGBluetoothService.ReceiveStringLoop method" Url="html/249c3a99-649d-9e3c-8109-c7fe867fbe34.htm" />
+  <HelpKINode Title="ECGBluetoothServiceSimulation class">
+    <HelpKINode Title="ECGBluetoothServiceSimulation Class" Url="html/273a1a56-0e96-7e6c-e9ab-e4eadb8145c9.htm" />
+    <HelpKINode Title="about ECGBluetoothServiceSimulation class" Url="html/273a1a56-0e96-7e6c-e9ab-e4eadb8145c9.htm" />
+    <HelpKINode Title="constructor" Url="html/1a6ddf3c-75ab-c6a9-b12f-cd920d3d01f2.htm" />
+    <HelpKINode Title="fields" Url="html/f5afa4c9-ce75-990c-18eb-2e693a2f0a81.htm" />
+    <HelpKINode Title="methods" Url="html/d4dffc23-534c-4503-b94c-43a732f92eb9.htm" />
+    <HelpKINode Title="properties" Url="html/b9cbd391-82ba-67d1-fd35-19f0508b6bc1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ECGBluetoothServiceSimulation.Connect method" Url="html/08cc573e-31c1-e999-c20e-a00e3068700f.htm" />
+  <HelpKINode Title="ECGBluetoothServiceSimulation.ECGBluetoothServiceSimulation constructor" Url="html/1a6ddf3c-75ab-c6a9-b12f-cd920d3d01f2.htm" />
+  <HelpKINode Title="ECGBluetoothServiceSimulation.GetListPairedDevices method" Url="html/adab8157-38d9-ad49-8e51-b67592b216ad.htm" />
+  <HelpKINode Title="ECGBluetoothServiceSimulation.ReceiveStringLoop method" Url="html/3568b636-0f4d-296c-f2c0-b3cae6669b99.htm" />
+  <HelpKINode Title="ECGCatcher namespace" Url="html/6c6b488d-e920-2e32-fb2d-6baade521329.htm" />
+  <HelpKINode Title="ECGCatcher.App class" Url="html/f27204fc-88ac-89fa-80f4-bb12d1b1c1e5.htm" />
+  <HelpKINode Title="ECGCatcher.BluetoothDevice class" Url="html/8477600b-9c49-52ee-56b2-f69cf9c99854.htm" />
+  <HelpKINode Title="ECGCatcher.Common namespace" Url="html/8810c3b2-74e8-a1c6-1926-de80712822ba.htm" />
+  <HelpKINode Title="ECGCatcher.Common.ColorToBrushConverter class" Url="html/f84817fe-32e3-02af-9016-df7fd6d92146.htm" />
+  <HelpKINode Title="ECGCatcher.Common.GraphSpaceCanvasBehavior class" Url="html/784c5205-0d76-d49c-8ac1-9b9eaa79e049.htm" />
+  <HelpKINode Title="ECGCatcher.IGraphSpace interface" Url="html/2e9e4dd9-c6e7-6f69-c2f3-181fdc7777d5.htm" />
+  <HelpKINode Title="ECGCatcher.Models namespace" Url="html/a5b79f97-484e-6e48-4220-7dfd7a341574.htm" />
+  <HelpKINode Title="ECGCatcher.Models.Bluetooth namespace" Url="html/a851de44-5af7-0f1d-1217-7b5828da0d1a.htm" />
+  <HelpKINode Title="ECGCatcher.Models.Bluetooth.BluetoothService class" Url="html/2164eee8-f210-f42e-9aed-9213dc5e2b9c.htm" />
+  <HelpKINode Title="ECGCatcher.Models.Bluetooth.BluetoothSpecification class" Url="html/624f16c8-b618-9788-0f76-5974995be993.htm" />
+  <HelpKINode Title="ECGCatcher.Models.Bluetooth.DataReceivingStatus enumeration" Url="html/0f71379e-a810-a442-6ec6-0435d272fb9c.htm" />
+  <HelpKINode Title="ECGCatcher.Models.Bluetooth.ECGBluetoothService class" Url="html/940acfbc-7e40-5271-b1d2-b6a28bfb7e90.htm" />
+  <HelpKINode Title="ECGCatcher.Models.Bluetooth.ECGBluetoothServiceSimulation class" Url="html/273a1a56-0e96-7e6c-e9ab-e4eadb8145c9.htm" />
+  <HelpKINode Title="ECGCatcher.Models.Bluetooth.IBluetoothService interface" Url="html/0481be78-8771-b9cc-7757-37e27aa3c57c.htm" />
+  <HelpKINode Title="ECGCatcher.Models.ECGPoint class" Url="html/00c663f4-a936-46fc-7dc2-2dc7f9f44172.htm" />
+  <HelpKINode Title="ECGCatcher.Models.GraphDrawer class" Url="html/21ac177c-cc75-3e1e-895a-ba1240e3b45d.htm" />
+  <HelpKINode Title="ECGCatcher.Models.GraphDrawerStatus enumeration" Url="html/9abe8bad-6c15-3e64-cc00-4b8d76e0343f.htm" />
+  <HelpKINode Title="ECGCatcher.Models.GraphShifter class" Url="html/a5439802-955d-1e1d-90cf-d7df520b84d6.htm" />
+  <HelpKINode Title="ECGCatcher.Models.GraphSpace class" Url="html/411c0a56-e1d4-0248-2dbd-f99fe93ed3e6.htm" />
+  <HelpKINode Title="ECGCatcher.Models.Simulation class" Url="html/69aafc98-f85c-8f85-e74f-789cb75d34ff.htm" />
+  <HelpKINode Title="ECGCatcher.Models.SizeChangedEventArgs class" Url="html/36c27a01-cd26-71c1-f9dd-c00d48af8205.htm" />
+  <HelpKINode Title="ECGCatcher.Program class" Url="html/810599d4-aca2-1c65-ef03-ddb88b856e0a.htm" />
+  <HelpKINode Title="ECGCatcher.ViewModels namespace" Url="html/21309371-edad-03fb-b020-6f52c34e23eb.htm" />
+  <HelpKINode Title="ECGCatcher.ViewModels.BluetoothPanelViewModel class" Url="html/d7e7c7cd-759f-5385-cf97-bde98c4f2e57.htm" />
+  <HelpKINode Title="ECGCatcher.ViewModels.BluetoothStatus enumeration" Url="html/58e975d7-1059-74dc-aaef-0c2b129dba34.htm" />
+  <HelpKINode Title="ECGCatcher.ViewModels.MainViewModel class" Url="html/7394f45c-6585-d1e9-1ac7-529952b3be9a.htm" />
+  <HelpKINode Title="ECGCatcher.Views namespace" Url="html/43e6624b-ed51-d00d-0fb5-8231262c1937.htm" />
+  <HelpKINode Title="ECGCatcher.Views.MainView class" Url="html/72469a91-8802-c889-1691-c2b4855c1d84.htm" />
+  <HelpKINode Title="ECGPoint class">
+    <HelpKINode Title="ECGPoint Class" Url="html/00c663f4-a936-46fc-7dc2-2dc7f9f44172.htm" />
+    <HelpKINode Title="about ECGPoint class" Url="html/00c663f4-a936-46fc-7dc2-2dc7f9f44172.htm" />
+    <HelpKINode Title="constructor" Url="html/7e978240-c291-47df-b402-31511e381577.htm" />
+    <HelpKINode Title="methods" Url="html/328cc115-c9e0-71de-2525-0e3a7e231121.htm" />
+    <HelpKINode Title="properties" Url="html/eb3b6c9f-47cd-f291-f786-4f6623edd801.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ECGPoint.ECGPoint constructor" Url="html/7e978240-c291-47df-b402-31511e381577.htm" />
+  <HelpKINode Title="ECGPoint.StrokeColor property" Url="html/fb12161a-6d39-3d00-eb0b-efb8333a1d23.htm" />
+  <HelpKINode Title="ECGPoint.StrokeThickness property" Url="html/e0ce397a-6faa-b5e4-e35f-9e9d001269f7.htm" />
+  <HelpKINode Title="ECGPoint.X1 property" Url="html/fd480e81-c605-8cf1-c5df-7a4525cb8c4c.htm" />
+  <HelpKINode Title="ECGPoint.X2 property" Url="html/8dbb318b-48cb-2810-deec-c4126d5983d2.htm" />
+  <HelpKINode Title="ECGPoint.Y1 property" Url="html/c088e529-4336-e1a8-d24d-dcd2bf79053e.htm" />
+  <HelpKINode Title="ECGPoint.Y2 property" Url="html/a98f9d96-e4f4-0528-2f32-d568df0c5b79.htm" />
+  <HelpKINode Title="FakedData property" Url="html/94d089d1-ff47-420c-5944-45b90eec79c9.htm" />
+  <HelpKINode Title="GetListPairedDevices method">
+    <HelpKINode Title="BluetoothService.GetListPairedDevices Method " Url="html/1b2d888b-2fe5-8f4b-25db-1b21c5dc2afa.htm" />
+    <HelpKINode Title="ECGBluetoothServiceSimulation.GetListPairedDevices Method " Url="html/adab8157-38d9-ad49-8e51-b67592b216ad.htm" />
+    <HelpKINode Title="IBluetoothService.GetListPairedDevices Method " Url="html/22dc7c72-09fb-1974-561f-28e05ebe5fc9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetXamlType method" Url="html/aba62e02-128a-dc09-939c-fc970d47bc6a.htm" />
+  <HelpKINode Title="GetXmlnsDefinitions method" Url="html/4b9e59b8-5b31-670e-7da0-3dcea7d8e9a8.htm" />
+  <HelpKINode Title="GraphData property" Url="html/f7e09b18-eb64-d015-670f-0bc0151d8a30.htm" />
+  <HelpKINode Title="GraphDrawer class">
+    <HelpKINode Title="GraphDrawer Class" Url="html/21ac177c-cc75-3e1e-895a-ba1240e3b45d.htm" />
+    <HelpKINode Title="about GraphDrawer class" Url="html/21ac177c-cc75-3e1e-895a-ba1240e3b45d.htm" />
+    <HelpKINode Title="constructor" Url="html/ddbb4bc9-6126-8df4-d888-a0e9c5360884.htm" />
+    <HelpKINode Title="events" Url="html/f6a60cb7-4c1b-a9ff-f73d-070d41e5d125.htm" />
+    <HelpKINode Title="fields" Url="html/ee10b867-4d46-0776-cb1a-652db4a227e6.htm" />
+    <HelpKINode Title="methods" Url="html/c9b25240-7076-eb02-d219-1d98a3b8dca6.htm" />
+    <HelpKINode Title="properties" Url="html/5180e197-31b3-b6f6-e6dd-3d84603cafe0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GraphDrawer.ContinueDrawingGraph method" Url="html/9d795892-7cda-0bb4-8b17-0a69c7cdc9ef.htm" />
+  <HelpKINode Title="GraphDrawer.CurrentPoints property" Url="html/a1396b4c-10a6-cccf-c7d7-dbc5865214e8.htm" />
+  <HelpKINode Title="GraphDrawer.CurrentStatus property" Url="html/c5bae91d-927c-30cb-0e13-c94ed161df90.htm" />
+  <HelpKINode Title="GraphDrawer.DataOffset field" Url="html/41dd30f6-3e46-cf4f-d472-c997718e5bc0.htm" />
+  <HelpKINode Title="GraphDrawer.GraphData property" Url="html/f7e09b18-eb64-d015-670f-0bc0151d8a30.htm" />
+  <HelpKINode Title="GraphDrawer.GraphDrawer constructor" Url="html/ddbb4bc9-6126-8df4-d888-a0e9c5360884.htm" />
+  <HelpKINode Title="GraphDrawer.PauseDrawingGraph method" Url="html/ec18f204-79b1-4fc8-dc83-b63725f861bc.htm" />
+  <HelpKINode Title="GraphDrawer.RestoreStartingState method" Url="html/4dd51674-b144-ec8f-57e5-2142dfc1027e.htm" />
+  <HelpKINode Title="GraphDrawer.Shifter property" Url="html/e40ccde9-c42b-4567-e911-3bbf6abc8695.htm" />
+  <HelpKINode Title="GraphDrawer.ShiftOffsetMultiplier field" Url="html/9197f97c-0b0f-77a4-fe6d-710b9462dc63.htm" />
+  <HelpKINode Title="GraphDrawer.StartDrawingGraph method" Url="html/b89c0419-ec74-78d3-0b2a-0c6febb2db41.htm" />
+  <HelpKINode Title="GraphDrawerStatus enumeration" Url="html/9abe8bad-6c15-3e64-cc00-4b8d76e0343f.htm" />
+  <HelpKINode Title="GraphShifter class">
+    <HelpKINode Title="GraphShifter Class" Url="html/a5439802-955d-1e1d-90cf-d7df520b84d6.htm" />
+    <HelpKINode Title="about GraphShifter class" Url="html/a5439802-955d-1e1d-90cf-d7df520b84d6.htm" />
+    <HelpKINode Title="constructor" Url="html/145853a7-0a2a-1f53-4cd8-8a25d06f2105.htm" />
+    <HelpKINode Title="events" Url="html/8c455ba6-84d4-7c36-08c7-827acfe9297b.htm" />
+    <HelpKINode Title="methods" Url="html/ae957a54-634e-14e8-b0be-bc2526d888b7.htm" />
+    <HelpKINode Title="properties" Url="html/830f3403-fdf7-6134-e844-d294a08729bd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GraphShifter.GraphShifter constructor" Url="html/145853a7-0a2a-1f53-4cd8-8a25d06f2105.htm" />
+  <HelpKINode Title="GraphShifter.RestoreStartingShift method" Url="html/cd652f20-7a32-e869-243f-b6e45c5227b0.htm" />
+  <HelpKINode Title="GraphShifter.ShiftGraph method" Url="html/91f92c16-f11c-af32-7532-79ccda4d7436.htm" />
+  <HelpKINode Title="GraphShifter.TranslateX property" Url="html/19b15e1b-4d86-96c8-8b04-62ce38eaf2af.htm" />
+  <HelpKINode Title="GraphShiftFactor property">
+    <HelpKINode Title="GraphSpace.GraphShiftFactor Property " Url="html/51ea48e9-a56d-93a3-03fa-6990e2026ed9.htm" />
+    <HelpKINode Title="IGraphSpace.GraphShiftFactor Property " Url="html/3d601876-7368-2039-da75-8c89fb5f6377.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GraphSpace class">
+    <HelpKINode Title="GraphSpace Class" Url="html/411c0a56-e1d4-0248-2dbd-f99fe93ed3e6.htm" />
+    <HelpKINode Title="about GraphSpace class" Url="html/411c0a56-e1d4-0248-2dbd-f99fe93ed3e6.htm" />
+    <HelpKINode Title="constructor" Url="html/87056d23-1360-284a-5889-300e15f5f9d2.htm" />
+    <HelpKINode Title="events" Url="html/d2ccf9ed-0c81-e3cb-41fa-73f90ffd6c2e.htm" />
+    <HelpKINode Title="methods" Url="html/95e68a5f-e2bb-eb1e-0341-b9dcff7effac.htm" />
+    <HelpKINode Title="properties" Url="html/f9d33823-7dde-b36b-e53a-4094acb09218.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GraphSpace property">
+    <HelpKINode Title="GraphSpaceCanvasBehavior.GraphSpace Property " Url="html/6c779991-f0b7-a8ba-2b28-f4002d1eedf8.htm" />
+    <HelpKINode Title="MainViewModel.GraphSpace Property " Url="html/6604d9fb-770c-47b7-c0a7-331dad02a3d8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GraphSpace.ActualHeight property" Url="html/40e1f6a5-2231-1a79-bed5-f37caf376e1a.htm" />
+  <HelpKINode Title="GraphSpace.ActualSizeChanged event" Url="html/8ba4be8b-ca92-a69c-a39c-127faa5b0acb.htm" />
+  <HelpKINode Title="GraphSpace.ActualWidth property" Url="html/507fc1c9-dbeb-8bdd-545a-41451f10fe03.htm" />
+  <HelpKINode Title="GraphSpace.CalculateInitialFactors method" Url="html/91f84490-1675-91f3-cef6-ee5aedc103db.htm" />
+  <HelpKINode Title="GraphSpace.Children property" Url="html/0f6a42c0-b2ef-3a41-8bee-71162a0496f0.htm" />
+  <HelpKINode Title="GraphSpace.DataScaleFactor property" Url="html/99d19b05-a3a0-a866-2a3e-9d287928b842.htm" />
+  <HelpKINode Title="GraphSpace.GraphShiftFactor property" Url="html/51ea48e9-a56d-93a3-03fa-6990e2026ed9.htm" />
+  <HelpKINode Title="GraphSpace.GraphSpace constructor" Url="html/87056d23-1360-284a-5889-300e15f5f9d2.htm" />
+  <HelpKINode Title="GraphSpace.GraphSpaceSizeChanged event" Url="html/7ba3154f-0e26-9429-2c04-2c5bbfbe44f7.htm" />
+  <HelpKINode Title="GraphSpace.Height property" Url="html/90f0c402-65e6-5a97-7967-dbabb26f2330.htm" />
+  <HelpKINode Title="GraphSpace.PreviousPoint property" Url="html/fbef69de-2ce0-0cca-9be7-a7450ed78d09.htm" />
+  <HelpKINode Title="GraphSpace.Width property" Url="html/719dad5b-ca53-0d1e-bb5b-567540e43f31.htm" />
+  <HelpKINode Title="GraphSpace.ZeroLevelCoordinate property" Url="html/33bf787e-6fef-5077-ec67-07d10e199305.htm" />
+  <HelpKINode Title="GraphSpaceCanvasBehavior class">
+    <HelpKINode Title="GraphSpaceCanvasBehavior Class" Url="html/784c5205-0d76-d49c-8ac1-9b9eaa79e049.htm" />
+    <HelpKINode Title="about GraphSpaceCanvasBehavior class" Url="html/784c5205-0d76-d49c-8ac1-9b9eaa79e049.htm" />
+    <HelpKINode Title="constructor" Url="html/fba8e5ef-42ea-8a76-cc06-0b074961de44.htm" />
+    <HelpKINode Title="fields" Url="html/d02f9c99-cfc7-f747-f0fb-18d68f3b9de6.htm" />
+    <HelpKINode Title="methods" Url="html/44451ec3-46cb-91a0-f147-e59c51bfe603.htm" />
+    <HelpKINode Title="properties" Url="html/b7997066-86ef-6c85-cc35-9fa6ff212425.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GraphSpaceCanvasBehavior.AssociatedObject property" Url="html/08f41f9d-4a76-2647-e9ed-8cc5581221a0.htm" />
+  <HelpKINode Title="GraphSpaceCanvasBehavior.Attach method" Url="html/78aba3af-7491-7443-58f2-857ead113d44.htm" />
+  <HelpKINode Title="GraphSpaceCanvasBehavior.Detach method" Url="html/74f3e53b-165b-6602-a6a3-ce04a2390435.htm" />
+  <HelpKINode Title="GraphSpaceCanvasBehavior.GraphSpace property" Url="html/6c779991-f0b7-a8ba-2b28-f4002d1eedf8.htm" />
+  <HelpKINode Title="GraphSpaceCanvasBehavior.GraphSpaceCanvasBehavior constructor" Url="html/fba8e5ef-42ea-8a76-cc06-0b074961de44.htm" />
+  <HelpKINode Title="GraphSpaceCanvasBehavior.GraphSpaceProperty field" Url="html/c6e14ce0-4c20-5e9e-78e3-3950480277d1.htm" />
+  <HelpKINode Title="GraphSpaceProperty field" Url="html/c6e14ce0-4c20-5e9e-78e3-3950480277d1.htm" />
+  <HelpKINode Title="GraphSpaceSizeChanged event">
+    <HelpKINode Title="GraphSpace.GraphSpaceSizeChanged Event" Url="html/7ba3154f-0e26-9429-2c04-2c5bbfbe44f7.htm" />
+    <HelpKINode Title="IGraphSpace.GraphSpaceSizeChanged Event" Url="html/9b608f34-9d45-9b4d-35be-80d79f7f9599.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Height property">
+    <HelpKINode Title="GraphSpace.Height Property " Url="html/90f0c402-65e6-5a97-7967-dbabb26f2330.htm" />
+    <HelpKINode Title="IGraphSpace.Height Property " Url="html/c7ba5c88-2390-efc7-fb81-d15e80a186a3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HostName property" Url="html/48c71b73-d4b7-f47e-3f92-ffb8ac21b7a4.htm" />
+  <HelpKINode Title="IBluetoothService interface">
+    <HelpKINode Title="IBluetoothService Interface" Url="html/0481be78-8771-b9cc-7757-37e27aa3c57c.htm" />
+    <HelpKINode Title="about IBluetoothService interface" Url="html/0481be78-8771-b9cc-7757-37e27aa3c57c.htm" />
+    <HelpKINode Title="methods" Url="html/7cd6f553-f5d0-8a29-d019-592cff7837ba.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IBluetoothService.Connect method" Url="html/519f5198-5da0-398d-f5d4-13b0515e834a.htm" />
+  <HelpKINode Title="IBluetoothService.Disconnect method" Url="html/54a04030-a6cd-45b4-5e56-6f888b04e925.htm" />
+  <HelpKINode Title="IBluetoothService.GetListPairedDevices method" Url="html/22dc7c72-09fb-1974-561f-28e05ebe5fc9.htm" />
+  <HelpKINode Title="IDialog interface">
+    <HelpKINode Title="IDialog Interface" Url="html/9f33bf0b-8fa8-44cf-7416-906e47f90789.htm" />
+    <HelpKINode Title="about IDialog interface" Url="html/9f33bf0b-8fa8-44cf-7416-906e47f90789.htm" />
+    <HelpKINode Title="properties" Url="html/db67e926-6a7c-fe3f-64a9-b71ce79572a8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IDialog(Of T) interface">
+    <HelpKINode Title="IDialog(T) Interface" Url="html/77706001-27b6-408e-cc06-f0b86899998c.htm" />
+    <HelpKINode Title="about IDialog(Of T) interface" Url="html/77706001-27b6-408e-cc06-f0b86899998c.htm" />
+    <HelpKINode Title="properties" Url="html/42c69c0d-32ac-4c97-fda2-2591e7d69296.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IDialog(Of T).Result property" Url="html/ce76f473-b237-236f-d61d-e19f322d0fda.htm" />
+  <HelpKINode Title="IDialog.IsOpen property" Url="html/d3714685-cc3e-57e5-1296-aba363e8bd20.htm" />
+  <HelpKINode Title="IDialog&lt;T&gt; interface">
+    <HelpKINode Title="IDialog(T) Interface" Url="html/77706001-27b6-408e-cc06-f0b86899998c.htm" />
+    <HelpKINode Title="about IDialog&lt;T&gt; interface" Url="html/77706001-27b6-408e-cc06-f0b86899998c.htm" />
+    <HelpKINode Title="properties" Url="html/42c69c0d-32ac-4c97-fda2-2591e7d69296.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IDialog&lt;T&gt;.Result property" Url="html/ce76f473-b237-236f-d61d-e19f322d0fda.htm" />
+  <HelpKINode Title="IGraphSpace interface">
+    <HelpKINode Title="IGraphSpace Interface" Url="html/2e9e4dd9-c6e7-6f69-c2f3-181fdc7777d5.htm" />
+    <HelpKINode Title="about IGraphSpace interface" Url="html/2e9e4dd9-c6e7-6f69-c2f3-181fdc7777d5.htm" />
+    <HelpKINode Title="events" Url="html/96fd9985-754e-5757-4b21-de66d82011d4.htm" />
+    <HelpKINode Title="methods" Url="html/f035f4dc-ccd4-540f-da3a-7cf83f142c7e.htm" />
+    <HelpKINode Title="properties" Url="html/e5f9281a-1582-e62b-5102-1b1273a0e7f8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IGraphSpace.ActualHeight property" Url="html/fea9be1c-38dd-4e04-ce8e-1c8d326776f8.htm" />
+  <HelpKINode Title="IGraphSpace.ActualSizeChanged event" Url="html/9531ab7a-b135-c2b7-8632-3c9205ef39d3.htm" />
+  <HelpKINode Title="IGraphSpace.ActualWidth property" Url="html/fa8d58b5-f94c-2e95-544c-97837ffae7e1.htm" />
+  <HelpKINode Title="IGraphSpace.CalculateInitialFactors method" Url="html/f7024dec-da5d-2c67-edd6-e8e02f90a7b7.htm" />
+  <HelpKINode Title="IGraphSpace.Children property" Url="html/d530634c-be52-0025-2093-b95a3e12c816.htm" />
+  <HelpKINode Title="IGraphSpace.DataScaleFactor property" Url="html/a5b60f7b-92d7-0dbd-15db-734a8a23b8b8.htm" />
+  <HelpKINode Title="IGraphSpace.GraphShiftFactor property" Url="html/3d601876-7368-2039-da75-8c89fb5f6377.htm" />
+  <HelpKINode Title="IGraphSpace.GraphSpaceSizeChanged event" Url="html/9b608f34-9d45-9b4d-35be-80d79f7f9599.htm" />
+  <HelpKINode Title="IGraphSpace.Height property" Url="html/c7ba5c88-2390-efc7-fb81-d15e80a186a3.htm" />
+  <HelpKINode Title="IGraphSpace.PreviousPoint property" Url="html/ab9a2038-af3c-5f42-668f-9e40909230b4.htm" />
+  <HelpKINode Title="IGraphSpace.Width property" Url="html/84136d24-35a5-aac5-1e2f-2640d73c06c8.htm" />
+  <HelpKINode Title="IGraphSpace.ZeroLevelCoordinate property" Url="html/1b97c343-055a-c168-a4c2-adc605d263f3.htm" />
+  <HelpKINode Title="InitializeComponent method">
+    <HelpKINode Title="App.InitializeComponent Method " Url="html/51503c3b-a36f-9c68-f880-140f208c7a57.htm" />
+    <HelpKINode Title="MainView.InitializeComponent Method " Url="html/8dfe6ae2-eadd-0f93-c608-3de7daa8eb9e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IsCheckedSimulation property" Url="html/65e99185-823a-1d11-b702-3ff384cd3891.htm" />
+  <HelpKINode Title="IsConnected property" Url="html/1f88cd97-8072-d620-ff0a-905fb71fc9d2.htm" />
+  <HelpKINode Title="IsOpen property" Url="html/d3714685-cc3e-57e5-1296-aba363e8bd20.htm" />
+  <HelpKINode Title="MainView class">
+    <HelpKINode Title="MainView Class" Url="html/72469a91-8802-c889-1691-c2b4855c1d84.htm" />
+    <HelpKINode Title="about MainView class" Url="html/72469a91-8802-c889-1691-c2b4855c1d84.htm" />
+    <HelpKINode Title="constructor" Url="html/b09ebeae-d4b0-c7bd-99c1-314c27d2776a.htm" />
+    <HelpKINode Title="events" Url="html/3089802d-c2cd-b183-3921-3e7dcd2f654d.htm" />
+    <HelpKINode Title="methods" Url="html/6a5581b1-7a45-711a-bcb2-833e07c79459.htm" />
+    <HelpKINode Title="properties" Url="html/5b58db05-56e2-22bb-748a-675156bb27a3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainView.Connect method" Url="html/44fa2362-d3f5-1429-3c73-79e4733c206d.htm" />
+  <HelpKINode Title="MainView.InitializeComponent method" Url="html/8dfe6ae2-eadd-0f93-c608-3de7daa8eb9e.htm" />
+  <HelpKINode Title="MainView.MainView constructor" Url="html/b09ebeae-d4b0-c7bd-99c1-314c27d2776a.htm" />
+  <HelpKINode Title="MainViewModel class">
+    <HelpKINode Title="MainViewModel Class" Url="html/7394f45c-6585-d1e9-1ac7-529952b3be9a.htm" />
+    <HelpKINode Title="about MainViewModel class" Url="html/7394f45c-6585-d1e9-1ac7-529952b3be9a.htm" />
+    <HelpKINode Title="constructor" Url="html/b46d04a0-1093-93b1-b88e-d5d7489fc1f4.htm" />
+    <HelpKINode Title="events" Url="html/b8b1cc52-94e8-0bf0-fed1-3107c133d14a.htm" />
+    <HelpKINode Title="methods" Url="html/573c23cc-3015-22b0-c235-e2630542049d.htm" />
+    <HelpKINode Title="properties" Url="html/e86dfadd-4bb6-8116-28fc-d5ffd2f695ca.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainViewModel.BluetoothPanel property" Url="html/fa15126b-bdb9-10a9-145b-a4fce3605f35.htm" />
+  <HelpKINode Title="MainViewModel.Drawer property" Url="html/e92a0c83-2bf2-bbc6-e9d1-b7efd8ea8c0d.htm" />
+  <HelpKINode Title="MainViewModel.GraphSpace property" Url="html/6604d9fb-770c-47b7-c0a7-331dad02a3d8.htm" />
+  <HelpKINode Title="MainViewModel.MainViewModel constructor" Url="html/b46d04a0-1093-93b1-b88e-d5d7489fc1f4.htm" />
+  <HelpKINode Title="NewHeight property" Url="html/89371248-e4e4-2195-70fd-793f88e177ee.htm" />
+  <HelpKINode Title="NewWidth property" Url="html/549bedea-1917-b6b8-93a5-801c72e55d3a.htm" />
+  <HelpKINode Title="NextFakedData method" Url="html/81c5bede-fb74-22d7-7f10-1fd04bcbc8e7.htm" />
+  <HelpKINode Title="NoAccess enumeration member" Url="html/58e975d7-1059-74dc-aaef-0c2b129dba34.htm" />
+  <HelpKINode Title="NoDeviceFound enumeration member" Url="html/58e975d7-1059-74dc-aaef-0c2b129dba34.htm" />
+  <HelpKINode Title="NotInitialized enumeration member" Url="html/58e975d7-1059-74dc-aaef-0c2b129dba34.htm" />
+  <HelpKINode Title="Paused enumeration member" Url="html/9abe8bad-6c15-3e64-cc00-4b8d76e0343f.htm" />
+  <HelpKINode Title="PauseDrawingGraph method" Url="html/ec18f204-79b1-4fc8-dc83-b63725f861bc.htm" />
+  <HelpKINode Title="PreviousPoint property">
+    <HelpKINode Title="GraphSpace.PreviousPoint Property " Url="html/fbef69de-2ce0-0cca-9be7-a7450ed78d09.htm" />
+    <HelpKINode Title="IGraphSpace.PreviousPoint Property " Url="html/ab9a2038-af3c-5f42-668f-9e40909230b4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Program class">
+    <HelpKINode Title="Program Class" Url="html/810599d4-aca2-1c65-ef03-ddb88b856e0a.htm" />
+    <HelpKINode Title="about Program class" Url="html/810599d4-aca2-1c65-ef03-ddb88b856e0a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ReceiveStringLoop method">
+    <HelpKINode Title="BluetoothService.ReceiveStringLoop Method " Url="html/d0403867-ece4-a49f-f0dc-ae10d4dd725f.htm" />
+    <HelpKINode Title="ECGBluetoothService.ReceiveStringLoop Method " Url="html/249c3a99-649d-9e3c-8109-c7fe867fbe34.htm" />
+    <HelpKINode Title="ECGBluetoothServiceSimulation.ReceiveStringLoop Method " Url="html/3568b636-0f4d-296c-f2c0-b3cae6669b99.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RestoreStartingShift method" Url="html/cd652f20-7a32-e869-243f-b6e45c5227b0.htm" />
+  <HelpKINode Title="RestoreStartingState method" Url="html/4dd51674-b144-ec8f-57e5-2142dfc1027e.htm" />
+  <HelpKINode Title="Result property" Url="html/ce76f473-b237-236f-d61d-e19f322d0fda.htm" />
+  <HelpKINode Title="RfcommServiceUuid field" Url="html/ccc4efa8-43eb-0e3d-7971-0fa89d99326a.htm" />
+  <HelpKINode Title="RGraphics.Models namespace" Url="html/db271dba-4746-78ba-1450-3dea48f5cfc6.htm" />
+  <HelpKINode Title="RGraphics.Models.IDialog interface" Url="html/9f33bf0b-8fa8-44cf-7416-906e47f90789.htm" />
+  <HelpKINode Title="RGraphics.Models.IDialog(Of T) interface" Url="html/77706001-27b6-408e-cc06-f0b86899998c.htm" />
+  <HelpKINode Title="RGraphics.Models.IDialog&lt;T&gt; interface" Url="html/77706001-27b6-408e-cc06-f0b86899998c.htm" />
+  <HelpKINode Title="Run method" Url="html/8245b4e9-ff08-8a7c-91e6-75fed29d4d47.htm" />
+  <HelpKINode Title="SdpServiceNameAttributeId field" Url="html/97ef89a2-d352-af89-2727-71f2f23553ea.htm" />
+  <HelpKINode Title="SdpServiceNameAttributeType field" Url="html/f4ad0da0-c1fa-7ec6-48c5-cc995525af73.htm" />
+  <HelpKINode Title="Searching enumeration member" Url="html/58e975d7-1059-74dc-aaef-0c2b129dba34.htm" />
+  <HelpKINode Title="SelectedIndex property" Url="html/7e514e3f-1c8c-15a3-0c39-1afde07b64e1.htm" />
+  <HelpKINode Title="Service field" Url="html/2f1c07fc-cba5-386f-de17-d9335f57e4ff.htm" />
+  <HelpKINode Title="ServiceInfoCollection field" Url="html/3b10ebaf-7933-cbab-d4a4-f2bdf61a547e.htm" />
+  <HelpKINode Title="ServiceName property" Url="html/3fd5f841-02a2-74d8-6b16-acab3e61d939.htm" />
+  <HelpKINode Title="Shifter property" Url="html/e40ccde9-c42b-4567-e911-3bbf6abc8695.htm" />
+  <HelpKINode Title="ShiftGraph method" Url="html/91f92c16-f11c-af32-7532-79ccda4d7436.htm" />
+  <HelpKINode Title="ShiftOffsetMultiplier field" Url="html/9197f97c-0b0f-77a4-fe6d-710b9462dc63.htm" />
+  <HelpKINode Title="Simulation class">
+    <HelpKINode Title="Simulation Class" Url="html/69aafc98-f85c-8f85-e74f-789cb75d34ff.htm" />
+    <HelpKINode Title="about Simulation class" Url="html/69aafc98-f85c-8f85-e74f-789cb75d34ff.htm" />
+    <HelpKINode Title="constructor" Url="html/7373b38a-d18d-c441-baf6-f9c54bf8c5be.htm" />
+    <HelpKINode Title="methods" Url="html/9fdbe845-7283-46b1-979c-7105bbf7bef3.htm" />
+    <HelpKINode Title="properties" Url="html/74fa7467-acc8-ab97-f6cd-cdd440ec9d22.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Simulation.FakedData property" Url="html/94d089d1-ff47-420c-5944-45b90eec79c9.htm" />
+  <HelpKINode Title="Simulation.NextFakedData method" Url="html/81c5bede-fb74-22d7-7f10-1fd04bcbc8e7.htm" />
+  <HelpKINode Title="Simulation.Run method" Url="html/8245b4e9-ff08-8a7c-91e6-75fed29d4d47.htm" />
+  <HelpKINode Title="Simulation.Simulation constructor" Url="html/7373b38a-d18d-c441-baf6-f9c54bf8c5be.htm" />
+  <HelpKINode Title="SizeChangedEventArgs class">
+    <HelpKINode Title="SizeChangedEventArgs Class" Url="html/36c27a01-cd26-71c1-f9dd-c00d48af8205.htm" />
+    <HelpKINode Title="about SizeChangedEventArgs class" Url="html/36c27a01-cd26-71c1-f9dd-c00d48af8205.htm" />
+    <HelpKINode Title="constructor" Url="html/cbc27768-fe3b-dd12-61f8-0067e26dc422.htm" />
+    <HelpKINode Title="methods" Url="html/1720b3aa-d23c-610c-c0d0-3ad425c21f06.htm" />
+    <HelpKINode Title="properties" Url="html/d24fd81c-c7c4-cc66-5fdd-b19f74f0ae97.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SizeChangedEventArgs.NewHeight property" Url="html/89371248-e4e4-2195-70fd-793f88e177ee.htm" />
+  <HelpKINode Title="SizeChangedEventArgs.NewWidth property" Url="html/549bedea-1917-b6b8-93a5-801c72e55d3a.htm" />
+  <HelpKINode Title="SizeChangedEventArgs.SizeChangedEventArgs constructor" Url="html/cbc27768-fe3b-dd12-61f8-0067e26dc422.htm" />
+  <HelpKINode Title="Socket field" Url="html/04df2547-de7e-f80b-3a72-361e024f8040.htm" />
+  <HelpKINode Title="Start enumeration member" Url="html/0f71379e-a810-a442-6ec6-0435d272fb9c.htm" />
+  <HelpKINode Title="StartDrawingGraph method" Url="html/b89c0419-ec74-78d3-0b2a-0c6febb2db41.htm" />
+  <HelpKINode Title="Started enumeration member" Url="html/9abe8bad-6c15-3e64-cc00-4b8d76e0343f.htm" />
+  <HelpKINode Title="Status property">
+    <HelpKINode Title="BluetoothPanelViewModel.Status Property " Url="html/e9430c52-09d9-9013-228b-0ad44e162d19.htm" />
+    <HelpKINode Title="BluetoothService.Status Property " Url="html/9f00b268-d8ef-5885-85fe-0d3f72a0507d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Stop enumeration member" Url="html/0f71379e-a810-a442-6ec6-0435d272fb9c.htm" />
+  <HelpKINode Title="Stopped enumeration member" Url="html/9abe8bad-6c15-3e64-cc00-4b8d76e0343f.htm" />
+  <HelpKINode Title="StrokeColor property" Url="html/fb12161a-6d39-3d00-eb0b-efb8333a1d23.htm" />
+  <HelpKINode Title="StrokeThickness property" Url="html/e0ce397a-6faa-b5e4-e35f-9e9d001269f7.htm" />
+  <HelpKINode Title="TranslateX property" Url="html/19b15e1b-4d86-96c8-8b04-62ce38eaf2af.htm" />
+  <HelpKINode Title="UnexpectedConnectionError enumeration member" Url="html/58e975d7-1059-74dc-aaef-0c2b129dba34.htm" />
+  <HelpKINode Title="UnexpectedDataFormat enumeration member" Url="html/58e975d7-1059-74dc-aaef-0c2b129dba34.htm" />
+  <HelpKINode Title="UUID field" Url="html/b5bb4796-247d-ff3a-5f3f-d2b62352779e.htm" />
+  <HelpKINode Title="Width property">
+    <HelpKINode Title="GraphSpace.Width Property " Url="html/719dad5b-ca53-0d1e-bb5b-567540e43f31.htm" />
+    <HelpKINode Title="IGraphSpace.Width Property " Url="html/84136d24-35a5-aac5-1e2f-2640d73c06c8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Writer field" Url="html/1f8f734d-f193-460d-b374-318d19d672bf.htm" />
+  <HelpKINode Title="WrongService enumeration member" Url="html/58e975d7-1059-74dc-aaef-0c2b129dba34.htm" />
+  <HelpKINode Title="X1 property" Url="html/fd480e81-c605-8cf1-c5df-7a4525cb8c4c.htm" />
+  <HelpKINode Title="X2 property" Url="html/8dbb318b-48cb-2810-deec-c4126d5983d2.htm" />
+  <HelpKINode Title="Y1 property" Url="html/c088e529-4336-e1a8-d24d-dcd2bf79053e.htm" />
+  <HelpKINode Title="Y2 property" Url="html/a98f9d96-e4f4-0528-2f32-d568df0c5b79.htm" />
+  <HelpKINode Title="ZeroLevelCoordinate property">
+    <HelpKINode Title="GraphSpace.ZeroLevelCoordinate Property " Url="html/33bf787e-6fef-5077-ec67-07d10e199305.htm" />
+    <HelpKINode Title="IGraphSpace.ZeroLevelCoordinate Property " Url="html/1b97c343-055a-c168-a4c2-adc605d263f3.htm" />
+  </HelpKINode>
+</HelpKI>
