@@ -1,1 +1,0 @@
-E:\dokumenty\Projekty\ECGCatcher\ECGCatcher\ECGCatcher.Windows\ECGCatcher.Windows.csproj;neutral
